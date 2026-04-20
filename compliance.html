@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliance Registry | Bitcoin System Constitution</title>
+  <meta name="description" content="Compliance registry, badge system, and recognition process for Bitcoin System Constitution claims.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="seal-128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="content-page">
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Bitcoin System Constitution</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-dropdown"><a href="constitution.html" class="nav-dropdown-trigger">Constitution</a><ul class="nav-submenu"><li><a href="one-pager.html">One-Page Summary</a></li><li><a href="companions.html">Companion Standards</a></li><li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li></ul></li>
+        <li><a href="commentary.html">Commentary</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="checklist.html">Checklist</a></li>
+        <li><a href="compliance.html" class="active">Compliance</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-shell narrow-page">
+    <header class="page-hero narrow">
+      <p class="eyebrow">Public Record</p>
+      <h1>Compliance Registry</h1>
+      <p class="page-intro">The compliance registry is a permanent, public record of systems evaluated against the Bitcoin System Constitution. Every system receives one of seven badge classes based on verifiable evidence, published standards, and documented reasoning. No badge is granted by reputation, popularity, or politics.</p>
+    </header>
+
+    <!-- How the Registry Works -->
+    <section class="content-card" style="margin-bottom: 1.5rem;">
+      <h2>How the Registry Works</h2>
+      <p>Compliance is voluntary in applicability and strict in claim. A system enters the registry only after it publicly adopts the constitution or requests recognition under it. Registration does not create compliance by itself; it creates a public record that can be examined against the constitutional text and companion standards.</p>
+      <p>Every registered system is assigned exactly one badge class at any given time. Badge assignments are backed by a formal compliance decision record that documents the evidence, reasoning, and standards applied. All records are permanent — they can be updated with new decisions, but prior records are never deleted.</p>
+      <div class="info-box">
+        <p><strong>Core principle:</strong> The registry exists so that anyone — user, developer, auditor, or competitor — can independently verify whether a system's compliance claim is justified. No standing is required to inspect or challenge any record.</p>
+      </div>
+    </section>
+
+    <!-- Badge Classes -->
+    <section class="content-card" style="margin-bottom: 1.5rem;">
+      <h2>Badge Classes</h2>
+      <p>Every system in the registry carries exactly one of the following seven badges. Badge assignment is based on verifiable evidence evaluated against the constitution and its binding companion standards.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="min-width: 160px;">Badge</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="status-badge" style="border-color: rgba(72, 187, 120, 0.4); color: #48bb78;">Compliant</span></td>
+              <td>System meets all constitutional requirements and binding standards. No unresolved breaches. No active disputes on material articles.</td>
+            </tr>
+            <tr>
+              <td><span class="status-badge" style="border-color: rgba(212, 168, 67, 0.4); color: #d4a843;">Provisional</span></td>
+              <td>System is in a disclosed transitional state (e.g., provisional custody). May not claim full compliance. Must disclose timeline and milestones.</td>
+            </tr>
+            <tr>
+              <td><span class="status-badge" style="border-color: rgba(100, 149, 237, 0.4); color: #6495ed;">Partial</span></td>
+              <td>System meets some but not all constitutional requirements. Must disclose which articles are satisfied and which are not.</td>
+            </tr>
+            <tr>
+              <td><span class="status-badge" style="border-color: rgba(237, 137, 54, 0.4); color: #ed8936;">Historically Breached</span></td>
+              <td>System has restored compliance but has a recorded breach history. Breach record is permanent.</td>
+            </tr>
+            <tr>
+              <td><span class="status-badge" style="border-color: rgba(159, 122, 234, 0.4); color: #9f7aea;">Disputed</span></td>
+              <td>System's compliance status is subject to an active, unresolved dispute. Must disclose dispute details.</td>
+            </tr>
+            <tr>
+              <td><span class="status-badge" style="border-color: rgba(245, 101, 101, 0.4); color: #f56565;">Non-Compliant</span></td>
+              <td>System fails to meet one or more constitutional requirements. Must disclose which articles are violated.</td>
+            </tr>
+            <tr>
+              <td><span class="status-badge" style="border-color: rgba(160, 160, 180, 0.4); color: #a0a0b4;">Out of Scope</span></td>
+              <td>System does not claim constitutional compliance and is not evaluated against this constitution.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Accordion sections for detailed content -->
+
+    <!-- Compliance Decision Records -->
+    <div class="accordion" style="margin-bottom: 0.75rem;">
+      <input type="checkbox" id="acc-decisions" class="accordion-toggle">
+      <label for="acc-decisions" class="accordion-label">
+        Compliance Decision Records
+        <span class="companion-desc">What every badge decision must include</span>
+      </label>
+      <div class="accordion-body">
+        <div class="accordion-inner">
+          <p>Every badge assignment or change must be backed by a formal compliance decision record. These records ensure that no badge is granted, revoked, or changed without a documented, verifiable basis.</p>
+
+          <h3>Required Elements</h3>
+          <p>Every compliance decision record must include all ten of the following:</p>
+          <ol>
+            <li><strong>System identification</strong> — The name, version, and unique identifier of the system being evaluated.</li>
+            <li><strong>Badge assigned</strong> — The specific badge class assigned as a result of this decision.</li>
+            <li><strong>Date</strong> — The date the decision was issued.</li>
+            <li><strong>Articles reviewed</strong> — The specific constitutional articles evaluated in this decision.</li>
+            <li><strong>Evidence used</strong> — The evidence examined, including proof-of-reserves attestations, audit reports, public disclosures, on-chain data, or operational documentation.</li>
+            <li><strong>Standards applied</strong> — The specific companion standards, checklists, or verification criteria applied during evaluation.</li>
+            <li><strong>Disputes</strong> — Any active or resolved disputes relevant to the system at the time of evaluation.</li>
+            <li><strong>Limitations</strong> — Any limitations, caveats, or scope restrictions that affect the decision.</li>
+            <li><strong>Evaluator identification</strong> — The individual, organization, or process responsible for the evaluation.</li>
+            <li><strong>Decision rationale</strong> — A plain-language explanation of why the badge was assigned, including which requirements were met, which were not, and what evidence was decisive.</li>
+          </ol>
+
+          <div class="info-box" style="margin-top: 1rem;">
+            <p><strong>Permanence rule:</strong> Compliance decision records are permanent. They may be updated with new decisions, supplemented with additional evidence, or superseded by later evaluations — but they are never deleted. The full history of every system's compliance record remains publicly accessible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Standards Basis -->
+    <div class="accordion" style="margin-bottom: 0.75rem;">
+      <input type="checkbox" id="acc-standards" class="accordion-toggle">
+      <label for="acc-standards" class="accordion-label">
+        Standards Basis
+        <span class="companion-desc">What badge decisions can and cannot be based on</span>
+      </label>
+      <div class="accordion-body">
+        <div class="accordion-inner">
+          <p>Badge assignments must be grounded in published, verifiable criteria. This section defines what constitutes a valid basis for a compliance decision — and what does not.</p>
+
+          <h3>Permitted Bases</h3>
+          <p>Badge decisions may be based on:</p>
+          <ul>
+            <li><strong>The constitution itself</strong> — The full text of the Bitcoin System Constitution, including all articles and definitions.</li>
+            <li><strong>Binding companion standards</strong> — Published companion standards that have been formally adopted as binding under the constitutional framework.</li>
+            <li><strong>Published verification checklists</strong> — Checklists and evaluation criteria that are publicly documented and available for independent review.</li>
+            <li><strong>Public dispute resolution records</strong> — Outcomes of formally filed disputes that have been resolved through the documented process.</li>
+          </ul>
+
+          <h3>Prohibited Bases</h3>
+          <p>Badge decisions must never be based on:</p>
+          <ul>
+            <li><strong>Subjective impressions</strong> — Personal opinions, gut feelings, or informal assessments that are not documented or verifiable.</li>
+            <li><strong>Favoritism</strong> — Preferential treatment based on relationships, affiliations, or commercial interests.</li>
+            <li><strong>Popularity</strong> — Market share, user count, social media following, or public sentiment.</li>
+            <li><strong>Politics</strong> — Political alignment, ideological agreement, or community faction loyalty.</li>
+            <li><strong>Unpublished criteria</strong> — Standards, thresholds, or requirements that have not been publicly documented before being applied.</li>
+            <li><strong>Ad hoc standards</strong> — Requirements invented after the fact or applied inconsistently across systems.</li>
+          </ul>
+
+          <div class="info-box" style="margin-top: 1rem;">
+            <p><strong>Transparency requirement:</strong> If a badge decision cannot cite a specific, published standard for every element of its reasoning, the decision is deficient and subject to challenge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dispute Process -->
+    <div class="accordion" style="margin-bottom: 0.75rem;">
+      <input type="checkbox" id="acc-disputes" class="accordion-toggle">
+      <label for="acc-disputes" class="accordion-label">
+        Dispute Process
+        <span class="companion-desc">How badge assignments can be challenged</span>
+      </label>
+      <div class="accordion-body">
+        <div class="accordion-inner">
+          <p>Any badge assignment can be formally disputed. The dispute process exists to ensure that compliance decisions remain accountable, correctable, and transparent.</p>
+
+          <h3>Standing</h3>
+          <p>Anyone can file a dispute. No standing is required — you do not need to be a user of the system, a holder of any token, or a participant in any governance process. The dispute stands or falls on its evidence, not on who filed it.</p>
+
+          <h3>Filing Requirements</h3>
+          <p>A valid dispute must include all of the following:</p>
+          <ol>
+            <li><strong>System identified</strong> — The specific system whose badge is being contested.</li>
+            <li><strong>Badge contested</strong> — The current badge assignment that the dispute challenges.</li>
+            <li><strong>Basis</strong> — The constitutional articles, companion standards, or decision record elements that the dispute is grounded in.</li>
+            <li><strong>Evidence</strong> — Specific, verifiable evidence supporting the dispute claim.</li>
+            <li><strong>Requested outcome</strong> — The badge change or corrective action the filer believes is warranted.</li>
+          </ol>
+
+          <h3>Response Timeline</h3>
+          <p>Once a dispute is filed, a response is required within <strong>14 days</strong>. The response must address the specific evidence and reasoning presented in the dispute. Failure to respond within the timeline is itself a matter of public record.</p>
+
+          <h3>Permanence</h3>
+          <p>All disputes — filed, pending, resolved, or withdrawn — are permanently accessible in the public record. Dispute history is never deleted, even after resolution. This ensures that patterns of repeated challenges, systemic issues, or governance failures remain visible.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Governance Transition -->
+    <div class="accordion" style="margin-bottom: 1.5rem;">
+      <input type="checkbox" id="acc-governance" class="accordion-toggle">
+      <label for="acc-governance" class="accordion-label">
+        Governance Transition
+        <span class="companion-desc">From governance-led to standards-driven evaluation</span>
+      </label>
+      <div class="accordion-body">
+        <div class="accordion-inner">
+          <p>The compliance registry is designed to transition from an initial governance-led phase to a fully standards-driven evaluation process.</p>
+
+          <h3>Phase 1: Governance-Led</h3>
+          <p>In Phase 1, badge assignments and compliance decisions are managed by the founding governance process. This phase exists because the companion standards, verification checklists, and dispute resolution mechanisms are still being published and refined. During this phase:</p>
+          <ul>
+            <li>Badge decisions are made by identified evaluators operating under published criteria.</li>
+            <li>The governance process is responsible for publishing and maintaining the standards that badge decisions are based on.</li>
+            <li>All decisions remain subject to the same transparency, documentation, and dispute requirements as in Phase 2.</li>
+          </ul>
+
+          <h3>Phase 2: Standards-Driven</h3>
+          <p>In Phase 2, badge assignments are determined entirely by published, independently verifiable standards. The role of governance is reduced to maintaining the standards themselves — not to making individual compliance decisions. During this phase:</p>
+          <ul>
+            <li>Any qualified evaluator can issue a compliance decision record using the published standards.</li>
+            <li>Badge assignments are reproducible — different evaluators applying the same standards to the same evidence should reach the same conclusion.</li>
+            <li>Governance maintains the standards but does not control access to the evaluation process.</li>
+          </ul>
+
+          <h3>Anti-Capture Safeguard</h3>
+          <div class="info-box">
+            <p><strong>12-month disclosure rule:</strong> If governance fails to publish a transition timeline from Phase 1 to Phase 2 within 12 months of the registry's first badge assignment, that failure is itself disclosed in the registry as a governance deficiency. This safeguard exists to prevent indefinite governance control over the compliance process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to Request Recognition -->
+    <section class="content-card" style="margin-bottom: 1.5rem;">
+      <h2>How to Request Recognition</h2>
+      <p>Publish a clear claim of applicability, identify the system and relevant layers, provide supporting documentation for reserves, liabilities, custody, governance, exit paths, and security assumptions, and submit the request for public review. Ambiguous marketing language is not enough.</p>
+      <p>A valid recognition request should include:</p>
+      <ul style="padding-left: 1.4rem; margin-bottom: 1rem;">
+        <li>The system name, version, and unique identifier.</li>
+        <li>The constitutional layers claimed (Layer 1, Layer 2, Layer 3, or cross-layer).</li>
+        <li>Supporting evidence for each applicable article — proof-of-reserves, audit reports, custody documentation, governance disclosures, exit mechanism specifications.</li>
+        <li>Disclosure of any known limitations, provisional states, or areas of non-compliance.</li>
+        <li>A public point of contact for follow-up evaluation and dispute response.</li>
+      </ul>
+      <p>Submit recognition requests through the <a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub repository</a> for public review.</p>
+    </section>
+
+    <!-- Registry Table -->
+    <section class="table-card" style="margin-bottom: 1.5rem;">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>System Name</th>
+              <th>Layer(s)</th>
+              <th>Badge</th>
+              <th>Submission Date</th>
+              <th>Review Status</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6">No systems have registered yet.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <div class="empty-state">
+      <h2>Coming Soon</h2>
+      <p>The registry structure and badge system are in place, but no public submissions have been recorded yet. When systems begin requesting recognition, this page will display the full review pipeline, badge assignments, decision records, and permanent compliance history.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-left">Bitcoin System Constitution &middot; CC0 1.0 &middot; Public Domain &middot; Satoshi Nohashi</div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:satoshinohashi@proton.me">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

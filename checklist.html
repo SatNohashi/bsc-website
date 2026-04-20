@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification Checklist | Bitcoin System Constitution</title>
+  <meta name="description" content="A practical checklist for evaluating any Bitcoin-based system against the Bitcoin System Constitution requirements, organized by article and topic.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="seal-128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="content-page">
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Bitcoin System Constitution</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li class="nav-dropdown"><a href="constitution.html" class="nav-dropdown-trigger">Constitution</a><ul class="nav-submenu"><li><a href="one-pager.html">One-Page Summary</a></li><li><a href="companions.html">Companion Standards</a></li><li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li></ul></li><li><a href="commentary.html">Commentary</a></li><li><a href="faq.html">FAQ</a></li><li><a href="checklist.html" class="active">Checklist</a></li><li><a href="compliance.html">Compliance</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <header class="page-hero narrow">
+      <p class="eyebrow">Evaluation Tool</p>
+      <h1>Verification Checklist</h1>
+      <p class="page-intro">A practical tool for evaluating any Bitcoin-based system against the constitutional requirements. Check each item to track your evaluation. This checklist does not create binding obligations — it is a convenience tool.</p>
+    </header>
+
+    <section class="section narrow">
+<div class="info-box">
+      <p><strong>How to use:</strong> Check each item as you verify it against the system being evaluated. Items are organized by constitutional topic. References to specific articles are provided for each item. This checklist is interactive — your checks are saved in your browser session only.</p>
+    </div>
+
+    <!-- Exit Rights -->
+    <div class="checklist-category">
+      <h3>Exit Rights</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c1">
+        <label for="c1">Downward exit (L3→L2, L2→L1) exists as a non-discretionary right, not a favor <span class="checklist-ref">Art. IX.1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c2">
+        <label for="c2">No committee, operator group, or governance body exercises discretionary control over normal downward movement <span class="checklist-ref">Art. IX.3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c3">
+        <label for="c3">No identity-based approval required for downward exit within the protocol <span class="checklist-ref">Art. IX.2</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c4">
+        <label for="c4">No insider class has privileged withdrawal rights over ordinary users <span class="checklist-ref">Art. IX.4</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c5">
+        <label for="c5">Functional exit blocking (excessive fees, delays, identity gates) treated the same as structural blocking <span class="checklist-ref">Art. IX.8</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c6">
+        <label for="c6">Normal downward movement has a constitutional maximum delay of 12 Bitcoin blocks <span class="checklist-ref">Art. XVII.11</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c7">
+        <label for="c7">Layer 2 remains workable even if Bitcoin Layer 1 never changes <span class="checklist-ref">Art. IX.6</span></label>
+      </div>
+    </div>
+
+    <!-- Reserve Truth -->
+    <div class="checklist-category">
+      <h3>Reserve Truth &amp; Liability Truth</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c10">
+        <label for="c10">Any direct claim on Bitcoin is provable without trusting the issuer <span class="checklist-ref">Art. XIII.1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c11">
+        <label for="c11">Both reserves AND total outstanding liabilities are publicly verifiable <span class="checklist-ref">Art. XIII.3-4</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c12">
+        <label for="c12">Encumbered reserves are explicitly disclosed and not counted as free backing <span class="checklist-ref">Art. XIII.5</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c13">
+        <label for="c13">Reserves backing direct Bitcoin claims are unencumbered by default <span class="checklist-ref">Art. XIII.7</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c14">
+        <label for="c14">A published proof cadence exists with a declared maximum lag <span class="checklist-ref">Art. XIII.10-11</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c15">
+        <label for="c15">Proofs are timestamped, publicly accessible, and independently verifiable <span class="checklist-ref">Art. XIII.12</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c16">
+        <label for="c16">Missed proof cadences result in claims being marked as stale or unproven <span class="checklist-ref">Art. XIII.13-14</span></label>
+      </div>
+    </div>
+
+    <!-- Custody -->
+    <div class="checklist-category">
+      <h3>Custody Independence</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c20">
+        <label for="c20">No single key can move, spend, or encumber reserves backing direct claims or L2 balances <span class="checklist-ref">Art. XIV.1.2</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c21">
+        <label for="c21">No single entity holds exclusive custody over such reserves <span class="checklist-ref">Art. XIV.1.3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c22">
+        <label for="c22">Signing authority is distributed across independent control domains <span class="checklist-ref">Art. XIV.1.4</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c23">
+        <label for="c23">Reserve custody structure is publicly disclosed (control model, jurisdictional distribution, failure modes) <span class="checklist-ref">Art. XIV.1.6</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c24">
+        <label for="c24">No custody change weakening the model takes effect without public notice and an exit window <span class="checklist-ref">Art. XIV.1.8</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c25">
+        <label for="c25">Signer admission is public and rule-based, not incumbent-discretionary <span class="checklist-ref">Art. XIV.2.3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c26">
+        <label for="c26">If provisional custody, it is publicly disclosed, capped, and has a maturity timeline <span class="checklist-ref">Art. XIV.2.6-7</span></label>
+      </div>
+    </div>
+
+    <!-- Credit Distinction -->
+    <div class="checklist-category">
+      <h3>Credit Distinction</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c30">
+        <label for="c30">Bitcoin, direct claims, utility balances, and credit are categorically separated <span class="checklist-ref">Art. XII.1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c31">
+        <label for="c31">No credit instrument is represented, marketed, or labeled as Bitcoin or a direct claim <span class="checklist-ref">Art. XII.2</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c32">
+        <label for="c32">Lending, rehypothecation, or yield-bearing instruments are visibly and permanently labeled as credit <span class="checklist-ref">Art. XII.3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c33">
+        <label for="c33">Holders can always tell whether they hold Bitcoin, a claim, a utility balance, or credit <span class="checklist-ref">Art. XII.6</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c34">
+        <label for="c34">Layer 2 does not require acceptance of credit instruments as money substitutes <span class="checklist-ref">Art. XII.5</span></label>
+      </div>
+    </div>
+
+    <!-- Censorship Resistance -->
+    <div class="checklist-category">
+      <h3>Censorship Resistance</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c40">
+        <label for="c40">No sustained discretionary suppression of valid ordinary transactions based on identity or politics <span class="checklist-ref">Art. X.1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c41">
+        <label for="c41">Architecture preserves a practical path to inclusion for valid transactions <span class="checklist-ref">Art. X.4</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c42">
+        <label for="c42">Economic coercion and incentive-based suppression are treated as censorship <span class="checklist-ref">Art. X.8</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c43">
+        <label for="c43">Spam resistance rules are published, identity-blind, and generally applied <span class="checklist-ref">Art. X.5</span></label>
+      </div>
+    </div>
+
+    <!-- Privacy -->
+    <div class="checklist-category">
+      <h3>Privacy</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c50">
+        <label for="c50">Users can transact, exit, and move between layers without unnecessary identity exposure <span class="checklist-ref">Art. XI.1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c51">
+        <label for="c51">Surveillance is not a neutral default — it requires specific constitutional justification <span class="checklist-ref">Art. XI.3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c52">
+        <label for="c52">No identity disclosure required for ordinary transactions or normal downward exit <span class="checklist-ref">Art. XI.5</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c53">
+        <label for="c53">Data collection beyond constitutional necessity is disclosed and limited <span class="checklist-ref">Art. XI.7-8</span></label>
+      </div>
+    </div>
+
+    <!-- Governance Limits -->
+    <div class="checklist-category">
+      <h3>Governance Limits</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c60">
+        <label for="c60">Constitutional amendments end no later than 5 years from constitutional genesis <span class="checklist-ref">Art. XIX.4</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c61">
+        <label for="c61">Governance authority ends at year 25 <span class="checklist-ref">Art. XIX.6-7</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c62">
+        <label for="c62">All approved changes fully implemented by year 30, then full ossification <span class="checklist-ref">Art. XIX.8-9</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c63">
+        <label for="c63">No extension mechanisms for any governance window <span class="checklist-ref">Art. XIX.10</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c64">
+        <label for="c64">Governance tokens (if any) exist only on Layer 3, not Layer 2 <span class="checklist-ref">Art. XX.1-2</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c65">
+        <label for="c65">Pre-declared authority is specific and fixed before amendment window closes <span class="checklist-ref">Art. XIX.15</span></label>
+      </div>
+    </div>
+
+    <!-- Monetary Integrity -->
+    <div class="checklist-category">
+      <h3>Monetary Integrity</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c70">
+        <label for="c70">Bitcoin supply is never altered by Layer 2 or Layer 3 accounting <span class="checklist-ref">Art. V.1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c71">
+        <label for="c71">Expanded divisibility is not treated as expanded supply <span class="checklist-ref">Art. V.2</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c72">
+        <label for="c72">Dust and remainder balances do not silently disappear <span class="checklist-ref">Art. VIII.4</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c73">
+        <label for="c73">Layer 2 prohibits speculative tokens, complex DeFi, hidden leverage, and fractional reserve behavior <span class="checklist-ref">Art. VII</span></label>
+      </div>
+    </div>
+
+    <!-- Decentralization -->
+    <div class="checklist-category">
+      <h3>Operational Decentralization</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c80">
+        <label for="c80">Architecture favors decreasing central dependency over time <span class="checklist-ref">Art. XXIV.1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c81">
+        <label for="c81">No single actor, company, or jurisdiction can practically gate ordinary L2 operation or exit <span class="checklist-ref">Art. XXIV.3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c82">
+        <label for="c82">Concentration of choke functions (ordering, custody, proof generation, bridging) is evaluated <span class="checklist-ref">Art. XXIV.5</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c83">
+        <label for="c83">Concentration reports published at least every 90 days <span class="checklist-ref">OIS §5.3</span></label>
+      </div>
+    </div>
+
+    <!-- Recoverability -->
+    <div class="checklist-category">
+      <h3>Recoverability &amp; Independence</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c90">
+        <label for="c90">No silent changes to derivation paths, recovery logic, or wallet mapping for existing balances <span class="checklist-ref">Art. XXV.2</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c91">
+        <label for="c91">Recovery-critical metadata is exportable in open, vendor-independent form <span class="checklist-ref">Art. XXV.5</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c92">
+        <label for="c92">Delegated control is revocable without delegate cooperation <span class="checklist-ref">Art. XXVI.2-3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c93">
+        <label for="c93">Recovery is possible even if daily operators disappear, are captured, or refuse service <span class="checklist-ref">SSAS §4.3</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c94">
+        <label for="c94">No single operator or service is the only path to recovery <span class="checklist-ref">SSAS §4.4</span></label>
+      </div>
+    </div>
+
+    <!-- User Clarity -->
+    <div class="checklist-category">
+      <h3>User Clarity &amp; UX</h3>
+      <div class="checklist-item">
+        <input type="checkbox" id="c100">
+        <label for="c100">Users can always distinguish what they hold (BTC, claim, utility balance, gas token, credit) <span class="checklist-ref">Art. XXVIII</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c101">
+        <label for="c101">Risk warnings are shown in plain language before committing value to new trust contexts <span class="checklist-ref">UX §1</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c102">
+        <label for="c102">No dark patterns — no deceptive defaults, prechecked opt-ins, or buried exit options <span class="checklist-ref">UX §5</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c103">
+        <label for="c103">Self-custody is at least as visually accessible as custodial alternatives <span class="checklist-ref">UX §10</span></label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="c104">
+        <label for="c104">Compliance context is disclosed (compliant, partially compliant, non-compliant, or out of scope) <span class="checklist-ref">UX §9</span></label>
+      </div>
+    </div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">Bitcoin System Constitution · CC0 1.0 · Public Domain · Satoshi Nohashi</div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:satoshinohashi@proton.me">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

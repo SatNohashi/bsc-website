@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constitutional Commentary | Bitcoin System Constitution</title>
+  <meta name="description" content="Article-by-article commentary on the Bitcoin System Constitution — explaining the intent, reasoning, and context behind every rule.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="seal-128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="content-page">
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Bitcoin System Constitution</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li class="nav-dropdown"><a href="constitution.html" class="nav-dropdown-trigger">Constitution</a><ul class="nav-submenu"><li><a href="one-pager.html">One-Page Summary</a></li><li><a href="companions.html">Companion Standards</a></li><li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li></ul></li><li><a href="commentary.html" class="active">Commentary</a></li><li><a href="faq.html">FAQ</a></li><li><a href="checklist.html">Checklist</a></li><li><a href="compliance.html">Compliance</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <header class="page-hero narrow">
+      <p class="eyebrow">Advisory Guidance</p>
+      <h1>Constitutional Commentary</h1>
+      <p class="page-intro">Article-by-article explanation of the intent, reasoning, and context behind every rule in the Bitcoin System Constitution. This commentary is advisory — it does not create binding obligations beyond the articles themselves.</p>
+    </header>
+
+    <section class="section narrow">
+      <div class="info-box">
+        <p><strong>About this commentary:</strong> For each article, this commentary covers: the origin (what problem motivated it), the intent (what it protects or prevents), what it allows, what it forbids, gray areas requiring judgment, connections to other articles, and the line between constitutional principle and implementation detail. This commentary is interpretive and advisory — it may inform understanding but cannot override the constitutional text itself.</p>
+      </div>
+
+      <!-- Article I. Definitions -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-1" class="accordion-toggle">
+        <label for="commentary-1" class="accordion-label">Article I. Definitions</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Definitions drift was identified as one of the highest-risk attack surfaces. A constitution can look strict while still being hollow if later actors simply redefine words like "trust-minimized," "direct Bitcoin claim," "plain transferability," or "material breach."</p>
+
+            <h4>Intent</h4>
+            <p>This article locks the meaning of the terms that carry the rest of the constitution. It exists to stop capture by semantic drift.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Property-based definitions that remain technologically flexible.</li>
+              <li>Companion standards that refine measurement without changing core meaning.</li>
+              <li>New implementations that fit constitutional categories even if their technical design is novel.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Rebranding a credit instrument as a "utility balance."</li>
+              <li>Calling a trusted multisig bridge "trust-minimized" merely because it uses signatures.</li>
+              <li>Calling a stale reserve statement "proof" because it was once valid.</li>
+              <li>Pretending a support system is constitutionally harmless when it has become a choke point.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A support system that starts non-critical but later becomes operationally central.</li>
+              <li>A component that mixes several functions across more than one constitutional layer.</li>
+              <li>A system with multiple canonical paths rather than one.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects every later article by preventing word games.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution defines the words. Later standards may define measurement methods, thresholds, or test procedures.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article II. Sovereignty of Bitcoin -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-2" class="accordion-toggle">
+        <label for="commentary-2" class="accordion-label">Article II. Sovereignty of Bitcoin</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Many systems begin by claiming to "extend Bitcoin" and end by treating Bitcoin as merely one input among many. The article exists to prevent higher layers from becoming covert replacements for the base money.</p>
+
+            <h4>Intent</h4>
+            <p>Bitcoin is the root money, final settlement layer, and highest trust anchor. Everything above it is subordinate.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Faster layers built on top of Bitcoin.</li>
+              <li>Bitcoin-denominated utility layers.</li>
+              <li>Application layers that serve Bitcoin users.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Marketing a fast smart-contract layer as effectively equal to Bitcoin L1.</li>
+              <li>Treating wrapped balances as if they erase base-layer trust differences.</li>
+              <li>Designing L2 or L3 so users are expected to remain there permanently for safety.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A very strong L2 may become highly trusted, but it still must not claim equality with L1.</li>
+              <li>A system can be highly useful without being equally sovereign.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This anchors Articles III, VI, IX, XVI, and XXXI.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the hierarchy. Implementation decides how to preserve it.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article III. Functional Layer Order -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-3" class="accordion-toggle">
+        <label for="commentary-3" class="accordion-label">Article III. Functional Layer Order</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Without clean role separation, layers blur together and users stop knowing where risk begins. That is how experimental systems quietly become money systems.</p>
+
+            <h4>Intent</h4>
+            <p>Each layer has a job: L1 is the fortress, L2 is the cash rail, L3 is the experimental city.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Multiple internal modules or sublayers inside L2 or L3.</li>
+              <li>Several technical components serving one constitutional layer.</li>
+              <li>Different implementations of the same functional role.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Smuggling L3-style risk into L2 while keeping the L2 label.</li>
+              <li>Claiming that a layered system is still "three layers" while hiding a fourth trust boundary.</li>
+              <li>Using internal complexity to evade constitutional duties.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A privacy module inside L2.</li>
+              <li>A settlement engine used by both L2 and L3.</li>
+              <li>Components that provide support without holding money.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article works with Article I definitions and Article IV risk hierarchy.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution defines roles, not exact architecture.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article IV. Honest Risk Hierarchy -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-4" class="accordion-toggle">
+        <label for="commentary-4" class="accordion-label">Article IV. Honest Risk Hierarchy</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A recurring failure pattern in finance and crypto is that risk is moved, re-labeled, and hidden until users no longer know what they actually hold.</p>
+
+            <h4>Intent</h4>
+            <p>Risk must be visible. The closer to money, the harder and simpler. The farther from money, the more optional and disclosed.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>A risky application layer with explicit opt-in.</li>
+              <li>Faster but weaker systems that clearly say so.</li>
+              <li>Experimental assets that are openly labeled as speculative.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Presenting L3 balances like L1 cash.</li>
+              <li>Hiding risk inside design language like "efficiency" or "innovation."</li>
+              <li>Structuring layers so ordinary users cannot tell where risk jumps.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A useful L3 product that is safe enough for some users but not equivalent to L2.</li>
+              <li>A bridged asset that is safer than most L3 tokens but still weaker than L1.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is the tone-setter for Articles IX, XII, XVI, XXVIII, and XXXI.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution demands honesty. UX and implementation documents decide how that honesty is shown.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article V. Monetary Integrity -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-5" class="accordion-toggle">
+        <label for="commentary-5" class="accordion-label">Article V. Monetary Integrity</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Many systems that claim fixed supply quietly reintroduce inflation through accounting tricks, synthetic balances, or hidden claims.</p>
+
+            <h4>Intent</h4>
+            <p>No supply manipulation. More precision is allowed. More claims are not.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Sub-sat accounting.</li>
+              <li>Internal precision expansion.</li>
+              <li>New software layers that preserve exact ownership ratios.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Treating divisibility as monetary expansion.</li>
+              <li>Issuing extra balances against unchanged reserves.</li>
+              <li>Hidden liabilities disguised as harmless abstractions.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Accounting migration events.</li>
+              <li>Denomination changes in display units.</li>
+              <li>Synthetic products that are clearly labeled as not direct Bitcoin.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects Articles VIII, XII, and XIII.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution forbids fake supply. Companion standards can define how to audit implementations for hidden claim creation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article VI. Mission of Layer 2 -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-6" class="accordion-toggle">
+        <label for="commentary-6" class="accordion-label">Article VI. Mission of Layer 2</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A Bitcoin-centered system needs a practical money layer for actual economic life. Without that, users are pushed either back to traditional banking or up into overly risky execution layers.</p>
+
+            <h4>Intent</h4>
+            <p>Layer 2 must preserve spendability without corrupting scarcity.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Fast payments.</li>
+              <li>Merchant settlement.</li>
+              <li>Salary and remittance flows.</li>
+              <li>Fine-grained accounting.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Turning L2 into a playground for endless product expansion.</li>
+              <li>Designing L2 mainly for speculation instead of everyday use.</li>
+              <li>Making L2 so complex that it loses its cash-rail character.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>How much optional functionality can be added before L2 stops being "boring enough."</li>
+              <li>Privacy or routing improvements that increase complexity but preserve mission.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article works closely with Articles VII, VIII, IX, and XXIV.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution gives L2 its mission. Product and technical standards decide the specific mechanics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article VII. Boundaries of Layer 2 -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-7" class="accordion-toggle">
+        <label for="commentary-7" class="accordion-label">Article VII. Boundaries of Layer 2</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Every money layer attracts pressure to monetize itself. DeFi, governance, token sprawl, hidden leverage, and "temporary" features all tend to creep in.</p>
+
+            <h4>Intent</h4>
+            <p>L2 must resist mission creep.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Features that directly support Bitcoin payments and settlement.</li>
+              <li>Internal mechanisms needed for batching, routing, or sub-sat handling.</li>
+              <li>Improvements that strengthen cash functionality.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>L2-native money tokens.</li>
+              <li>Hidden leverage.</li>
+              <li>Governance games around reserve logic.</li>
+              <li>Oracle-driven money behavior.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A narrowly scoped liquidity tool.</li>
+              <li>Optional privacy or queueing mechanisms.</li>
+              <li>Support features that look financial but do not create monetary confusion.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article supports Article VI by naming the temptations that would destroy it.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution draws the red lines. A later L2 implementation standard can test features against them.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article VIII. Divisibility Without Dilution -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-8" class="accordion-toggle">
+        <label for="commentary-8" class="accordion-label">Article VIII. Divisibility Without Dilution</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>If Bitcoin succeeds, sat-level accounting may become too coarse for ordinary pricing, wages, and machine-scale commerce. The problem is not supply. It is usability.</p>
+
+            <h4>Intent</h4>
+            <p>Allow ever-finer accounting without creating more money.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Internal sub-sat units.</li>
+              <li>Dynamic or very high precision accounting.</li>
+              <li>Dust tracking that preserves ownership.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Burning away small balances because they are inconvenient.</li>
+              <li>Quietly rounding ownership downward for operational convenience.</li>
+              <li>Using divisibility changes to smuggle in supply expansion.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Long-lived dust accumulation.</li>
+              <li>How remainders are carried forward or netted.</li>
+              <li>Settlement to L1 when L1 precision is coarser.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is an application of Article V to practical money use.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution says what must not happen. Detailed remainder handling belongs in implementation standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article IX. Exit as a Right -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-9" class="accordion-toggle">
+        <label for="commentary-9" class="accordion-label">Article IX. Exit as a Right</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Financial systems become cages when users must ask permission to leave. That is true whether the gate is a government, a company, a bridge committee, or a polite compliance workflow.</p>
+
+            <h4>Intent</h4>
+            <p>Downward exit must remain a right.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Rule-based exit queues.</li>
+              <li>Bounded withdrawal delays.</li>
+              <li>Trust-minimized exit paths with known assumptions.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Identity-gated normal exit.</li>
+              <li>Committee-controlled exit.</li>
+              <li>"Temporary" legal excuses that become permanent gatekeeping.</li>
+              <li>Systems where only approved institutions can leave reliably.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Truly external fiat ramps that are outside protocol scope.</li>
+              <li>Congestion periods where exit remains possible but slower.</li>
+              <li>Distinguishing actual legal edge behavior from protocol-level dependence on it.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is central. It links to Articles X, XI, XVI, XVII, XXIII, and XXVI.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the right. The exact operational path may vary.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article X. Transaction-Level Censorship Resistance -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-10" class="accordion-toggle">
+        <label for="commentary-10" class="accordion-label">Article X. Transaction-Level Censorship Resistance</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A system may allow exit in theory while suppressing the actual transactions needed to use that right. That makes formal freedom meaningless.</p>
+
+            <h4>Intent</h4>
+            <p>Protect practical inclusion, not just structural permission.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Refusing malformed or underfunded transactions.</li>
+              <li>Congestion management.</li>
+              <li>Spam controls.</li>
+              <li>Deterministic fee or queue rules.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Refusing valid transactions because of who sent them.</li>
+              <li>Selectively delaying politically disfavored users.</li>
+              <li>Allowing one operator cluster to suppress ordinary transfers indefinitely.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Spam filtering that disproportionately affects some users.</li>
+              <li>Fees that are economically neutral in theory but exclusionary in practice.</li>
+              <li>Routing systems where censorship is hard to distinguish from repeated outage.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article strengthens Article IX. Exit without inclusion is fake exit.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the anti-censorship principle. The operational standard can later define metrics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XI. Privacy as a Component of Financial Freedom -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-11" class="accordion-toggle">
+        <label for="commentary-11" class="accordion-label">Article XI. Privacy as a Component of Financial Freedom</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Exit under surveillance is not full freedom. People may technically be allowed to move value while being practically chilled, tracked, or punished for doing so.</p>
+
+            <h4>Intent</h4>
+            <p>Financial privacy is not a luxury. It is part of meaningful freedom.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Privacy-preserving tools.</li>
+              <li>Limited data collection when genuinely unavoidable for protocol operation.</li>
+              <li>Public proof systems that do not expose unnecessary user detail.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Treating surveillance as a substitute for safety.</li>
+              <li>Making ordinary movement require unnecessary identity exposure.</li>
+              <li>Building the architecture around total observability of all users.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Public ledgers with privacy-enhancing overlays.</li>
+              <li>Disclosures needed for proof of reserves versus user-level privacy.</li>
+              <li>Balancing auditability with confidentiality.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects the spirit of Article IX and supports Article XXVIII.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution protects the principle. Privacy technology choices belong in implementation standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XII. Distinction Between Bitcoin, Claims, Utility Balances, and Credit -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-12" class="accordion-toggle">
+        <label for="commentary-12" class="accordion-label">Article XII. Distinction Between Bitcoin, Claims, Utility Balances, and Credit</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>This article exists because shadow banking and crypto banking both work by blurring claims, credit, and money until users no longer know what they own.</p>
+
+            <h4>Intent</h4>
+            <p>A user must never mistake someone else's promise for money.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Credit markets on L3 with explicit labeling.</li>
+              <li>Bitcoin-denominated utility balances with clear risk disclosure.</li>
+              <li>Optional lending products.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Presenting a lendable claim like unencumbered Bitcoin.</li>
+              <li>Calling an IOU "cash."</li>
+              <li>Treating utility balances and direct claims as interchangeable.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Partially backed systems.</li>
+              <li>Wrapped assets with mixed custody models.</li>
+              <li>Revenue-bearing products that look like custody balances.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is one of the anti-bank core articles. It supports XIII, XIV, XVI, XXVIII.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution requires clear asset-class separation. UX and labeling rules help enforce it.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XIII. Reserve Truth, Liability Truth, and Proof Cadence -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-13" class="accordion-toggle">
+        <label for="commentary-13" class="accordion-label">Article XIII. Reserve Truth, Liability Truth, and Proof Cadence</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Many systems show a wallet and call that proof, while hiding liabilities, encumbrances, or stale data. This article exists because proof without timing or liabilities is theater.</p>
+
+            <h4>Intent</h4>
+            <p>Reserves must be real, liabilities must be shown, and proof must stay current enough to matter.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Public cryptographic proof systems.</li>
+              <li>Declared proof cadence with maximum lag.</li>
+              <li>Systems that openly label proof as stale when cadence is missed.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Showing reserve assets without liabilities.</li>
+              <li>Calling 18-month-old proof "current."</li>
+              <li>Quietly lending reserves while still treating claims as fully backed.</li>
+              <li>Using compliance or efficiency language to override reserve integrity.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Architectures where real-time proof is impossible.</li>
+              <li>Reserve privacy versus public proof.</li>
+              <li>Liability proof methods that are technically hard but still constitutionally required in principle.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article works directly with XII and XIV.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution names the obligations. Proof mechanics and cadence thresholds belong in later standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XIV. Reserve Custody Independence -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-14" class="accordion-toggle">
+        <label for="commentary-14" class="accordion-label">Article XIV. Reserve Custody Independence</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Visible reserves under weak custody are not safe reserves. One key, one jurisdiction, or one coordinated signer group can make proof irrelevant in practice.</p>
+
+            <h4>Intent</h4>
+            <p>Reserve custody must resist theft, seizure, coercion, and concentration. And over time it should open rather than harden into an aristocracy.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Distributed custody.</li>
+              <li>Public signer criteria.</li>
+              <li>Provisional bootstrap phases if honestly disclosed and bounded.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Single-key custody.</li>
+              <li>Single-entity exclusive reserve control.</li>
+              <li>Silent custody downgrades.</li>
+              <li>Treating provisional custody like mature compliance.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A very small early system with reserve caps and public disclosure.</li>
+              <li>Signer growth that is formally open but practically cartelized.</li>
+              <li>Jurisdiction distribution that looks broad but shares one controlling party.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article makes XIII real. Reserve proof without custody independence is hollow.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the custody principles. Exact signer counts, jurisdictions, ceremonies, and thresholds belong in the Reserve Custody and Key Management Standard.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XV. Plain Transferability and Voluntary Encumbrance -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-15" class="accordion-toggle">
+        <label for="commentary-15" class="accordion-label">Article XV. Plain Transferability and Voluntary Encumbrance</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Money stops being money when every transfer must go through policy logic, identity logic, or contracts. But users still need voluntary smart controls.</p>
+
+            <h4>Intent</h4>
+            <p>Keep plain transfer native. Let contracts be opt-in, not compulsory.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>A user receiving a plain balance and later locking it in a vault.</li>
+              <li>Contract-based transfers chosen explicitly by the holder.</li>
+              <li>Business-specific contract flows at the edge.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Requiring all L2 or base L3 movement to occur through contracts.</li>
+              <li>Turning ordinary transfer into programmable banking by default.</li>
+              <li>Using regulated business practices to redefine the constitutional core.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Wallets that steer users toward contracts.</li>
+              <li>Account abstraction that is convenient but still preserves plain transfer underneath.</li>
+              <li>Business users that choose contract mediation for all of their own flows.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects the money character of L2 and the base utility balance of L3.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution sets the rule. App-layer design can offer many voluntary paths above it.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XVI. Role of Layer 3 -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-16" class="accordion-toggle">
+        <label for="commentary-16" class="accordion-label">Article XVI. Role of Layer 3</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A system needs a place for experimentation. It must not pretend that place is the same as money.</p>
+
+            <h4>Intent</h4>
+            <p>L3 is where speed, programmability, and optional risk live. It is not the constitutional vault.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Smart contracts.</li>
+              <li>Application-specific risk.</li>
+              <li>Optional credit, derivatives, or automation systems.</li>
+              <li>Gas tokens.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Marketing L3 risk as money safety.</li>
+              <li>Structuring L3 so Bitcoin utility balances cannot retreat downward.</li>
+              <li>Imposing app risk as a condition of the base protocol.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>L3 applications that become extremely important economically.</li>
+              <li>Gas tokens that gain governance weight.</li>
+              <li>Apps that are safe enough to become normal, but still not constitutional money.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects the hierarchy created by II, III, and IV.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution limits the role. The app ecosystem can still be broad and creative.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XVII. Interlayer Coupling and Movement -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-17" class="accordion-toggle">
+        <label for="commentary-17" class="accordion-label">Article XVII. Interlayer Coupling and Movement</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Bridges and cross-layer paths are where many systems lie the most. They often market movement as seamless while hiding trust, committees, delays, or insolvency risk.</p>
+
+            <h4>Intent</h4>
+            <p>Movement across layers must disclose its trust assumptions and protect downward escape.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Trust-minimized canonical L1-L2 paths.</li>
+              <li>Weaker but still rule-based L2-L3 paths.</li>
+              <li>Explicit opt-in trusted or contractual paths.</li>
+              <li>Bridges that independently prove compliance.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Committee-controlled normal movement.</li>
+              <li>Adjacency-based compliance inheritance.</li>
+              <li>Saying "it connects two good systems, therefore it is good."</li>
+              <li>Structuring fees or delays so ordinary exit becomes fictional.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A bridge that is safe enough operationally but weaker than canonical paths.</li>
+              <li>Several canonical paths rather than one.</li>
+              <li>A non-compliant bridge used by fully informed users voluntarily.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is where many other articles meet: IX, X, XIII, XIV, XVIII, XXIII, XXIV.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution governs disclosure, bounded risk, and non-discretionary movement. Exact bridge architecture belongs in technical standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XVIII. Exit Priority Under Stress -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-18" class="accordion-toggle">
+        <label for="commentary-18" class="accordion-label">Article XVIII. Exit Priority Under Stress</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>When systems get stressed, the first temptation is always the same: pause withdrawals, preserve the institution, and tell users it is temporary.</p>
+
+            <h4>Intent</h4>
+            <p>In uncertainty, user withdrawal matters more than growth or image.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Risk warnings.</li>
+              <li>Growth feature slowdowns.</li>
+              <li>Additional monitoring and disclosure.</li>
+              <li>Greater emphasis on conservative operation.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Freezing exits because it is convenient for operators.</li>
+              <li>Letting the parties who benefit from a freeze declare the emergency.</li>
+              <li>Treating compliance pressure as a valid excuse to suspend rights.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Extreme congestion versus intentional restriction.</li>
+              <li>Recovery actions that help restore exit without creating new gatekeepers.</li>
+              <li>Short-lived technical faults that look like stress but are just outages.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects IX in the moments when institutions usually fail.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution biases the system toward user freedom under stress. Monitoring and alerting systems can be built separately.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XIX. Governance, Mutability, and Ossification -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-19" class="accordion-toggle">
+        <label for="commentary-19" class="accordion-label">Article XIX. Governance, Mutability, and Ossification</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>The constitution assumes that long-lived governance is usually a permanent opening for capture, not a virtue to celebrate.</p>
+
+            <h4>Intent</h4>
+            <p>The rules should harden over time. Governance must end. Systems are allowed to fail. Endless mutability is not allowed.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>A limited founding amendment window.</li>
+              <li>A longer but still finite governance window.</li>
+              <li>A final implementation grace period for already-approved work.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Infinite governance.</li>
+              <li>Extension by excuse.</li>
+              <li>Open-ended authority carried over past sunset.</li>
+              <li>Reopening the constitution because something is inconvenient.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Whether a bug is critical enough to justify using remaining governance time.</li>
+              <li>How specific an approved change must be before year 25 to survive into the final implementation window.</li>
+              <li>Whether a "module" change is really a protocol-level change.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is a hard anti-capture backbone. It supports XX, XXI, XXVII, XXIX, and XXX.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution sets the time windows. Process details may be elaborated separately.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XX. Governance Tokens -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-20" class="accordion-toggle">
+        <label for="commentary-20" class="accordion-label">Article XX. Governance Tokens</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Governance tokens are often sold as participation while functioning as plutocracy, soft equity, or a mechanism to preserve permanent politics.</p>
+
+            <h4>Intent</h4>
+            <p>If governance tokens exist at all, they must be bounded, temporary, and constitutionally subordinate.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Governance tokens on L3 or optional extensions.</li>
+              <li>Limited operational governance within a constitutional box.</li>
+              <li>Time-limited governance power.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Governance tokens on L2.</li>
+              <li>Governance tokens controlling core rights.</li>
+              <li>Renewing governance by renaming the token or mirroring it after sunset.</li>
+              <li>Treating token holders like constitutional sovereigns.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>A gas token that also has some bounded governance role.</li>
+              <li>A successor system that chooses token governance openly.</li>
+              <li>Whether some decisions are truly "application-layer" or actually constitutional in disguise.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is an enforcement arm of XIX.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution sets limits and sunsets. Token distribution and voting mechanics belong in separate standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXI. Constitutional Entrenchment -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-21" class="accordion-toggle">
+        <label for="commentary-21" class="accordion-label">Article XXI. Constitutional Entrenchment</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Many systems die not by one coup, but by a sequence of small changes, technical patches, and "clarifications."</p>
+
+            <h4>Intent</h4>
+            <p>Foundational protections must be harder to change than ordinary settings, and cumulative drift must count as weakening.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>A limited amendment process inside the founding window.</li>
+              <li>Clear notice and exit periods.</li>
+              <li>Honest creation of a new system when the old one is no longer being honored.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Sneaking constitutional changes into technical updates.</li>
+              <li>Slow gutting through cumulative changes.</li>
+              <li>Pretending a materially weakened system is the same constitutional system.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Whether a technical change has constitutional effect.</li>
+              <li>Whether several small changes amount to one large weakening.</li>
+              <li>Whether a new implementation is still the same system or already a successor.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects the durability of the whole constitution.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution requires entrenchment. Exact procedural templates can be specified later.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXII. Constitutional Genesis and Activation Clocks -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-22" class="accordion-toggle">
+        <label for="commentary-22" class="accordion-label">Article XXII. Constitutional Genesis and Activation Clocks</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Without fixed clocks, operators can play timing games forever: delayed launch, soft-launch, beta forever, or reset the timeline by republishing the constitution.</p>
+
+            <h4>Intent</h4>
+            <p>Separate the life of the constitutional rules from the life of live user-facing components.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>One constitutional clock for the whole system.</li>
+              <li>Separate activation clocks for modules or later-launched parts.</li>
+              <li>Honest staging of rollout.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Resetting the constitutional clock by word games.</li>
+              <li>Pretending a live production system is "just a preview" to avoid obligations.</li>
+              <li>Launch-timing ambiguity used to extend mutability or avoid review.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Very limited pilots with no meaningful user reliance.</li>
+              <li>Test environments that have real code but not real user exposure.</li>
+              <li>Later modules that are live but still not central.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article makes XIX enforceable.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution defines the timing model. Operational compliance documents can define evidence standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXIII. Right of Parallel Implementation and Escape -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-23" class="accordion-toggle">
+        <label for="commentary-23" class="accordion-label">Article XXIII. Right of Parallel Implementation and Escape</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A partially centralized system becomes dangerous when one operator path becomes the only practical path. Exit requires not only user rights, but builder rights.</p>
+
+            <h4>Intent</h4>
+            <p>No incumbent gets to be the exclusive doorway.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Parallel implementations.</li>
+              <li>Alternative routing.</li>
+              <li>Alternative custody-escape tools.</li>
+              <li>Competing operator sets.</li>
+              <li>Anonymous or pseudonymous builders, so long as risks are not misrepresented.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Incumbent permission requirements.</li>
+              <li>Exclusivity over constitutional functions.</li>
+              <li>Identity revelation as a condition of building escape infrastructure.</li>
+              <li>Soft monopolies over compliant pathways.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Trademark and naming issues.</li>
+              <li>Security review of alternative paths.</li>
+              <li>Whether an alternative path is truly compliant or merely available.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article strengthens IX and XXIV. Exit is stronger when builders can create new exits.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution protects the right. Compatibility rules and testing belong elsewhere.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXIV. Directional Decentralization -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-24" class="accordion-toggle">
+        <label for="commentary-24" class="accordion-label">Article XXIV. Directional Decentralization</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A system may be formally correct and still function like a controlled gatekeeper if operation is too concentrated.</p>
+
+            <h4>Intent</h4>
+            <p>Decentralization is not a slogan. It is a direction of travel and a practical operational condition.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Starting from an imperfect initial state.</li>
+              <li>Operational concentration that is openly disclosed and improving.</li>
+              <li>Sliding-scale standards that account for actual network size and participation.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Permanent practical dependence on one company, one cloud provider, one jurisdiction, or one operator cartel.</li>
+              <li>Claiming decentralization because node count looks large while choke functions remain monopolized.</li>
+              <li>Entrenching concentrated control while praising decentralization in marketing.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Small early systems with few operators.</li>
+              <li>Shared cloud usage that is common but not yet dominant.</li>
+              <li>Apparent diversity that hides correlated control.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article reinforces X, XIV, XVII, and XXIII.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the principle. The Operational Independence and Concentration Standard should later define metrics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXV. Long-Term Recoverability -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-25" class="accordion-toggle">
+        <label for="commentary-25" class="accordion-label">Article XXV. Long-Term Recoverability</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Keys alone are not enough if software drift can make valid funds appear invisible. Silent derivation changes and wallet mapping drift are a real form of loss.</p>
+
+            <h4>Intent</h4>
+            <p>A user who once validly controlled funds must be able to rediscover them later without vendor dependence or silent semantic drift.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Explicit opt-in recovery-model upgrades.</li>
+              <li>Archival recovery tools.</li>
+              <li>Exportable recovery-critical metadata.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Silent derivation changes.</li>
+              <li>Breaking discoverability with an update.</li>
+              <li>Vendor dependence for rediscovery.</li>
+              <li>"Your money is safe, the wallet just changed" as an excuse.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Complex migrations where old and new models coexist.</li>
+              <li>Recovery metadata that is hard to expose but still constitutionally needed.</li>
+              <li>Long-term support of obscure legacy paths.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects real-world self-custody and continuity.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the non-drift rule. The Software and Security Architecture Standard can define design patterns.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXVI. Dependence Must Remain Escapable -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-26" class="accordion-toggle">
+        <label for="commentary-26" class="accordion-label">Article XXVI. Dependence Must Remain Escapable</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Some users will always choose assistance, delegation, or managed custody. The problem is not that dependence exists. The problem is when it becomes a prison.</p>
+
+            <h4>Intent</h4>
+            <p>Convenience must not silently turn into irrecoverable surrender.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Assisted custody.</li>
+              <li>Managed recovery.</li>
+              <li>Operator help.</li>
+              <li>Delegated control with clear revocation and exit rules.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Permanent dependence caused by one temporary choice.</li>
+              <li>Hidden conversion of convenience rights into ownership rights.</li>
+              <li>Lack of a route back to self-control.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Complex recovery arrangements that require bounded waiting periods.</li>
+              <li>Delegation models that are revocable in theory but costly in practice.</li>
+              <li>Systems where an operator disappears and the recovery path becomes difficult but not impossible.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article complements IX and XXV.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution requires escape from dependence. Specific user flows belong in UX and software standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXVII. Breach, Restoration, and Continuity -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-27" class="accordion-toggle">
+        <label for="commentary-27" class="accordion-label">Article XXVII. Breach, Restoration, and Continuity</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>Systems often break rules, patch the problem, and then pretend the breach never happened. That destroys the meaning of continuity.</p>
+
+            <h4>Intent</h4>
+            <p>A system may repair itself going forward, but it may not erase the record or rewrite the past to cosmetically restore legitimacy.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Publicly disclosed restored compliance.</li>
+              <li>Forward remediation within allowed windows.</li>
+              <li>Honest admission of historical breach.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Retroactive history rewriting as "restoration."</li>
+              <li>Memory-holing breach periods.</li>
+              <li>Claiming uninterrupted compliance after material violation.</li>
+              <li>Using restoration language to excuse structural betrayal.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Which breaches are continuity-breaking versus restorable.</li>
+              <li>How much user harm can be repaired without successor treatment.</li>
+              <li>Whether a bug fix affects only future behavior or also past ownership claims.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects the integrity of the constitution over time and points to the Breach and Restoration Standard.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the principles. The separate Breach and Restoration Standard should classify severity and restoration paths.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXVIII. Clarity to Users -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-28" class="accordion-toggle">
+        <label for="commentary-28" class="accordion-label">Article XXVIII. Clarity to Users</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A system can be technically well-designed and still fail users if it hides what they hold or uses language designed to make risk feel smaller than it is.</p>
+
+            <h4>Intent</h4>
+            <p>The user must be able to tell what asset class they hold.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Multiple asset types in one ecosystem.</li>
+              <li>Bitcoin utility balances on L3.</li>
+              <li>Gas tokens and credit products, if clearly labeled.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Blurring utility balances with direct claims.</li>
+              <li>Naming that encourages false equivalence.</li>
+              <li>Label tricks in code or UI.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Wallet interfaces that aggregate balances.</li>
+              <li>Assets with partially shared properties.</li>
+              <li>Contextual naming that is accurate in one layer but misleading in another.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is the user-facing counterpart to XII.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states the clarity obligation. The UX constitution should express it in interface terms.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXIX. Scope, Extensions, Compliance, Naming -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-29" class="accordion-toggle">
+        <label for="commentary-29" class="accordion-label">Article XXIX. Scope, Extensions, Compliance, Naming</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>This constitution is meant to be a standard, not a magical force field. Systems must choose to adopt it, and others must not inherit compliance by proximity.</p>
+
+            <h4>Intent</h4>
+            <p>Applicability is voluntary. Claims are strict.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Existing systems to remain outside the constitution.</li>
+              <li>New systems to adopt it prospectively.</li>
+              <li>Third parties to evaluate compliance.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Claiming compliance by brand association.</li>
+              <li>Claiming retroactive purity without proof.</li>
+              <li>Using the name while materially violating the rules.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Systems that partially adopt the constitution.</li>
+              <li>Whether a module can be compliant when the host system is not.</li>
+              <li>How to speak honestly about partial alignment.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article prevents the constitution from being diluted into branding.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution states when it applies and how claims work. Evaluation frameworks may be developed separately.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXX. Successor Systems and Voluntary Migration -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-30" class="accordion-toggle">
+        <label for="commentary-30" class="accordion-label">Article XXX. Successor Systems and Voluntary Migration</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A common abuse pattern is silent migration: "same brand, same team, same users, new trust model."</p>
+
+            <h4>Intent</h4>
+            <p>New systems require new consent.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Honest successor systems.</li>
+              <li>Voluntary migration.</li>
+              <li>Fresh claims of compliance that are independently demonstrated.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>Silent rollover.</li>
+              <li>Balance remapping as implied consent.</li>
+              <li>Treating lineage as legitimacy.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Migration tools that are optional but heavily promoted.</li>
+              <li>Shared infrastructure between old and new systems.</li>
+              <li>Whether a change is big enough to count as a successor.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article protects the meaning of continuity and complements XXVII and XXIX.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>The constitution protects consent. Migration tooling is an implementation matter.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article XXXI. Strategic End State -->
+      <div class="accordion">
+        <input type="checkbox" id="commentary-31" class="accordion-toggle">
+        <label for="commentary-31" class="accordion-label">Article XXXI. Strategic End State</label>
+        <div class="accordion-body">
+          <div class="accordion-inner">
+            <h4>Origin</h4>
+            <p>A constitution needs an orienting picture of what success looks like, not just a list of things forbidden.</p>
+
+            <h4>Intent</h4>
+            <p>The end state is a hierarchy where: Bitcoin remains the final truth, Layer 2 makes Bitcoin usable as everyday money, Layer 3 carries experimentation, and users can always retreat downward for safety.</p>
+
+            <h4>Allows</h4>
+            <ul>
+              <li>Innovation above the money.</li>
+              <li>Growth in utility and experimentation.</li>
+              <li>Multiple compliant implementations of the same layered philosophy.</li>
+            </ul>
+
+            <h4>Forbids</h4>
+            <ul>
+              <li>An architecture where experimentation swallows the money layer.</li>
+              <li>A world where users are stuck in the fast system because exit is too costly or too controlled.</li>
+              <li>Treating freedom language as branding while dependence hardens underneath.</li>
+            </ul>
+
+            <h4>Gray areas</h4>
+            <ul>
+              <li>Whether a very successful L3 product starts to distort the role of L2.</li>
+              <li>Whether new layers beyond three can still remain constitutionally aligned.</li>
+              <li>How much convenience centralization is tolerable before the system loses its soul.</li>
+            </ul>
+
+            <h4>Connection</h4>
+            <p>This article is the destination image for the whole constitution.</p>
+
+            <h4>Implementation vs constitutional</h4>
+            <p>This article defines the direction, not the roadmap.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box" style="margin-top: 2rem;">
+        <p><strong>Final note:</strong> If future readers are ever unsure how to interpret a disputed clause, the correct reading is the one that best protects honest hierarchy, visible risk, current proof, free exit, and the user's ability to escape control.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">Bitcoin System Constitution · CC0 1.0 · Public Domain · Satoshi Nohashi</div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:satoshinohashi@proton.me">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

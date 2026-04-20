@@ -1,0 +1,3387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Companion Standards | Bitcoin System Constitution</title>
+  <meta name="description" content="Seven binding companion standards that operationalize the Bitcoin System Constitution — breach procedures, custody requirements, UX rules, dispute resolution, and more.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="seal-128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="content-page">
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Bitcoin System Constitution</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li class="nav-dropdown"><a href="constitution.html" class="nav-dropdown-trigger active">Constitution</a><ul class="nav-submenu"><li><a href="one-pager.html">One-Page Summary</a></li><li><a href="companions.html" class="active">Companion Standards</a></li><li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li></ul></li><li><a href="commentary.html">Commentary</a></li><li><a href="faq.html">FAQ</a></li><li><a href="checklist.html">Checklist</a></li><li><a href="compliance.html">Compliance</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <header class="page-hero narrow">
+      <p class="eyebrow">Binding Standards</p>
+      <h1>Companion Standards</h1>
+      <p class="page-intro">Seven binding companion documents that operationalize the constitutional requirements. Each standard supports specific articles and defines the detailed thresholds, procedures, and rules referenced by the constitution.</p>
+    </header>
+
+    <section class="section narrow">
+<div class="info-box">
+      <p><strong>Note:</strong> All companion standards are currently in <strong>Draft</strong> status. Where a companion standard is designated binding, its binding force is limited to the scope assigned to it by the constitution. Click any standard below to expand its full content.</p>
+    </div>
+
+<div class="accordion" id="breach-restoration-standard">
+  <input type="checkbox" id="comp-0" class="accordion-toggle">
+  <label for="comp-0" class="accordion-label">Breach and Restoration Standard<br><span class="companion-desc">Defines how breaches are classified, disclosed, evaluated, cured, and recorded.</span></label>
+  <div class="accordion-body">
+    <div class="accordion-inner">
+      <p><span class="status-badge draft">Binding · Draft</span></p>
+      <h3>Governing Rules</h3>
+<ol>
+<li>This standard uses the definitions in <strong>Article I</strong> of the constitution exclusively.</li>
+<li>Where more than one classification could apply, the <strong>highest applicable severity</strong> controls.</li>
+<li>Where no exact case is listed, classification must default to the <strong>nearest more conservative</strong> reading, not the more forgiving one.</li>
+<li>Aggravating factors may elevate a breach by one level where constitutionally justified. Mitigating factors may affect cure conditions, but do not reduce a breach below its baseline classification.</li>
+<li>No claim of restored compliance is valid unless the conditions in this standard are met publicly and verifiably.</li>
+<li>In the absence of a companion technical or operational standard, interpretation must default to the reading that best protects:</li>
+</ol>
+<ul>
+<li>exit rights</li>
+<li>reserve and liability truth</li>
+<li>custody independence</li>
+<li>non-discretionary operation</li>
+<li>censorship resistance</li>
+<li>practical path to inclusion</li>
+<li>constitutional time limits</li>
+<li>user freedom</li>
+</ul>
+<ol>
+<li>Disputes over breach classification, restoration, continuity, or evidence may be reviewed under the <strong>Constitutional Dispute and Review Standard of Bitcoin System Constitution</strong> where that document exists. In its absence, the public evidence and conservative-reading rules in this document control.</li>
+<li>A system's own classification of its breach status is non-authoritative. Compliance status is determined by observable behavior and evidence under this standard and may be independently evaluated by external parties.</li>
+</ol>
+<h3>Section 1. Failure Severity Classes</h3>
+<h4>Overview Table</h4>
+<table>
+<thead><tr>
+<th>Level</th>
+<th>Class</th>
+<th>Description</th>
+<th>Continuity Effect</th>
+<th>Typical Cure Status</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Minor deviation</td>
+<td>Technical non-conformance without material user impact</td>
+<td>No continuity break by default</td>
+<td>Automatically curable or curable with disclosure</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Material breach</td>
+<td>Violation affecting constitutionally protected user interests</td>
+<td>Continuity may survive, depending on severity and disclosure</td>
+<td>Usually curable with disclosure or scarred</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Continuity-breaking breach</td>
+<td>Material breach severe enough to end uninterrupted constitutional continuity</td>
+<td>Continuous compliance is broken</td>
+<td>Scarred or not curable under same continuity claim</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Permanent non-compliance</td>
+<td>The system cannot restore compliance under its current identity</td>
+<td>Current identity cannot truthfully claim compliance</td>
+<td>Not curable under current identity</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Successor-required</td>
+<td>A new system is required if constitutional compliance is ever to be claimed again</td>
+<td>Current system identity cannot continue as compliant</td>
+<td>Only cure is a new successor system with fresh consent</td>
+</tr>
+</tbody></table>
+<h4>Level 1. Minor deviation</h4>
+<p>A <strong>minor deviation</strong> is technical non-conformance that does not materially impair user rights, reserve integrity, custody safety, constitutional time limits, governance sunsets, asset-class clarity, or practical ability to transact or exit.</p>
+<p><strong>Typical examples</strong></p>
+<ul>
+<li>A documentation mismatch that does not affect actual behavior.</li>
+<li>A proof publication formatting defect where the proof itself remains current and independently verifiable.</li>
+<li>A temporary non-critical implementation inconsistency with no material user effect.</li>
+</ul>
+<p><strong>What it is not</strong></p>
+<p>It is not a minor deviation if it affects:</p>
+<ul>
+<li>exit rights</li>
+<li>reserve truth</li>
+<li>liability truth</li>
+<li>custody safety</li>
+<li>credit versus money distinction</li>
+<li>governance authority or time windows</li>
+<li>user asset clarity</li>
+<li>practical transaction inclusion</li>
+</ul>
+<h4>Level 2. Material breach</h4>
+<p>A <strong>material breach</strong> is a breach that affects constitutionally protected user interests, even if the system may still remain recoverable under its current identity.</p>
+<p><strong>Typical examples</strong></p>
+<ul>
+<li>Functional exit blocking.</li>
+<li>Hidden reserve lending.</li>
+<li>Missing proof cadence repeatedly.</li>
+<li>Presenting stale proof as current.</li>
+<li>Misrepresenting a credit instrument as money.</li>
+<li>Transaction-level censorship of valid ordinary transactions.</li>
+<li>Governance action after the governance sunset date, where the act is isolated and immediately disclosed.</li>
+</ul>
+<p><strong>Typical effect</strong></p>
+<p>A Level 2 breach may or may not break continuity. Severity, concealment, duration, and user impact determine whether it escalates to Level 3.</p>
+<h4>Level 3. Continuity-breaking breach</h4>
+<p>A <strong>continuity-breaking breach</strong> is a material breach severe enough that the system can no longer truthfully claim uninterrupted constitutional continuity from the point it adopted the constitution.</p>
+<p><strong>Typical examples</strong></p>
+<ul>
+<li>Discretionary freezing of normal downward exit.</li>
+<li>Repeated undisclosed reserve impairment.</li>
+<li>Misrepresentation of constitutional compliance during a known material breach.</li>
+<li>Continued governance operation after sunset in a way that materially affects users.</li>
+<li>Silent migration behavior that materially changes trust assumptions without fresh consent.</li>
+<li>Repeated proof cadence failure combined with concealment or active current-backing claims.</li>
+</ul>
+<p><strong>Typical effect</strong></p>
+<p>The system may possibly become <strong>currently compliant</strong> again later, but it is permanently <strong>historically breached</strong> and may never claim uninterrupted compliance across the breach period.</p>
+<h4>Level 4. Permanent non-compliance</h4>
+<p>A <strong>permanent non-compliance</strong> event means the system, under its current identity, can no longer restore constitutional compliance.</p>
+<p><strong>Typical examples</strong></p>
+<ul>
+<li>Protocol-level changes after the final hard stop window.</li>
+<li>Governance continuing after the governance window in a sustained or structural way.</li>
+<li>Constitutional amendment attempts after the constitutional amendment window closes.</li>
+<li>Replacing governance or constitutional authority through disguised renamed structures after sunset.</li>
+<li>Persistently operating core functions through a model that is constitutionally incompatible and not reversible under the same identity.</li>
+</ul>
+<p><strong>Typical effect</strong></p>
+<p>The current system identity may continue to exist technically, but it cannot truthfully claim compliance.</p>
+<h4>Level 5. Successor-required</h4>
+<p>A <strong>successor-required</strong> event means the only path back to constitutional compliance is a <strong>new system</strong> that users voluntarily enter.</p>
+<p><strong>Typical examples</strong></p>
+<ul>
+<li>Forced migration into a new trust model.</li>
+<li>Silent remapping of balances into a new system.</li>
+<li>Retroactive rewriting of ownership or settlement history as a supposed cure.</li>
+<li>Continuing a permanently non-compliant system while claiming continuity under a refreshed brand or architecture.</li>
+<li>Governance or constitutional authority being functionally restarted under a new wrapper within the same claimed system identity.</li>
+</ul>
+<p><strong>Typical effect</strong></p>
+<p>The current system identity must not continue to claim constitutional compliance. Only a successor, with fresh voluntary consent, may seek compliance.</p>
+<h3>Section 2. Cure Types</h3>
+<h4>Type A. Automatically curable</h4>
+<p>This applies where the system corrects itself through ordinary operation without requiring a special constitutional disclosure process, and without any material user impact.</p>
+<p><strong>Typical fit:</strong> Level 1 only.</p>
+<h4>Type B. Curable with disclosure</h4>
+<p>This applies where a fix is possible, but the system must publicly disclose:</p>
+<ul>
+<li>what happened</li>
+<li>when it happened</li>
+<li>who was affected</li>
+<li>what changed</li>
+<li>whether continuity was impacted</li>
+</ul>
+<p><strong>Typical fit:</strong> Level 1 or Level 2.</p>
+<h4>Type C. Scarred</h4>
+<p>This applies where the system may return to current compliance, but the breach history is permanently part of its record. It may not claim uninterrupted compliance across the breach period.</p>
+<p><strong>Typical fit:</strong> Level 2 or Level 3.</p>
+<h4>Type D. Not curable</h4>
+<p>This applies where the system cannot restore constitutional compliance under its current identity.</p>
+<p><strong>Typical fit:</strong> Level 4 or Level 5.</p>
+<h3>Section 3. Time Sensitivity, Uncertainty Notices, and Disclosure Windows</h3>
+<h4>3.1 Acknowledgment duty</h4>
+<p>A system must acknowledge a known or reasonably suspected breach <strong>without unreasonable delay</strong>.</p>
+<p>For binding evaluation, the following principles apply:</p>
+<ol>
+<li>Breaches affecting <strong>exit, reserves, liabilities, custody, governance authority, constitutional clocks, constitutional naming, or compliance status</strong> require the fastest acknowledgment.</li>
+<li>If full facts are not yet known, the system must publish an <strong>uncertainty notice</strong> rather than remain silent.</li>
+<li>Silence when a material breach is known or reasonably inferable is itself an aggravating factor and may elevate the breach independently of the underlying cause.</li>
+</ol>
+<h4>3.2 Uncertainty notice requirements</h4>
+<p>An uncertainty notice is a temporary preliminary disclosure. It must include, at minimum:</p>
+<ol>
+<li>what is known</li>
+<li>what is unknown</li>
+<li>what users should assume conservatively for now</li>
+<li>whether exit, reserves, liabilities, custody, governance, or proof cadence may be affected</li>
+<li>what the immediate user implications are</li>
+<li>when the next update will be published</li>
+</ol>
+<p>An uncertainty notice does not suspend the system's broader disclosure obligations. It only bridges the period before fuller disclosure is possible.</p>
+<h4>3.3 Hard deadlines for uncertainty notices and fuller disclosure</h4>
+<p><strong>High-severity issue classes</strong></p>
+<p>For reasonably suspected issues affecting:</p>
+<ul>
+<li>exit</li>
+<li>reserve truth</li>
+<li>liability truth</li>
+<li>custody</li>
+<li>governance authority or governance time limits</li>
+<li>constitutional clocks</li>
+<li>compliance misrepresentation</li>
+<li>constitutional naming</li>
+<li>proof cadence failure involving reserve-backed claims</li>
+</ul>
+<p>the following hard deadlines apply:</p>
+<ul>
+<li><strong>uncertainty notice:</strong> within <strong>24 hours</strong></li>
+<li><strong>fuller disclosure:</strong> within <strong>72 hours</strong></li>
+<li><strong>update cadence while uncertain:</strong> every <strong>24 hours</strong></li>
+</ul>
+<p><strong>Lower-severity issue classes</strong></p>
+<p>For lower-severity issues without current material effect on user rights, reserves, custody, governance, or exit:</p>
+<ul>
+<li><strong>uncertainty notice:</strong> within <strong>72 hours</strong></li>
+<li><strong>fuller disclosure:</strong> within <strong>7 days</strong></li>
+<li><strong>update cadence while uncertain:</strong> every <strong>72 hours</strong></li>
+</ul>
+<h4>3.4 Maximum uncertainty period</h4>
+<p>An uncertainty notice may not remain the system's sole disclosure state beyond the applicable maximum uncertainty period above.</p>
+<p>At the end of that period, the system must publish the fullest disclosure then available, including:</p>
+<ul>
+<li>all facts known</li>
+<li>all facts still unknown</li>
+<li>current user impact</li>
+<li>worst-case implications if uncertainty remains</li>
+<li>next remedial steps</li>
+</ul>
+<p>A system may not avoid fuller disclosure by claiming it still lacks perfect information.</p>
+<h4>3.5 Consequences of missed uncertainty deadlines</h4>
+<p>Failure to issue:</p>
+<ul>
+<li>the initial uncertainty notice on time,</li>
+<li>the required interim updates on time,</li>
+<li>or the fuller disclosure by the hard deadline</li>
+</ul>
+<p>constitutes an aggravating factor and may itself be treated as a separate disclosure breach.</p>
+<p>Repeated or strategic use of uncertainty status to avoid harder obligations should generally elevate severity by one level.</p>
+<h4>3.6 Silence as breach</h4>
+<p>Failure to disclose a known or reasonably inferable material breach within the required timeframe shall be treated as a minimum Level 3 continuity-breaking breach, regardless of the underlying breach classification.</p>
+<h3>Section 4. Historical Integrity Rules</h3>
+<ol>
+<li>Breach history cannot be erased.</li>
+<li>A system may be:</li>
+</ol>
+<ul>
+<li>currently compliant</li>
+<li>currently non-compliant</li>
+<li>restored to compliance</li>
+<li>historically breached</li>
+<li>permanently non-compliant</li>
+</ul>
+<ol>
+<li>"Currently compliant" and "continuously compliant" are not the same claim.</li>
+<li>A system that suffered a continuity-breaking breach may never claim uninterrupted compliance across that breach period.</li>
+<li>Material breach history is permanent on the constitutional record.</li>
+<li>Minor deviations should remain in technical history, even if they do not permanently scar constitutional standing.</li>
+<li>All material breach disclosures must remain permanently accessible in a public, durable location. Breach records must not be removed, rewritten, buried, or made practically inaccessible over time.</li>
+</ol>
+<h4>Practical meaning</h4>
+<p>A system may say:</p>
+<ul>
+<li>"currently compliant, historically breached"</li>
+</ul>
+<p>but may not say:</p>
+<ul>
+<li>"continuously compliant"</li>
+</ul>
+<p>if continuity was broken.</p>
+<h3>Section 5. Evidence Requirements for Claiming Restored Compliance</h3>
+<p>The burden of proof always lies on the system claiming restoration.</p>
+<h4>5.1 Required public disclosure</h4>
+<p>At minimum, the system must disclose:</p>
+<ol>
+<li>the <strong>nature</strong> of the breach</li>
+<li>the <strong>scope</strong> of the breach</li>
+<li>the <strong>timing</strong> of the breach</li>
+<li>the <strong>affected functions, balances, or users</strong></li>
+<li>the <strong>constitutional article or articles implicated</strong></li>
+<li>the <strong>remediation taken</strong></li>
+<li>whether the breach <strong>broke continuity</strong></li>
+<li>whether the system claims:</li>
+</ol>
+<ul>
+<li>current compliance</li>
+<li>restored compliance</li>
+<li>or successor treatment</li>
+</ul>
+<p>All such disclosures must be made in a public, durable location reasonably discoverable by affected users.</p>
+<h4>5.2 Evidence standard</h4>
+<p>Claims of restoration must be supported by the strongest publicly available evidence appropriate to the breach, including where relevant:</p>
+<ul>
+<li>on-chain evidence</li>
+<li>cryptographic proof</li>
+<li>updated proof-of-reserves and liabilities</li>
+<li>custody disclosures</li>
+<li>governance records</li>
+<li>published timelines</li>
+<li>public code or configuration changes</li>
+<li>independently checkable operational evidence</li>
+</ul>
+<h4>5.3 Minimum restoration conditions</h4>
+<p>No system may claim restored compliance until:</p>
+<ol>
+<li>the breach has been publicly disclosed</li>
+<li>the remediation is actually active, not merely promised</li>
+<li>users have had a practical opportunity to understand the breach and, where relevant, exercise normal downward movement after disclosure under conditions that are not rendered illusory by excessive fees, excessive delays, or discriminatory access conditions</li>
+<li>the system is no longer engaging in the breaching behavior</li>
+<li>the system is not falsely presenting the breach period as uninterrupted compliance</li>
+</ol>
+<h4>5.4 Minimum remediation periods before claiming restored compliance</h4>
+<p><strong>Level 1</strong></p>
+<p>No earlier than <strong>24 hours</strong> after full disclosure and active remediation.</p>
+<p><strong>Level 2</strong></p>
+<p>No earlier than <strong>72 hours</strong> after full disclosure and active remediation, where the affected protections include:</p>
+<ul>
+<li>exit</li>
+<li>reserve or liability truth</li>
+<li>custody</li>
+<li>proof cadence for reserve-backed claims</li>
+<li>governance or constitutional clocks</li>
+<li>compliance status or naming</li>
+</ul>
+<p><strong>Level 3</strong></p>
+<p>A system may never claim restored <strong>continuity</strong>.</p>
+<p>It may claim current compliance only as <strong>historically breached</strong> and no earlier than <strong>7 days</strong> after full disclosure and active remediation, with all scar conditions disclosed.</p>
+<p><strong>Level 4 and Level 5</strong></p>
+<p>No restored compliance claim is available under the same system identity.</p>
+<h4>5.5 Exit accessibility during remediation</h4>
+<p>A restoration claim is invalid if exit remains technically available but practically inaccessible due to excessive fees, delays, or discriminatory conditions. Exit must remain reasonably accessible to ordinary users during the restoration period.</p>
+<h4>5.6 Restoration claim publication</h4>
+<p>Restoration claims must be published in the same public, durable location as the original breach disclosure and must be directly linked to it. Restoration claims must not be scattered across multiple locations or hidden within unrelated communication channels.</p>
+<h4>5.7 Independent verification</h4>
+<p>Where a breach concerns:</p>
+<ul>
+<li>reserves</li>
+<li>liabilities</li>
+<li>custody</li>
+<li>governance authority</li>
+<li>constitutional clocks</li>
+<li>or system state needed for exit</li>
+</ul>
+<p>the claim of restoration should be independently verifiable to the maximum extent technically possible.</p>
+<h3>Section 6. Naming Consequences</h3>
+<h4>6.1 Minor deviation</h4>
+<p>A system may continue using constitutional naming if the deviation is corrected and did not create material user confusion or harm.</p>
+<h4>6.2 Material breach</h4>
+<p>A system may continue using constitutional naming only if it does not misrepresent itself as continuously compliant and if it discloses the breach honestly.</p>
+<h4>6.3 Continuity-breaking breach</h4>
+<p>A system may use constitutional naming only with clear breach disclosure. It may not present itself as uninterruptedly compliant.</p>
+<h4>6.4 Permanent non-compliance</h4>
+<p>A system must not present itself as constitutionally compliant. It may describe itself as a former implementation, legacy implementation, or non-compliant implementation, but not as currently compliant.</p>
+<h4>6.5 Successor-required</h4>
+<p>A new system must not inherit constitutional naming by default. It must independently demonstrate compliance and obtain user trust on its own.</p>
+<h4>6.6 Misrepresentation</h4>
+<p>A system that continues to use constitutional naming while materially violating this standard or the constitution is engaged in misrepresentation.</p>
+<h3>Section 7. Forward Remediation vs Impermissible Retroactive Correction</h3>
+<p>This section is central.</p>
+<h4>7.1 Forward remediation</h4>
+<p><strong>Forward remediation</strong> means correcting future behavior without rewriting valid prior constitutional reality.</p>
+<p>Forward remediation is generally acceptable if it:</p>
+<ul>
+<li>occurs within the allowed constitutional and governance windows</li>
+<li>is publicly disclosed</li>
+<li>does not retroactively alter valid ownership or settlement</li>
+<li>does not erase breach history</li>
+<li>does not require users to pretend the breach never happened</li>
+</ul>
+<h4>7.2 Impermissible retroactive correction</h4>
+<p><strong>Impermissible retroactive correction</strong> means rewriting or undoing prior valid system history, ownership, settlement, or constitutional reality in order to cosmetically repair a breach or undo an undesirable outcome.</p>
+<p>This is generally not acceptable.</p>
+<h4>7.3 Hard rule on rollback and history rewrite</h4>
+<p>A rollback, reorganization, or state reversal performed to:</p>
+<ul>
+<li>undo theft</li>
+<li>rescue users from bad contract programming</li>
+<li>reverse liquidation outcomes</li>
+<li>reverse politically painful but valid economic results</li>
+<li>or cosmetically repair a breach</li>
+</ul>
+<p>is an impermissible retroactive correction.</p>
+<p>If a system performs such a correction, the current system identity becomes <strong>permanently non-compliant</strong>, and any constitutionally compliant continuation must occur only through a <strong>successor system</strong> with:</p>
+<ul>
+<li>a new identity</li>
+<li>new clients</li>
+<li>no automatic migration</li>
+<li>no inherited constitutional continuity</li>
+<li>manual user exit and manual entry only</li>
+</ul>
+<h4>7.4 Invalid-state correction and core-rule breakage</h4>
+<p>If the system's published core monetary or consensus intent was broken, such as:</p>
+<ul>
+<li>more coins being created than the published rules allow</li>
+<li>objectively invalid blocks being accepted as if valid</li>
+</ul>
+<p>actors may choose to correct that invalid state, but such correction does not restore constitutional continuity for the existing system identity if it requires rollback, reorganization, or state reversal of already-observed history.</p>
+<p>In that case:</p>
+<ul>
+<li>the old system becomes permanently non-compliant</li>
+<li>a new system may be launched if users choose to trust it</li>
+<li>there is no automatic migration path</li>
+<li>users must move manually by exiting the old system and entering the new one</li>
+</ul>
+<p>The purpose of this hard consequence is deterrence. It ensures that any actor considering rollback or history rewrite understands that the constitutional cost is severe and public.</p>
+<h4>7.5 Classification table</h4>
+<table>
+<thead><tr>
+<th>Action</th>
+<th>Classification</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Fixing a core bug that enabled theft, going forward</td>
+<td>Acceptable forward remediation</td>
+</tr>
+<tr>
+<td>Patching a vulnerability prospectively</td>
+<td>Acceptable forward remediation</td>
+</tr>
+<tr>
+<td>Prospectively tightening governance rules within allowed windows</td>
+<td>Acceptable forward remediation</td>
+</tr>
+<tr>
+<td>Chain reorganization to undo theft or rewrite already-valid settled history</td>
+<td>Impermissible retroactive correction</td>
+</tr>
+<tr>
+<td>Rolling back state to before an exploit by rewriting valid final state</td>
+<td>Impermissible retroactive correction</td>
+</tr>
+<tr>
+<td>Retroactively changing governance rules to justify past actions</td>
+<td>Impermissible retroactive correction</td>
+</tr>
+<tr>
+<td>Retroactively changing ownership mapping to erase a breach</td>
+<td>Impermissible retroactive correction</td>
+</tr>
+<tr>
+<td>Rollback or reorganization to erase invalid supply creation or objectively invalid accepted blocks</td>
+<td>Impermissible retroactive correction under current identity; only successor path remains if actors choose to proceed</td>
+</tr>
+</tbody></table>
+<h4>7.6 General test</h4>
+<p>Ask:</p>
+<ol>
+<li>Does the action change future behavior only, or does it rewrite past valid state?</li>
+<li>Does it preserve the constitutional truth model of the affected layer?</li>
+<li>Does it require users to accept that history changed rather than that the system learned?</li>
+<li>Does it erase evidence of the breach rather than disclose it?</li>
+</ol>
+<p>If the answer points to rewriting past valid reality, it should generally be treated as impermissible retroactive correction.</p>
+<h3>Section 8. Specific Breach Classifications</h3>
+<p>These are presumptive classifications. Aggravating or mitigating circumstances may shift the final level, but not below the constitutional seriousness of the act.</p>
+<table>
+<thead><tr>
+<th>Event</th>
+<th>Presumptive Severity</th>
+<th>Typical Cure Type</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Governance action after year 25</td>
+<td>Level 2, Material breach</td>
+<td>Curable with disclosure or scarred</td>
+<td>May escalate if sustained or concealed</td>
+</tr>
+<tr>
+<td>Continued protocol decisions after year 25</td>
+<td>Level 3, Continuity-breaking breach</td>
+<td>Scarred or not curable</td>
+<td>Likely breaks continuity</td>
+</tr>
+<tr>
+<td>Any new protocol-level change after year 30</td>
+<td>Level 4, Permanent non-compliance</td>
+<td>Not curable</td>
+<td>Only successor path remains</td>
+</tr>
+<tr>
+<td>Hidden reserve lending</td>
+<td>Level 2, Material breach</td>
+<td>Curable with disclosure or scarred</td>
+<td>May escalate if prolonged or concealed</td>
+</tr>
+<tr>
+<td>Functional exit blocking</td>
+<td>Level 2, Material breach</td>
+<td>Curable with disclosure or scarred</td>
+<td>May escalate if sustained</td>
+</tr>
+<tr>
+<td>Misrepresenting compliance status</td>
+<td>Level 2, Material breach</td>
+<td>Curable with disclosure or scarred</td>
+<td>May escalate if intentional and prolonged</td>
+</tr>
+<tr>
+<td>Missed proof cadence, promptly disclosed, affected claims marked stale or unproven</td>
+<td>Level 1 or 2</td>
+<td>Curable with disclosure</td>
+<td>Severity depends on duration and user impact</td>
+</tr>
+<tr>
+<td>Repeated or persistent failure to meet declared proof cadence</td>
+<td>Level 2, Material breach</td>
+<td>Curable with disclosure or scarred</td>
+<td>May escalate if prolonged or paired with reserve uncertainty</td>
+</tr>
+<tr>
+<td>Failure to publish proof while continuing to present claims as currently backed or currently proven</td>
+<td>Level 2 or 3</td>
+<td>Scarred or curable with disclosure</td>
+<td>Concealment and duration matter</td>
+</tr>
+<tr>
+<td>Backdating, falsifying, or misleading proof timestamps or cadence records</td>
+<td>Level 3, Continuity-breaking breach</td>
+<td>Scarred or not curable</td>
+<td>May escalate if tied to reserve impairment</td>
+</tr>
+<tr>
+<td>Stale proof presented as current proof</td>
+<td>Level 2, Material breach</td>
+<td>Curable with disclosure or scarred</td>
+<td>May escalate if tied to reserve distress</td>
+</tr>
+<tr>
+<td>Reserve custody downgrade without disclosure</td>
+<td>Level 2, Material breach</td>
+<td>Curable with disclosure or scarred</td>
+<td>May escalate if user funds materially endangered</td>
+</tr>
+<tr>
+<td>Transaction-level censorship of valid ordinary exits</td>
+<td>Level 2 or 3</td>
+<td>Curable with disclosure or scarred</td>
+<td>Depends on duration and concentration</td>
+</tr>
+<tr>
+<td>Forced migration into new trust model</td>
+<td>Level 5, Successor-required</td>
+<td>Not curable</td>
+<td>Requires new system and fresh consent</td>
+</tr>
+<tr>
+<td>Silent balance remapping into successor</td>
+<td>Level 5, Successor-required</td>
+<td>Not curable</td>
+<td>Identity continuity is broken</td>
+</tr>
+<tr>
+<td>Governance continuation by renamed wrapper after sunset</td>
+<td>Level 4 or 5</td>
+<td>Not curable</td>
+<td>Depends on continuity claim and migration behavior</td>
+</tr>
+<tr>
+<td>Retroactive rewriting of valid settled history to "repair" a breach</td>
+<td>Level 5</td>
+<td>Not curable</td>
+<td>Successor treatment required</td>
+</tr>
+</tbody></table>
+<h3>Section 9. Concurrent Breaches and Propagation</h3>
+<h4>9.1 Local classification</h4>
+<p>Every breach shall first receive an independent <strong>local classification</strong> by:</p>
+<ul>
+<li>article violated</li>
+<li>affected function</li>
+<li>severity level</li>
+<li>cure type</li>
+</ul>
+<p>Lower-severity breaches do not disappear merely because a higher-severity breach also exists.</p>
+<h4>9.2 Propagation assessment</h4>
+<p>After local classification, each breach shall also receive a <strong>propagation assessment</strong>:</p>
+<ul>
+<li><strong>Isolated</strong></li>
+</ul>
+<p>confined to a bounded optional component or non-core function</p>
+<ul>
+<li><strong>Core-propagating</strong></li>
+</ul>
+<p>affects constitutional core guarantees strongly enough to set system-wide status</p>
+<ul>
+<li><strong>Cross-contaminating</strong></li>
+</ul>
+<p>interacts with other breaches in a way that raises total system severity</p>
+<h4>9.3 Core-propagating breaches</h4>
+<p>A breach is <strong>core-propagating</strong> when it materially affects:</p>
+<ul>
+<li>normal downward exit</li>
+<li>reserve truth</li>
+<li>liability truth</li>
+<li>reserve custody independence</li>
+<li>constitutional clocks</li>
+<li>governance sunset or governance scope</li>
+<li>forced migration</li>
+<li>compliance misrepresentation</li>
+<li>constitutional continuity</li>
+</ul>
+<p>A core-propagating breach sets the minimum <strong>system-wide current status</strong> at its severity level, even if other breaches are lower.</p>
+<h4>9.4 Cross-contamination</h4>
+<p>A breach is <strong>cross-contaminating</strong> when concurrent breaches share:</p>
+<ul>
+<li>a common cause</li>
+<li>a common operator set</li>
+<li>a common concealment pattern</li>
+<li>a common choke point</li>
+<li>or materially compounded user impact</li>
+</ul>
+<p>Cross-contaminating breaches may elevate the system-wide classification by one level where constitutionally justified, even if each breach alone would be classified lower.</p>
+<h4>9.5 Isolated breaches</h4>
+<p>A breach may remain function-scoped only where it is clearly bounded, fully disclosed, and does not materially impair any constitutional core guarantee.</p>
+<h4>9.6 Example</h4>
+<p>If a system has:</p>
+<ul>
+<li>a <strong>Level 3 breach</strong> in exit rights, and</li>
+<li>a <strong>Level 2 breach</strong> in reserve labeling,</li>
+</ul>
+<p>then:</p>
+<ul>
+<li>the exit breach is likely <strong>core-propagating</strong></li>
+<li>the system-wide current status is at least <strong>Level 3</strong></li>
+<li>the reserve labeling breach remains independently recorded</li>
+<li>the labeling breach may act as an aggravating factor if it worsened user confusion during the Level 3 event</li>
+</ul>
+<h4>9.7 Cross-contamination example</h4>
+<p>If a system:</p>
+<ul>
+<li>misses its declared proof cadence for reserve-backed claims, and</li>
+<li>simultaneously uses a misleading interface, notification, or public status display that conceals, downplays, or fails to clearly present that stale-proof condition,</li>
+</ul>
+<p>then:</p>
+<ul>
+<li>the proof cadence breach and the clarity breach may be classified as cross-contaminating</li>
+<li>the shared operator set and shared concealment pattern may justify elevation of the system-wide classification</li>
+<li>the compounded harm is greater than either breach alone because users are deprived not only of current proof, but also of their practical ability to detect the missing proof and respond</li>
+</ul>
+<p>This remains true even if each individual breach might otherwise appear curable in isolation.</p>
+<h3>Section 10. Aggravating and Mitigating Factors</h3>
+<h4>10.1 Aggravating factors</h4>
+<p>These factors may elevate the severity class by one level where constitutionally appropriate:</p>
+<ul>
+<li>concealment</li>
+<li>delayed disclosure</li>
+<li>operator enrichment during the breach</li>
+<li>insider advantage</li>
+<li>repeated occurrence</li>
+<li>misleading public statements</li>
+<li>impairment of user exit</li>
+<li>impairment of reserve truth</li>
+<li>impairment of user ability to distinguish asset class</li>
+<li>rewriting history rather than disclosing failure</li>
+<li>remaining in uncertainty status beyond the maximum allowed period</li>
+</ul>
+<h4>10.2 Mitigating factors</h4>
+<p>Mitigating factors may influence cure conditions but do not erase the breach. Examples include:</p>
+<ul>
+<li>prompt disclosure</li>
+<li>fast and honest remediation</li>
+<li>absence of operator benefit</li>
+<li>preserved user exit during remediation</li>
+<li>public evidence sufficient for independent verification</li>
+</ul>
+<h3>Section 11. Interpretive Priority</h3>
+<p>When breach classification is disputed, the preferred classification is the one that best prevents the following abuse patterns:</p>
+<ul>
+<li>hiding a serious breach behind technical wording</li>
+<li>treating disclosure as cure without real remediation</li>
+<li>remaining indefinitely in uncertainty mode</li>
+<li>rewriting history to cosmetically restore legitimacy</li>
+<li>claiming continuity after a constitutionally significant break</li>
+<li>using short duration as an excuse for severe breach</li>
+<li>using branding to preserve trust after constitutional reality has changed</li>
+</ul>
+<p>This standard exists to make breach handling honest, not convenient.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="constitutional-dispute-review-standard">
+  <input type="checkbox" id="comp-1" class="accordion-toggle">
+  <label for="comp-1" class="accordion-label">Constitutional Dispute and Review Standard<br><span class="companion-desc">How disputes about interpretation, breach classification, and compliance are raised and resolved.</span></label>
+  <div class="accordion-body">
+    <div class="accordion-inner">
+      <p><span class="status-badge draft">Binding · Draft</span></p>
+      <h3>Governing Principles</h3>
+<ol>
+<li>The constitution remains primary. This standard interprets, applies, and records; it does not override the constitution.</li>
+<li>Public evidence outranks self-serving assertion.</li>
+<li>Conservative reading controls where uncertainty remains unresolved.</li>
+<li>No system may be the sole judge of its own compliance status.</li>
+<li>Dispute review must remain transparent, replayable, and permanently recorded.</li>
+<li>Review may be decentralized and plural. It need not produce one global official court.</li>
+<li>Where multiple reviewers disagree, the strength of the evidence and fidelity to the constitution control, not mere reviewer prestige.</li>
+<li>Advisory commentary may inform interpretation, but binding outcomes must remain grounded in the constitution and its binding companion standards.</li>
+</ol>
+<h3>Section 1. Who May Raise a Dispute</h3>
+<h4>1.1 Standing</h4>
+<p>A constitutional dispute may be raised by any of the following:</p>
+<ol>
+<li>A user affected by the disputed behavior.</li>
+<li>An operator, implementer, or maintainer of the system under dispute.</li>
+<li>An independent reviewer, auditor, researcher, or evaluator.</li>
+<li>Another system claiming constitutional compliance.</li>
+<li>A group acting collectively on behalf of affected users.</li>
+<li>An automated monitoring or analysis system, including artificial intelligence, provided that the dispute is published in a form humans can inspect and evaluate. Automated disputes must include a human attestation that the evidence bundle has been reviewed by a person before formal submission, or must be categorized as preliminary filings requiring human confirmation before entering the formal dispute record.</li>
+</ol>
+<h4>1.2 Anonymous and pseudonymous disputes</h4>
+<p>Disputes may be raised anonymously or pseudonymously.</p>
+<p>No dispute may be dismissed solely because the disputing party does not reveal legal identity, provided the evidence is publicly inspectable and the claim is specific enough to evaluate.</p>
+<h4>1.3 Minimum threshold to initiate a dispute</h4>
+<p>A dispute must include, at minimum:</p>
+<ol>
+<li>The constitutional article or companion standard allegedly implicated.</li>
+<li>A factual claim, not merely a conclusion.</li>
+<li>A supporting evidence bundle or clear pointer to publicly available evidence.</li>
+<li>The specific classification, interpretation, or remedy being requested.</li>
+</ol>
+<p>Bare accusation without evidence is not sufficient to initiate a formal constitutional dispute record.</p>
+<h4>1.4 Frivolous and bad-faith disputes</h4>
+<p>A dispute that fails to meet the minimum evidentiary threshold in Section 1.3, and is not cured within a reasonable period after the deficiency is identified, may be formally closed as unsubstantiated.</p>
+<p>Closure of a frivolous dispute must itself be published in the precedent record with an explanation of why the threshold was not met.</p>
+<p>The dispute mechanism must not become an attack surface. Deliberate abuse of the dispute process — including filing multiple thin disputes to force constant disclosure obligations, drain operator resources, or manufacture a false cloud of dispute status over a clean system — may itself be recorded as a pattern in the precedent record and taken into account when evaluating future disputes from the same source.</p>
+<h3>Section 2. Subject Matter Scope</h3>
+<p>The following disputes fall within scope:</p>
+<ol>
+<li>Breach classification disputes.</li>
+<li>Restoration claim disputes.</li>
+<li>Constitutional continuity disputes.</li>
+<li>Naming and compliance representation disputes.</li>
+<li>Interpretation disputes regarding article meaning, definition scope, edge cases, or cross-article interaction.</li>
+<li>Disputes over whether a component, bridge, support system, or extension is compliant, partially compliant, non-compliant, or out of scope.</li>
+<li>Cross-standard disputes involving alleged contradiction, ambiguity, or hierarchy conflict between companion documents.</li>
+</ol>
+<p>The following are generally outside scope unless they directly implicate constitutional protections:</p>
+<ol>
+<li>Purely commercial disputes.</li>
+<li>Private contractual disagreements not tied to constitutional functions.</li>
+<li>Application-level losses that do not affect constitutional rights, exit, reserve truth, custody truth, or compliance representation.</li>
+<li>Subjective disputes about aesthetics, popularity, or market success.</li>
+</ol>
+<h3>Section 3. Dispute Disclosure Requirements</h3>
+<h4>3.1 What the disputing party must publish</h4>
+<p>A disputing party must publish:</p>
+<ol>
+<li>The identity or pseudonymous identifier of the disputing party, if any.</li>
+<li>The system or component under dispute.</li>
+<li>The article, clause, or companion standard at issue.</li>
+<li>The factual allegations.</li>
+<li>The evidence relied upon.</li>
+<li>The requested classification, interpretation, or corrective outcome.</li>
+<li>The date the dispute was initiated.</li>
+</ol>
+<h4>3.2 What the system under dispute must publish</h4>
+<p>Once a formal dispute is raised, the system under dispute must respond within the following windows:</p>
+<ul>
+<li>For disputes involving exit, reserve truth, custody, censorship resistance, or compliance representation: <strong>within 24 hours</strong>, consistent with the uncertainty notice deadline in the Breach and Restoration Standard.</li>
+<li>For lower-severity interpretation or procedural disputes: <strong>within 7 days</strong>.</li>
+</ul>
+<p>The system must:</p>
+<ol>
+<li>Acknowledge the dispute.</li>
+<li>State whether it admits, denies, or partially disputes the claim.</li>
+<li>Identify which facts are agreed, disputed, or unknown.</li>
+<li>Publish any contrary evidence it relies upon.</li>
+<li>State whether the dispute affects current compliance claims, restoration claims, or naming claims.</li>
+</ol>
+<h4>3.3 Silence by the system</h4>
+<p>Silence by the system under dispute is not treated as automatic concession of every claim.</p>
+<p>However:</p>
+<ol>
+<li>Silence may be treated as an aggravating factor.</li>
+<li>Silence weakens the system's credibility in the dispute record.</li>
+<li>Silence does not suspend constitutional consequences that already arise under the constitution or the Breach and Restoration Standard.</li>
+</ol>
+<h4>3.4 Public visibility of dispute status</h4>
+<p>The existence and current status of a formal constitutional dispute must be publicly visible in a durable and reasonably discoverable location.</p>
+<p>A dispute must not be hidden in private channels while public-facing materials imply no dispute exists.</p>
+<h3>Section 4. Review Process</h3>
+<h4>4.1 Who may review</h4>
+<p>A dispute may be reviewed by:</p>
+<ol>
+<li>Independent users.</li>
+<li>Auditors.</li>
+<li>Researchers.</li>
+<li>Technical reviewers.</li>
+<li>Compliance evaluators.</li>
+<li>Artificial intelligence or automated review systems.</li>
+<li>Multi-party review panels, provided they satisfy the independence rules in this standard.</li>
+</ol>
+<h4>4.2 Nature of review</h4>
+<p>Review under this standard is binding for constitutional classification only to the extent that the published evidence and constitutional reasoning support it.</p>
+<p>This standard does not create coercive enforcement power. It creates authoritative public classification power grounded in transparent reasoning.</p>
+<h4>4.3 Review method</h4>
+<p>A valid review must be:</p>
+<ol>
+<li>Article-cited.</li>
+<li>Evidence-cited.</li>
+<li>Publicly inspectable.</li>
+<li>Clear about what is fact, what is interpretation, and what is judgment.</li>
+</ol>
+<h4>4.4 Conservative-reading default</h4>
+<p>Pending final resolution of a genuine dispute, the conservative-reading and public-evidence rules from the Breach and Restoration Standard continue to control.</p>
+<p>A system may not use "dispute pending" status to suspend the constitutional default protections owed to users.</p>
+<h4>4.5 Naming during review</h4>
+<p>A system under formal unresolved dispute may continue to use constitutional naming only if:</p>
+<ol>
+<li>It publicly discloses that the dispute exists.</li>
+<li>It does not present the dispute as already resolved in its favor.</li>
+<li>It does not claim uninterrupted compliance where the dispute directly contests that claim.</li>
+</ol>
+<p>Where the dispute plausibly concerns material breach, continuity, or misrepresentation, a failure to disclose the unresolved dispute may itself constitute misrepresentation.</p>
+<h4>4.6 Time limits</h4>
+<p>A dispute review must not remain open indefinitely without status updates.</p>
+<p>At minimum:</p>
+<ol>
+<li>An initial response window must be declared.</li>
+<li>A review status update must be published at reasonable intervals.</li>
+<li>Final classification or explicit unresolved status must be published within a bounded review period defined by the reviewing body or companion operational procedure.</li>
+</ol>
+<p>If a review remains unresolved beyond that period, the conservative-reading default continues unless and until better evidence changes the outcome.</p>
+<h4>4.7 Maximum dispute duration</h4>
+<p>No dispute may remain in active review status for more than 90 days from the date of formal initiation without a published final classification.</p>
+<p>If no final classification is published within 90 days:</p>
+<ol>
+<li>The dispute automatically enters permanent unresolved status.</li>
+<li>The conservative-reading default from the Breach and Restoration Standard locks in as the controlling classification.</li>
+<li>The system must publicly disclose the unresolved status and the conservative default that applies.</li>
+<li>The dispute may be reopened only under the re-review conditions in Section 6.4.</li>
+</ol>
+<p>No reviewing body may extend this ceiling by self-definition, procedural amendment, or mutual agreement with the system under dispute.</p>
+<h4>4.8 Conflicting reviews</h4>
+<p>Where two or more credible reviewers publish conflicting classifications of the same dispute, backed by equally strong evidence and genuine constitutional ambiguity:</p>
+<ol>
+<li>The more protective classification controls pending resolution.</li>
+<li>The conflict must be publicly documented in the precedent record.</li>
+<li>Resolution may come through new evidence, a <a href="companions.html#definitions-interpretive-notes">Definitions and Interpretive Notes</a> update that resolves the ambiguity, or a subsequent review that addresses the specific disagreement with stronger reasoning.</li>
+</ol>
+<p>General reviewer prestige does not break ties. Constitutional protectiveness does.</p>
+<h4>4.9 Parallel dispute coordination</h4>
+<p>Where multiple reviewing bodies are simultaneously reviewing the same dispute:</p>
+<ol>
+<li>Each reviewing body should publish awareness of the other's process.</li>
+<li>Evidence sharing between parallel reviews should be coordinated where possible to avoid purely procedural divergence.</li>
+<li>Users must not be left without clear guidance — the more protective published classification controls until the parallel reviews converge or one is superseded by stronger evidence.</li>
+<li>Parallel reviews reaching opposite conclusions must both be recorded in the precedent record with full reasoning.</li>
+</ol>
+<h3>Section 5. Interim Rules During Dispute</h3>
+<h4>5.1 System behavior during dispute</h4>
+<p>While a material dispute remains unresolved:</p>
+<ol>
+<li>The system must not present the disputed matter as settled in its own favor.</li>
+<li>The system must not erase, bury, or downgrade visibility of facts relevant to the dispute.</li>
+<li>The system must continue to preserve user rights already required by the constitution.</li>
+</ol>
+<h4>5.2 Naming restrictions during unresolved dispute</h4>
+<p>During an unresolved dispute, a system may be required to qualify its naming claims, such as:</p>
+<ul>
+<li>compliance disputed</li>
+<li>restoration disputed</li>
+<li>continuity disputed</li>
+<li>naming disputed</li>
+</ul>
+<p>The exact required qualifier depends on the subject matter of the dispute.</p>
+<h4>5.3 Disclosure during dispute</h4>
+<p>The system under dispute must continue to disclose:</p>
+<ol>
+<li>The existence of the dispute.</li>
+<li>The status of the dispute.</li>
+<li>Whether it affects current user trust assumptions, exit, reserve truth, custody, or naming.</li>
+</ol>
+<h4>5.4 Conservative-reading control pending resolution</h4>
+<p>Where a dispute concerns user rights, exit, reserve truth, custody truth, proof cadence, censorship resistance, or compliance representation, the conservative-reading default from the Breach and Restoration Standard controls pending resolution.</p>
+<h4>5.5 Disputes involving absent companion standards</h4>
+<p>Where a dispute hinges on a threshold or requirement that should be defined in a companion standard that does not yet exist, reviewers must apply the conservative-reading default from Article XXIX.5 of the constitution: interpretation defaults to the reading that best preserves exit rights, reserve and liability truth, custody independence, non-discretionary operation, censorship resistance, constitutional time limits, and user freedom.</p>
+<p>The absence of a companion standard must not be used as grounds to defer resolution indefinitely or to argue that no threshold exists.</p>
+<h3>Section 6. Resolution and Precedent</h3>
+<h4>6.1 Publication of resolutions</h4>
+<p>Every resolution must be published in a durable, publicly accessible location and must include:</p>
+<ol>
+<li>The dispute identifier or title.</li>
+<li>The parties or participants, if disclosed.</li>
+<li>The evidence reviewed.</li>
+<li>The constitutional articles and standards relied upon.</li>
+<li>The final classification, interpretation, or unresolved determination.</li>
+<li>The date of publication.</li>
+</ol>
+<h4>6.1a Evidence preservation</h4>
+<p>All evidence bundles submitted in support of a dispute — by any party — must be archived in the same durable location as the resolution and must remain accessible for the life of the system.</p>
+<p>A resolution published without its supporting evidence bundle is incomplete. An incomplete resolution may not be relied upon as binding precedent.</p>
+<h4>6.2 Precedent status</h4>
+<p>Resolutions may create interpretive precedent, but no precedent may override the constitution.</p>
+<p>A precedent is persuasive only to the extent that:</p>
+<ol>
+<li>Its reasoning is publicly inspectable.</li>
+<li>Its evidence remains available.</li>
+<li>Its interpretation remains consistent with the constitution and binding standards.</li>
+</ol>
+<h4>6.3 Precedent record</h4>
+<p>A durable, publicly accessible precedent record should be maintained where feasible.</p>
+<p>That record should allow users and evaluators to inspect:</p>
+<ul>
+<li>prior disputes</li>
+<li>prior classifications</li>
+<li>interpretive patterns</li>
+<li>unresolved tensions</li>
+</ul>
+<h4>6.4 Appeal and re-review</h4>
+<p>A dispute may be reopened or re-reviewed where:</p>
+<ol>
+<li>Material new evidence appears.</li>
+<li>A prior review is shown to have had a conflict-of-interest defect.</li>
+<li>A later companion standard resolves a previously ambiguous threshold.</li>
+<li>The underlying facts materially change.</li>
+</ol>
+<p>Appeal does not automatically suspend the prior published resolution unless the appeal itself identifies a credible basis for reclassification.</p>
+<p>A re-review request must identify specific new evidence or a specific identified defect that was not available or not considered in the original review. General disagreement with the outcome is not sufficient to reopen a closed dispute.</p>
+<h3>Section 7. Anti-Capture Protections</h3>
+<h4>7.1 Reviewer independence</h4>
+<p>No review body may act as sole authoritative reviewer where it is:</p>
+<ol>
+<li>Controlled by the system under dispute.</li>
+<li>Funded solely by the system under dispute without disclosure.</li>
+<li>Operationally dependent on the system under dispute in a way that creates material conflict.</li>
+</ol>
+<h4>7.2 Conflict-of-interest rules</h4>
+<p>Reviewers must disclose material conflicts of interest, including:</p>
+<ul>
+<li>direct funding</li>
+<li>governance role</li>
+<li>operational role</li>
+<li>legal representation</li>
+<li>business dependency</li>
+<li>significant token or reserve exposure where relevant</li>
+</ul>
+<h4>7.3 No sole operator-funded arbiter</h4>
+<p>An operator-funded or operator-selected review body may participate in review, but must not be treated as the sole arbiter of the system's constitutional standing.</p>
+<h4>7.4 Funding and governance transparency</h4>
+<p>Any structured review body must disclose:</p>
+<ol>
+<li>How it is funded.</li>
+<li>How reviewers are selected.</li>
+<li>Whether the system under dispute has any appointment, veto, or funding influence.</li>
+<li>What rules govern recusals and conflicts.</li>
+</ol>
+<h3>Section 8. Interaction with Other Standards</h3>
+<h4>8.1 Breach and Restoration Standard</h4>
+<p>This standard works together with <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a>.</p>
+<p>Where a dispute concerns breach classification, restoration, continuity, uncertainty notices, or naming consequences, the Breach and Restoration Standard supplies the substantive classification rules, while this standard supplies the dispute process.</p>
+<h4>8.2 Constitutional Commentary</h4>
+<p><a href="commentary.html">Constitutional Commentary</a> is advisory. It may inform interpretation, but cannot override binding constitutional text or binding companion standards.</p>
+<h4>8.3 Definitions and Interpretive Notes</h4>
+<p><a href="companions.html#definitions-interpretive-notes">Definitions and Interpretive Notes</a> provides interpretive guidance for defined terms and edge cases. Where a dispute turns on defined language, that document should be consulted alongside the constitution itself.</p>
+<h4>8.4 UX Constitution</h4>
+<p><a href="companions.html#ux-constitution">UX Constitution</a> is binding. Where a dispute concerns interface-level compliance — including dark patterns, label blurring, misleading compliance signals, reveal control abuse, or notification manipulation — the UX Constitution provides the substantive standards, while this standard provides the dispute process.</p>
+<p>Article XXVII.11 of the constitution explicitly states that UX-level misrepresentation can constitute a constitutional breach. Disputes arising from interface behavior must be evaluated against both the UX Constitution and the protocol constitution.</p>
+<h4>8.5 Verification Checklist</h4>
+<p><a href="checklist.html">Verification Checklist</a> may assist evaluators in applying this standard consistently, but does not by itself override the constitution or this standard.</p>
+<h3>Constitutional Authority</h3>
+<p>This standard must not weaken, blur, or contradict the principles defined in the Bitcoin System Constitution.</p>
+<p>In the absence of this standard, the conservative-reading and public-evidence rules in the Breach and Restoration Standard control.</p>
+<p>No procedure created by this standard may be used to delay or suspend constitutional protections that would otherwise apply.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="definitions-interpretive-notes">
+  <input type="checkbox" id="comp-2" class="accordion-toggle">
+  <label for="comp-2" class="accordion-label">Definitions and Interpretive Notes<br><span class="companion-desc">Interpretive guidance for defined terms, edge cases, and anti-gaming notes.</span></label>
+  <div class="accordion-body">
+    <div class="accordion-inner">
+      <p><span class="status-badge draft">Interpretive · Draft</span></p>
+      <h3>1. Core Structure Terms</h3>
+<h4>Bitcoin</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>The definition of Bitcoin is intentionally narrow. It refers to the Bitcoin network and its native monetary unit, not to any wrapped, represented, bridged, or synthetic form of Bitcoin on another layer or system.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>Bitcoin held directly on Layer 1.</li>
+<li>Bitcoin UTXOs controlled under Bitcoin consensus rules.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A wrapped BTC token on another network.</li>
+<li>A custodial IOU denominated in BTC.</li>
+<li>A Layer 2 balance, even if fully backed and redeemable.</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Actors may try to exploit branding by saying "this is Bitcoin" when they mean "this is a Bitcoin-linked asset." The constitution requires stricter classification than common marketing language.</p>
+<h4>Layer 1</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Layer 1 is not merely the oldest chain in a stack. It is the final monetary truth layer recognized by the constitution.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>Final settlement.</li>
+<li>Long-term self-custody.</li>
+<li>Bitcoin-native consensus truth.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A fast settlement network that periodically checkpoints to Bitcoin.</li>
+<li>A sidechain or rollup that derives security from Bitcoin but has its own operational rules.</li>
+</ul>
+<p><strong>Usage guidance:</strong></p>
+<p>If a system offers convenience but still depends on another system for final truth, it is not Layer 1 under this constitution.</p>
+<h4>Layer 2</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Layer 2 is defined by its role, not by one technical pattern. It is the cash rail and support layer for real economic life.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>Fast Bitcoin-denominated transfer systems.</li>
+<li>Payment-oriented systems with finer accounting and lower fees than Layer 1.</li>
+<li>Systems designed to be safer and more conservative than Layer 3.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A generic smart contract chain with a BTC token.</li>
+<li>A speculative execution layer that happens to support Bitcoin.</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Calling something "Layer 2" does not make it a constitutional Layer 2. It must function as the transactional support layer described by the constitution.</p>
+<h4>Layer 3</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Layer 3 is the place for programmability, experimentation, and optional higher risk. It is constitutionally downstream from both Layer 1 and Layer 2 in trust.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>Smart contract environments.</li>
+<li>App layers.</li>
+<li>Tokenized systems and optional risk-bearing execution environments.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>Core transactional Bitcoin rail functions that should belong to Layer 2.</li>
+<li>Systems marketed as fast but expected to function as final money.</li>
+</ul>
+<p><strong>Usage guidance:</strong></p>
+<p>If a system is designed to be the place where users build, automate, speculate, or take app-level risk, it is likely Layer 3.</p>
+<h4>Constitutional layer</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>This is a functional category, not a physical topology requirement. A constitutional layer may be composed of many technical parts.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>A project may not avoid constitutional duties by saying, "This is only a subsystem, not the layer itself," if that subsystem performs core constitutional functions of the layer.</p>
+<h4>Component, sublayer, module, support system</h4>
+<p><strong>When does a support system become a component with constitutional duties</strong></p>
+<p>A support system becomes a component with constitutional duties when failure, capture, concentration, or misbehavior in that system can materially affect:</p>
+<ul>
+<li>reserve truth</li>
+<li>liability truth</li>
+<li>custody safety</li>
+<li>normal downward exit</li>
+<li>transaction inclusion</li>
+<li>constitutional timekeeping</li>
+<li>user ability to distinguish what they hold</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>A read-only public dashboard showing proof data is likely a support system.</li>
+<li>A relayer network that users must rely on to exit is no longer a harmless support system. It has constitutional significance.</li>
+<li>An indexer used only for convenience may be a support system.</li>
+<li>An indexer whose failure makes balances undiscoverable becomes constitutional in effect.</li>
+</ul>
+<p><strong>Is an indexer a support system</strong></p>
+<p>Usually yes at first.</p>
+<p>No, if users cannot meaningfully discover or prove balances without it.</p>
+<p><strong>Is a fee market a module</strong></p>
+<p>Yes, if it is a distinct functional unit governing transaction ordering, inclusion, or exit economics.</p>
+<p><strong>How to evaluate whether internal decomposition weakens, obscures, or evades protections</strong></p>
+<p>Ask four questions:</p>
+<ol>
+<li>Did the decomposition make risk harder for users to see.</li>
+<li>Did it reduce practical exit rights.</li>
+<li>Did it move a core duty into a supposedly non-critical subsystem.</li>
+<li>Did it create a new choke point while keeping the old constitutional label.</li>
+</ol>
+<p>If the answer to any is yes, constitutional concern exists.</p>
+<h3>2. Monetary Asset Classes</h3>
+<h4>Direct Bitcoin claim</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A direct Bitcoin claim is stronger than a Bitcoin-denominated balance, but weaker than actual Layer 1 Bitcoin. It is redeemable against Bitcoin reserves through a non-discretionary published process.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>A claim backed by publicly verifiable reserves and liabilities with a non-discretionary redemption path.</li>
+<li>A BTC representation whose reserve and claim set can be independently verified.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A balance redeemable only by committee approval.</li>
+<li>A BTC IOU issued by a company without proof of liabilities.</li>
+<li>A wrapped token with no enforceable or visible reserve process.</li>
+</ul>
+<p><strong>Usage guidance:</strong></p>
+<p>A direct claim is still a claim. It should never be confused with Layer 1 Bitcoin itself.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>A project may try to say "redeemable under normal conditions" while reserving emergency discretion. That is not non-discretionary redemption.</p>
+<h4>Bitcoin transactional balance</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A Bitcoin transactional balance is for use on Layer 2 as money in motion. It may be backed, but it is not defined primarily by reserve marketing. It is defined by its role in ordinary transfer and economic life.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>A Layer 2 payment balance.</li>
+<li>A cash-like BTC-denominated balance used for normal transfers and commerce.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A credit position.</li>
+<li>A time-locked application-specific position on Layer 3.</li>
+<li>A balance that can only move through complex contracts by default.</li>
+</ul>
+<p><strong>How to distinguish from a direct Bitcoin claim in practice</strong></p>
+<p>A direct Bitcoin claim emphasizes redemption against reserve.</p>
+<p>A Bitcoin transactional balance emphasizes everyday movement under Layer 2 rules.</p>
+<p>A system can have both features, but the constitutional classification depends on the actual role and user-facing trust model.</p>
+<h4>Bitcoin utility balance</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A Bitcoin utility balance is a Bitcoin-denominated balance used inside Layer 3 rules and risk. It is not ordinary money unless the user is fully informed that it remains subject to Layer 3 conditions.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>A BTC-denominated balance used in a Layer 3 smart contract environment.</li>
+<li>A balance used as app collateral, execution fuel substitute, or contract-side asset.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A plain Layer 2 cash balance.</li>
+<li>A direct Bitcoin claim marketed as current reserve-backed exit money.</li>
+<li>A credit instrument paying yield from reserve use.</li>
+</ul>
+<p><strong>When does a Bitcoin utility balance cross into being a credit instrument</strong></p>
+<p>It crosses over when the holder's position depends on:</p>
+<ul>
+<li>lending</li>
+<li>rehypothecation</li>
+<li>maturity transformation</li>
+<li>discretionary repayment</li>
+<li>reserve usage for yield</li>
+</ul>
+<p>If the balance earns yield because the underlying reserve is being put to work, the balance or associated position has become credit-like.</p>
+<h4>Native gas token</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A native gas token is not automatically speculative, but it is not Bitcoin unless it truly is Bitcoin. Clear separation matters.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Systems often try to create emotional equivalence between a native token and Bitcoin utility balances. The constitution rejects that blur.</p>
+<h4>Governance token</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A governance token is defined by authority, not branding. If a token materially influences protocol decision making, it is governance-like even if called something softer.</p>
+<h4>Credit instrument</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>This definition is intentionally broad because history shows that money-substitute fraud often begins with narrow loopholes.</p>
+<p><strong>Examples inside the definition:</strong></p>
+<ul>
+<li>BTC lending receipts.</li>
+<li>Yield-bearing wrapped balances whose reserves are deployed.</li>
+<li>Rehypothecated custody positions.</li>
+<li>Maturity-mismatched liabilities presented as stable value.</li>
+</ul>
+<p><strong>Examples outside the definition:</strong></p>
+<ul>
+<li>A plain transactional balance with no lending or discretionary repayment risk.</li>
+<li>A direct Bitcoin claim backed by unencumbered reserve.</li>
+</ul>
+<h4>Reserve, liability, encumbered reserve, unencumbered reserve</h4>
+<p><strong>Examples of encumbered reserve</strong></p>
+<ul>
+<li>Reserve BTC lent out to earn yield.</li>
+<li>Reserve pledged as collateral.</li>
+<li>Reserve committed into staking or bonded control.</li>
+<li>Reserve subject to third-party lien or claim.</li>
+</ul>
+<p><strong>Examples of unencumbered reserve</strong></p>
+<ul>
+<li>Reserve held solely to back its claims.</li>
+<li>Reserve not lent, pledged, or committed elsewhere.</li>
+</ul>
+<p><strong>Edge case: staking rewards</strong></p>
+<p>If "staking rewards" arise because reserve assets are being committed into another protocol or risk-bearing arrangement, then the reserve is encumbered and the resulting structure creates either:</p>
+<ul>
+<li>a credit instrument</li>
+<li>a new liability</li>
+<li>or both</li>
+</ul>
+<p>It does not remain constitutionally clean reserve merely because the system calls the yield "efficiency."</p>
+<h3>3. Trust and Movement</h3>
+<h4>Canonical interlayer path</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A canonical path is the constitutionally recognized normal route or routes for moving balances between layers under the system's core safety promises.</p>
+<p><strong>Usage guidance:</strong></p>
+<p>A system may have more than one canonical path if each is published, standard, and covered by the claimed protections.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>A team may try to treat a weak path as canonical when convenient and as "just optional" when criticized. The classification must be stable and public.</p>
+<h4>Trust-minimized</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Trust-minimized does not mean magical or risk-free. It means bounded, visible, rule-based trust assumptions that do not depend on a specific party's discretion.</p>
+<p><strong>Who evaluates "honestly"</strong></p>
+<p>No single actor gets to define this unilaterally. Honest evaluation should be based on:</p>
+<ul>
+<li>published threat model</li>
+<li>available alternatives</li>
+<li>disclosed tradeoffs</li>
+<li>later companion standards when they exist</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Calling something trust-minimized because it uses signatures or smart contracts is not enough. The real question is whether users still depend on specific actors' judgment or favor.</p>
+<h4>Strongest available security model</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>This is not a license for self-serving marketing. It is a discipline of public justification.</p>
+<p>A credible claim should be able to answer:</p>
+<ul>
+<li>What stronger alternative was considered.</li>
+<li>Why it was rejected.</li>
+<li>What trust assumptions remain.</li>
+<li>Why those assumptions were unavoidable at the time.</li>
+</ul>
+<p>Until a later standard exists, the conservative reading applies.</p>
+<p><strong>Examples of insufficient justifications</strong></p>
+<p>The following are generally not enough on their own:</p>
+<ul>
+<li>"This was easier to ship."</li>
+<li>"This was what our team knew how to build."</li>
+<li>"No one else had shipped the stronger option yet."</li>
+<li>"We used a trusted multisig because coordination was simpler."</li>
+<li>"We call this strongest available because it is the strongest version we personally implemented."</li>
+</ul>
+<p><strong>Examples that may count as stronger justification</strong></p>
+<ul>
+<li>A published explanation of why a stronger design was technically infeasible at launch.</li>
+<li>A clear statement of what stronger model was considered and what concrete dependency blocked it.</li>
+<li>Honest disclosure that the current design is transitional rather than ideal.</li>
+</ul>
+<h4>Trusted path</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A trusted path depends on trust in specific actors, even if it uses good software or cryptography around that trust.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>A company-controlled redemption path.</li>
+<li>A bridge where a signer council can halt or selectively approve movement.</li>
+</ul>
+<h4>Contractual path</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A contractual path depends on law, terms of service, business process, or signed agreements rather than protocol-enforced outcome.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Redemption guaranteed by legal contract only.</li>
+<li>A business-operated withdrawal path governed by customer account terms.</li>
+</ul>
+<h4>Non-discretionary</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Non-discretionary means rule-based operation. It does not mean every human role disappears. It means rights and outcomes do not depend on case-by-case favoritism or politics.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>deterministic queues</li>
+<li>published timeout rules</li>
+<li>fixed challenge processes</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>manual review boards</li>
+<li>emergency committee approval</li>
+<li>selective compliance judgments</li>
+</ul>
+<h4>Downward exit</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Downward exit is movement toward a harder, more sovereign layer. It is not merely "moving somewhere else."</p>
+<h4>Normal downward movement</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Normal downward movement means ordinary use of a standard exit path under standard conditions, not a one-off rescue by operator grace.</p>
+<h4>Functional exit blocking vs structural exit blocking</h4>
+<p><strong>Functional exit blocking examples</strong></p>
+<ul>
+<li>Exit is "allowed" but only through KYC intermediaries.</li>
+<li>Fees make ordinary exit economically impossible.</li>
+<li>Delay is so extreme that exit is practically unusable.</li>
+<li>Operators refuse to route specific users.</li>
+</ul>
+<p><strong>Legitimate operational limits</strong></p>
+<ul>
+<li>Congestion with uniform published rules.</li>
+<li>Fee pressure that is neutral and not strategically exclusionary.</li>
+<li>Timeouts required by known challenge windows.</li>
+<li>Invalid or malformed transactions being rejected.</li>
+</ul>
+<p><strong>When does fee-based difficulty become exit interference</strong></p>
+<p>When the system is intentionally structured or operated so that ordinary users cannot realistically exercise exit, especially if insiders or institutions retain easier access.</p>
+<h4>Exit interference</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Exit interference includes more than formal prohibition. Delay, fees, dependency, or operator favoritism can all count if they materially impair ordinary movement.</p>
+<h4>Plain transferability</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Plain transferability protects the idea that money should be movable without mandatory policy wrappers.</p>
+<p><strong>Examples inside the definition:</strong></p>
+<ul>
+<li>sending a Layer 2 balance directly to another user</li>
+<li>receiving a Layer 3 base utility balance without forced contract mediation</li>
+</ul>
+<p><strong>Examples outside the definition:</strong></p>
+<ul>
+<li>a transfer that can only occur through a mandatory permission contract</li>
+<li>a balance that cannot move unless identity data is provided</li>
+</ul>
+<h4>Voluntary encumbrance</h4>
+<p><strong>Edge case: time-locked contracts</strong></p>
+<p>A time-locked contract is a voluntary encumbrance if:</p>
+<ul>
+<li>the holder explicitly opted in</li>
+<li>the terms were visible</li>
+<li>the lock is part of a known contract condition</li>
+</ul>
+<p>It becomes a structural problem if:</p>
+<ul>
+<li>users are forced into such contracts to use ordinary money functions</li>
+<li>the lock is hidden or unavoidable</li>
+<li>the lock cannot unwind into plain transferability on known terms</li>
+</ul>
+<h4>Bridge</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A bridge is defined by function, not branding or implementation style. If a mechanism moves value across systems or trust boundaries by locking, wrapping, custodian release, message-mediated release, or equivalent logic, it is a bridge.</p>
+<p><strong>When does a bridge become a component with constitutional duties</strong></p>
+<p>A bridge becomes a constitutional component when its failure, capture, or discretion can materially affect:</p>
+<ul>
+<li>reserve truth</li>
+<li>movement between systems</li>
+<li>normal downward exit</li>
+<li>user asset classification</li>
+<li>practical access to Bitcoin-denominated balances</li>
+</ul>
+<p>A bridge that merely observes or reports is not usually a constitutional component. A bridge that holds, locks, wraps, releases, or intermediates value usually is.</p>
+<p><strong>Is a smart contract automatically a bridge</strong></p>
+<p>Not automatically. A smart contract is a bridge when it performs bridge behavior, such as:</p>
+<ul>
+<li>locking funds in one system and causing release in another</li>
+<li>issuing wrapped balances against locked assets</li>
+<li>coordinating cross-system redemption or claims</li>
+</ul>
+<p>A contract that only automates internal L3 behavior is not a bridge merely because it is a contract.</p>
+<p><strong>Does a bridge between two systems inside the same broader constitutional stack still count</strong></p>
+<p>Yes, if it crosses a distinct trust boundary, movement boundary, or asset-class boundary. The fact that two systems are within the same broad stack does not erase bridge risk.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Teams may try to say "this is not really a bridge, it is just internal routing." If the mechanism introduces bridge-like custody, wrapping, release logic, or trust assumptions, it should be evaluated as a bridge.</p>
+<h3>4. Governance and Change</h3>
+<h4>Constitutional genesis</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Constitutional genesis is fixed to stop timeline games. It is not a marketing date. It is the earliest durable public publication date.</p>
+<h4>Activation</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Activation is about real exposure, not labels.</p>
+<p><strong>Examples of activation:</strong></p>
+<ul>
+<li>real users deposit value</li>
+<li>real users rely on the component for transfer</li>
+<li>funds are at risk in production</li>
+</ul>
+<p><strong>Examples that may not count:</strong></p>
+<ul>
+<li>closed internal testing with no user reliance</li>
+<li>public testnets with no meaningful production value</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>"Beta" does not save a system from activation if real users are already depending on it.</p>
+<h4>Constitutional amendment vs protocol-level change</h4>
+<p>A constitutional amendment changes:</p>
+<ul>
+<li>the text</li>
+<li>the meaning</li>
+<li>or the operative effect of constitutional protections</li>
+</ul>
+<p>A protocol-level change changes:</p>
+<ul>
+<li>implementation behavior</li>
+<li>parameters</li>
+<li>routing</li>
+<li>features</li>
+<li>operational rules</li>
+</ul>
+<p>A technical change becomes constitutional if it materially changes:</p>
+<ul>
+<li>exit rights</li>
+<li>reserve truth</li>
+<li>custody safety</li>
+<li>governance reach</li>
+<li>the meaning of core protected terms</li>
+</ul>
+<h4>Governance authority</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Governance authority is broader than token voting. Any mechanism that can make binding protocol decisions is governance authority, even if it uses:</p>
+<ul>
+<li>multisigs</li>
+<li>councils</li>
+<li>operator committees</li>
+<li>foundations</li>
+<li>delegated roles</li>
+</ul>
+<h4>Protocol-level decision and protocol-level change</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>These terms exist so governance cannot hide behind wording like "operational adjustment" or "technical housekeeping" when the change really affects users.</p>
+<h4>Final implementation</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Final implementation means the approved change is actually deployed and active, not merely coded, proposed, or announced.</p>
+<h4>Governance sunset</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Governance sunset is meant to be real, not ceremonial. After sunset, governance cannot continue by renaming itself, wrapping itself, or acting through new intermediaries.</p>
+<p><strong>Examples of violation:</strong></p>
+<ul>
+<li>replacing token governance with a council that keeps the same practical authority</li>
+<li>creating an "advisory" vote that all operators are expected to obey</li>
+<li>introducing a new governance token after sunset within the same claimed compliant system</li>
+</ul>
+<h4>Constitutional continuity</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Constitutional continuity means no material break in compliance since public adoption of the constitution by that system.</p>
+<p>A short-lived issue does not automatically preserve continuity simply because it was brief. What matters is:</p>
+<ul>
+<li>whether the breach was material</li>
+<li>whether user rights were impaired</li>
+<li>whether system truth was broken</li>
+<li>whether continuity-breaking categories in the constitution were triggered</li>
+</ul>
+<p>A system may be currently compliant but still lack uninterrupted constitutional continuity.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Teams may argue that a breach was "too short to count." Duration matters, but materiality matters more.</p>
+<h4>Successor system</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A successor system is not defined by branding alone. It is defined by meaningful discontinuity in trust model, rights structure, migration consent, or core operating assumptions.</p>
+<p><strong>When does an upgrade become a successor system</strong></p>
+<p>A change increasingly looks like a successor system when it:</p>
+<ul>
+<li>changes the trust model materially</li>
+<li>changes the constitutional rights users rely on</li>
+<li>changes the meaning of core asset classes</li>
+<li>changes governance authority or sunset structure</li>
+<li>requires users to accept a new dependency or custody model</li>
+<li>migrates balances or assumptions in a way that goes beyond normal protocol evolution</li>
+</ul>
+<p>A large technical upgrade is not automatically a successor. But when users are effectively being asked to trust a different constitutional system, successor logic should apply.</p>
+<h4>Pre-declared authority</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Pre-declared authority means authority that was:</p>
+<ul>
+<li>published publicly</li>
+<li>durably recorded</li>
+<li>sufficiently specific to identify the governed subject matter</li>
+<li>published before the constitutional amendment window closed</li>
+</ul>
+<p>Vague statements like "governance may act as needed for protocol health" do not count.</p>
+<p><strong>Examples of governance scope expansion disguised as technical change</strong></p>
+<ul>
+<li>adding new emergency powers while calling it "resilience tooling"</li>
+<li>moving a reserve function under governance by labeling it "parameter tuning"</li>
+<li>giving governance authority over new domains through a generic upgrade module</li>
+</ul>
+<h4>Parallel implementation right</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>The right to build alternative implementations is meaningless if incumbents can suppress it through legal mechanisms while claiming the protocol is open. Article XXIII.7 closes this gap.</p>
+<p><strong>What counts as legal blocking:</strong></p>
+<ul>
+<li>Patent threats or litigation against interoperable implementations.</li>
+<li>API licensing that requires permission, payment, or identity disclosure to access constitutional functions.</li>
+<li>Trademark enforcement against accurate, non-deceptive compatibility claims (e.g., "compatible with X protocol").</li>
+<li>Certification or compliance programs that gate access to core protocol features.</li>
+<li>Terms of service that prohibit reverse engineering, interoperability, or independent tooling.</li>
+<li>Legal threats designed to make independent implementation economically unviable even if technically permitted.</li>
+</ul>
+<p><strong>What does NOT violate this right:</strong></p>
+<ul>
+<li>Enforcing trademark against actually deceptive branding (e.g., claiming to BE the official implementation when you are not).</li>
+<li>Protecting trade secrets that are not necessary for constitutional function implementation.</li>
+<li>Requiring accurate disclosure of non-affiliation.</li>
+<li>Standard open-source license compliance (e.g., attribution, copyleft obligations).</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>The test is whether the legal structure makes truthful independent implementation practically possible for an independent party with ordinary legal resources. A system that says "anyone can implement" while maintaining a patent portfolio aimed at implementers, or requiring expensive licensing for API access, fails this test.</p>
+<p><strong>Relationship to protocol openness:</strong></p>
+<p>Protocol-level openness (published specs, open code) is necessary but not sufficient. Legal openness is also required. A system with open code but closed legal posture is not compliant with Article XXIII.</p>
+<h3>5. Custody and Control</h3>
+<h4>Custody structure</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Custody structure is not just key count. It includes who can coordinate, who can compel, who can replace signers, and what real-world chokepoints exist.</p>
+<h4>Unilateral control</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Unilateral control includes practical unilateral control, not just formal single-key control. One person controlling several nominally different signers may still create unilateral control in substance.</p>
+<h4>Signer</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A signer is any actor with real reserve-moving authority, even if the technical role is called guardian, operator, validator, committee member, or shard holder.</p>
+<h4>Independent control domain</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Independence must be real, not cosmetic. Different shells under one real controller are not independent domains.</p>
+<h4>Custody concentration</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Custody concentration exists when reserve control is too dependent on too few real-world control points.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Many signers hosted by one company.</li>
+<li>Signers spread across legal entities but controlled by one parent group.</li>
+<li>Signers in several countries but all vulnerable to one practical coordination channel.</li>
+<li>A threshold that looks large but can still be satisfied by one hidden clique.</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Apparent signer count is not enough. Real independence matters more than headline diversity.</p>
+<h4>Provisional custody</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Provisional custody is a transitional state, not a rhetorical excuse. It must be:</p>
+<ul>
+<li>publicly disclosed</li>
+<li>bounded</li>
+<li>capped</li>
+<li>and directed toward constitutional maturity</li>
+</ul>
+<p>A mere statement of intent is not enough.</p>
+<p><strong>What provisional custody should include</strong></p>
+<p>At minimum:</p>
+<ul>
+<li>a public explanation of why full compliant custody is not yet in place</li>
+<li>a bounded timeline or declared review/expiry point</li>
+<li>a cap on reserve size while provisional custody remains</li>
+<li>clear statement that the custody model is not fully compliant</li>
+<li>a path or criteria for maturation</li>
+</ul>
+<p><strong>What provisional custody must not become</strong></p>
+<ul>
+<li>a permanent excuse</li>
+<li>a vague "we are still growing" status</li>
+<li>a marketing label used to imply near-compliance without real progress</li>
+</ul>
+<h3>6. Breach and Compliance</h3>
+<h4>Compliant and non-compliant</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Compliance is about actual behavior, not branding, affiliation, aspiration, or code comments.</p>
+<h4>Restored compliance</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>Restored compliance is not amnesia.</p>
+<p><strong>How much disclosure is enough</strong></p>
+<p>At minimum:</p>
+<ul>
+<li>what happened</li>
+<li>when it happened</li>
+<li>what users were affected</li>
+<li>what was fixed</li>
+<li>whether continuity was broken</li>
+<li>whether the system is currently compliant but historically breached</li>
+</ul>
+<p>If that is not disclosed, "restored compliance" is not honest.</p>
+<p><strong>Timing of restored compliance claims</strong></p>
+<p>A system should not claim restored compliance merely because it has published a patch. At minimum:</p>
+<ul>
+<li>the breach must be disclosed</li>
+<li>the remediation must actually be active</li>
+<li>users must have had a meaningful opportunity to understand the breach and, where relevant, exit after disclosure</li>
+</ul>
+<p>This document does not set a fixed universal number of days. But immediate next-day "restored compliance" claims after a material breach should generally be viewed skeptically.</p>
+<h4>Material breach</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A material breach is one that strikes the constitution where it actually protects users.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>freezing exit</li>
+<li>hiding reserve encumbrance</li>
+<li>disguising credit as money</li>
+<li>using governance after sunset</li>
+<li>silent migration to a successor system</li>
+</ul>
+<h4>Materially weakens</h4>
+<p><strong>Threshold guidance</strong></p>
+<p>A change materially weakens a protection if it reduces the real-world ability of ordinary users to rely on that protection, even if the text remains untouched.</p>
+<p>This includes weakening by:</p>
+<ul>
+<li>ambiguity</li>
+<li>cumulative drift</li>
+<li>concentration</li>
+<li>stale proof</li>
+<li>fee pressure</li>
+<li>discretionary operation</li>
+<li>hidden dependency</li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><strong>Ambiguity:</strong> redefining "ordinary transaction" so politically disfavored transactions are no longer treated as ordinary.</li>
+<li><strong>Cumulative drift:</strong> several small fee increases, queue changes, and operator exceptions that together make ordinary exit unrealistic.</li>
+<li><strong>Concentration:</strong> shifting more and more choke functions to one company while keeping protocol rules unchanged.</li>
+<li><strong>Stale proof:</strong> continuing to market balances as backed while proof cadence is missed.</li>
+<li><strong>Fee pressure:</strong> structuring costs so only large users can exit normally.</li>
+<li><strong>Hidden dependency:</strong> making all practical exit rely on a legally controlled intermediary.</li>
+</ul>
+<h4>Misrepresentation</h4>
+<p><strong>Examples in naming, branding, and marketing</strong></p>
+<ul>
+<li>calling a BTC IOU "Bitcoin"</li>
+<li>calling stale proof "verified backing"</li>
+<li>calling a discretionary bridge "trust-minimized"</li>
+<li>using constitutional branding while materially violating the articles</li>
+</ul>
+<h3>7. Transaction and Inclusion Terms</h3>
+<h4>Ordinary transaction</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>An ordinary transaction is a standard, technically valid, publicly supported request to move value or execute a supported operation through the normal rules of the system. It is defined by rule-conforming behavior and use of published pathways, not by the identity, intent, politics, reputation, or social standing of the sender.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>A correctly formatted transfer request using supported transaction types.</li>
+<li>A redemption request that follows published rules.</li>
+<li>A Layer 2 payment using documented parameters.</li>
+<li>An exit transaction within published size, fee, and formatting bounds.</li>
+<li>Any transaction that would be processed the same way if the sender were anonymous and unknown.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A malformed or technically invalid request.</li>
+<li>A request that violates explicit published protocol or policy limits.</li>
+<li>A request that depends on unsupported behavior, exceptional privileges, or unpublished operator discretion.</li>
+<li>A request that triggers a publicly predeclared exploit-mitigation or emergency invalidity rule that existed before the request was submitted.</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>The key test is whether the transaction would be treated the same way if the sender's identity, politics, and relationships were unknown. Systems may not redefine "ordinary" to exclude transactions based on:</p>
+<ul>
+<li>sender identity</li>
+<li>political context</li>
+<li>regulatory pressure on specific users</li>
+<li>transaction destination</li>
+<li>perceived purpose of funds</li>
+</ul>
+<p>An ordinary transaction remains ordinary regardless of who sends it or why, so long as it uses a supported path under the published rules.</p>
+<p><strong>Usage guidance:</strong></p>
+<p>When the constitution protects ordinary transactions from censorship, it means technically valid requests using supported public paths. A system cannot claim compliance while selectively refusing transactions that are rule-conforming but politically inconvenient.</p>
+<h4>Valid transaction</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>For constitutional purposes, a valid transaction is one that satisfies all published, neutral, identity-blind technical and policy requirements for inclusion under the relevant path. Validity is not merely whatever an operator says it is, and it is not limited to raw consensus validity if the system also relies on published inclusion rules.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>A transaction with correct cryptographic signatures.</li>
+<li>A transaction meeting the published minimum fee or fee rule, where applicable.</li>
+<li>A transaction referencing real, usable state or inputs, where applicable.</li>
+<li>A transaction within published size, complexity, and format limits.</li>
+<li>A transaction that passes the same automated validation checks applied to comparable transactions.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A transaction with invalid or missing signatures.</li>
+<li>A transaction referencing unusable or nonexistent state or inputs.</li>
+<li>A transaction that violates hard protocol rules.</li>
+<li>A transaction that fails published neutral validation or anti-spam rules.</li>
+<li>A transaction rejected under a rule that is unpublished, selectively applied, or identity-dependent.</li>
+</ul>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Validity is objective and rule-bound. A system may not declare a transaction invalid because:</p>
+<ul>
+<li>it dislikes the sender</li>
+<li>it faces pressure regarding the recipient</li>
+<li>external parties flagged the transaction</li>
+<li>the amount or pattern is politically inconvenient</li>
+<li>an operator wants to suppress the use case</li>
+</ul>
+<p>If a transaction passes the same published checks that other comparable transactions pass, it is valid. Selective invalidity claims based on identity, politics, or pressure are censorship, not validation.</p>
+<p><strong>Relationship to ordinary transaction:</strong></p>
+<p>Most ordinary transactions are valid transactions submitted through normal supported paths. Some technically valid edge-case transactions may be unusual without losing constitutional protection. The constitution's baseline test is whether valid public use remains available to ordinary users without special privilege.</p>
+<h4>Practical path to inclusion</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>A practical path to inclusion is a route by which an ordinary user can get a valid transaction processed within reasonable time and cost bounds, using documented tools and public procedures, without needing special access, insider relationships, exceptional capital, or extraordinary technical measures.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>A public mempool or submission path that accepts transactions from any user under published rules.</li>
+<li>A standard endpoint with documented, neutral acceptance criteria.</li>
+<li>A fee market where paying the generally applicable rate provides inclusion without identity checks.</li>
+<li>A queue system that processes requests in published order without favoritism.</li>
+<li>More than one route to inclusion, where at least one remains practical to ordinary users.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A path that requires KYC or identity verification for basic inclusion.</li>
+<li>A path that requires a relationship with specific operators.</li>
+<li>A path where insiders or large players have systematically faster or cheaper access to the same constitutional function.</li>
+<li>A path that is technically open but practically inaccessible due to extreme fees, extreme delays, hidden requirements, or undocumented steps.</li>
+<li>A path that exists on paper but is not actually operational for ordinary users.</li>
+</ul>
+<p><strong>Threshold guidance:</strong></p>
+<p>"Practical" means achievable by an ordinary user with ordinary resources, ordinary technical knowledge, and the documented public tools of the system. The test is not whether inclusion is theoretically possible. The test is whether a typical user can actually achieve it without extraordinary effort or privilege.</p>
+<p>Factors that may make a path impractical include:</p>
+<ul>
+<li>materially elevated fees without neutral, generally applicable justification</li>
+<li>materially elevated delays relative to comparable transactions under comparable conditions</li>
+<li>requirements for specialized infrastructure, relationships, or insider knowledge</li>
+<li>undocumented queues, hidden approval layers, or informal gatekeeping</li>
+</ul>
+<p>Exact operational thresholds should be defined in a later operational standard. Until then, the conservative reading applies.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>A system may claim "anyone can submit transactions" while structuring the actual path so that only insiders, wealthy actors, or specialists can realistically use it. This is functional censorship even if formal censorship does not exist.</p>
+<p>The constitutional test is whether ordinary users actually have practical access, not whether documentation claims they do.</p>
+<h4>Ordinary user</h4>
+<p><strong>Interpretive note:</strong></p>
+<p>An ordinary user is a person or entity using the system through the public, documented, non-privileged path, with ordinary resources, ordinary technical skill, and no special insider access. This term sets the minimum accessibility floor for constitutional protection. It does not reduce protections for users who are more sophisticated, wealthier, or more technically capable.</p>
+<p><strong>Inside the definition:</strong></p>
+<ul>
+<li>A user with standard technical literacy who can use a wallet and follow documented procedures.</li>
+<li>A user with typical financial resources who does not require institutional-scale capital to participate.</li>
+<li>A user without special relationships to operators, developers, governance participants, or service providers.</li>
+<li>A user relying on published interfaces and documented processes.</li>
+<li>A user who expects the system to work as publicly represented.</li>
+</ul>
+<p><strong>Outside the definition:</strong></p>
+<ul>
+<li>A user relying on private, undocumented, privileged pathways unavailable to the public.</li>
+<li>A user receiving preferential treatment through operator relationships, legal arrangements, or insider coordination.</li>
+<li>A user whose success depends on exceptional infrastructure or informal access that the system does not publicly promise to ordinary users.</li>
+</ul>
+<p><strong>Important clarification:</strong></p>
+<p>A sophisticated user, wealthy user, expert, institution, or developer is not excluded from constitutional protection merely because they are sophisticated. The question is whether the right being evaluated is available through the ordinary public path, not whether some protected user is unusually capable.</p>
+<p><strong>Usage guidance:</strong></p>
+<p>When the constitution refers to rights that must be available to users, the ordinary-user standard is the baseline test. A system cannot claim compliance by saying:</p>
+<ul>
+<li>sophisticated users can still exit</li>
+<li>large holders can still transact</li>
+<li>experts can still recover funds</li>
+</ul>
+<p>If ordinary users cannot do the same through the public path, the system is constitutionally weak.</p>
+<p><strong>Anti-gaming note:</strong></p>
+<p>Systems may try to define their real user base narrowly to exclude the users they find inconvenient. The constitutional test is this: would a reasonable person, seeing the system's public positioning and documented flows, expect to be able to use it through the normal path? If yes, that person counts as an ordinary user for constitutional evaluation.</p>
+<p><strong>Relationship to other terms:</strong></p>
+<ul>
+<li>Ordinary users submit ordinary transactions.</li>
+<li>Ordinary users need practical paths to inclusion.</li>
+<li>Ordinary users must be able to exercise exit rights without extraordinary measures.</li>
+<li>The constitution's protections are not limited to ordinary users, but ordinary-user accessibility is the minimum test for whether those protections are real.</li>
+</ul>
+<h4>Constitutional breach from transaction suppression</h4>
+<p>If valid ordinary transactions are suppressed by coercion and no practical neutral path to inclusion exists, the system is in constitutional breach — except where the restriction arises from a voluntary, explicit, user-chosen encumbrance whose terms were known in advance and are being enforced as written.</p>
+<h3>Final Interpretive Principle</h3>
+<p>When a disputed interpretation arises, the preferred reading is the one that best prevents:</p>
+<ul>
+<li>hidden credit becoming money</li>
+<li>stale proof becoming acceptable truth</li>
+<li>temporary governance becoming permanent control</li>
+<li>dependence becoming captivity</li>
+<li>centralization becoming the only door</li>
+<li>constitutional language becoming branding theater</li>
+</ul>
+<p>The constitution exists to keep systems honest under pressure, not merely elegant on paper.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="operational-independence-standard">
+  <input type="checkbox" id="comp-3" class="accordion-toggle">
+  <label for="comp-3" class="accordion-label">Operational Independence and Concentration Standard<br><span class="companion-desc">Measurable thresholds for when operational concentration becomes constitutionally unacceptable.</span></label>
+  <div class="accordion-body">
+    <div class="accordion-inner">
+      <p><span class="status-badge draft">Binding · Draft</span></p>
+      <h3>Governing Principles</h3>
+<ol>
+<li>The constitution protects users from practical gatekeeping, not merely from formal rule violations.</li>
+<li>Concentration is evaluated by <strong>control over choke functions</strong>, not by raw node counts alone.</li>
+<li>Thresholds must scale with real operational participation and real user dependence.</li>
+<li>A small network and a large network are not judged by the same raw numbers, but both remain bound by minimum floor expectations.</li>
+<li>"We are still early" is never a permanent excuse for dangerous concentration.</li>
+<li>User preference for one provider in an otherwise genuinely open market is not by itself a constitutional breach. Structural chokepoints, incentive lock-in, or dependency traps are.</li>
+<li>Where uncertainty exists, measurements and classifications shall default to the more conservative reading that best protects exit, inclusion, reserve truth, and user freedom.</li>
+</ol>
+<h3>Section 1. Sliding-Scale Anti-Concentration Framework</h3>
+<h4>1.1 Measurement window</h4>
+<p>Unless otherwise specified, concentration shall be measured over a trailing <strong>90-day</strong> window.</p>
+<p>If the system or relevant component is younger than 90 days, measurement uses the full lifetime of the live system to date.</p>
+<h4>1.2 Independent control domains</h4>
+<p>For each choke function, the system must identify the set of <strong>independent control domains</strong> actively participating in that function during the measurement window.</p>
+<p>Let:</p>
+<ul>
+<li><strong>N</strong> = number of independent control domains actively performing the choke function during the measurement window.</li>
+</ul>
+<p>For this standard, N is used only to compute dynamic thresholds. It is not a constitutional validator-count requirement.</p>
+<h4>1.3 Dynamic threshold functions</h4>
+<p>For any choke function with active participation count <strong>N</strong>, the following thresholds apply.</p>
+<p><strong>Single-cluster thresholds</strong></p>
+<p>Used for:</p>
+<ul>
+<li>largest operator share</li>
+<li>largest jurisdiction share</li>
+<li>largest infrastructure-provider share</li>
+<li>largest client-implementation share</li>
+<li>largest exit-dependency share</li>
+</ul>
+<p><strong>Green threshold:</strong></p>
+<ul>
+<li><code>SG(N) = max(0.15, min(0.50, 1.25 / N))</code></li>
+</ul>
+<p><strong>Yellow threshold:</strong></p>
+<ul>
+<li><code>SY(N) = max(0.25, min(0.67, 1.75 / N))</code></li>
+</ul>
+<p><strong>Red threshold:</strong></p>
+<ul>
+<li><code>SR(N) = max(0.35, min(0.80, 2.25 / N))</code></li>
+</ul>
+<p>If a measured single-cluster share exceeds <strong>SR(N)</strong>, that metric is in the <strong>Critical</strong> zone.</p>
+<p><strong>Top-three concentration thresholds</strong></p>
+<p>Used for:</p>
+<ul>
+<li>top-three operator share</li>
+<li>top-three coordinated-cluster share</li>
+</ul>
+<p><strong>Green threshold:</strong></p>
+<ul>
+<li><code>TG(N) = max(0.45, min(0.90, 3.25 / N))</code></li>
+</ul>
+<p><strong>Yellow threshold:</strong></p>
+<ul>
+<li><code>TY(N) = max(0.60, min(0.95, 4.25 / N))</code></li>
+</ul>
+<p><strong>Red threshold:</strong></p>
+<ul>
+<li><code>TR(N) = max(0.75, min(0.98, 5.25 / N))</code></li>
+</ul>
+<p>If a measured top-three share exceeds <strong>TR(N)</strong>, that metric is in the <strong>Critical</strong> zone.</p>
+<h4>1.3A Design intent of threshold constants</h4>
+<p>The constants used in the threshold functions are not arbitrary. They are chosen to create three properties at once:</p>
+<ol>
+<li>A small network is not judged by the same raw counts as a larger network.</li>
+<li>Early networks are not permanently excused from meaningful distribution.</li>
+<li>As the number of active independent control domains grows, acceptable concentration tightens rather than remaining flat.</li>
+</ol>
+<p>The constants are calibrated so that, for small and mid-sized live systems, Green status requires visibly meaningful distribution across independent domains, Yellow status warns before concentration becomes constitutionally dangerous, and Red status captures concentration severe enough to threaten ordinary operation or exit.</p>
+<p>These functions are binding unless amended through the constitutionally valid process. Disagreement with the constants is not by itself grounds to suspend their application.</p>
+<h4>1.4 Floor expectation</h4>
+<p>Regardless of formula output:</p>
+<ol>
+<li>A core choke function with only <strong>one</strong> active independent control domain cannot be Green.</li>
+<li>A core choke function with only <strong>one</strong> active independent control domain is <strong>Red at minimum</strong>, and may be <strong>Critical</strong> if it controls ordinary operation, reserve custody, or normal downward exit.</li>
+<li>A core choke function with fewer than <strong>three</strong> active independent control domains cannot be Green unless the system is in a declared provisional phase with public caps, deadlines, and decentralization milestones.</li>
+</ol>
+<h4>1.5 No permanent bootstrap excuse</h4>
+<p>A system may begin above its long-term concentration target, but:</p>
+<ul>
+<li>that concentration must be publicly disclosed</li>
+<li>its reduction path must be published</li>
+<li>it must have deadlines</li>
+<li>failure to reduce concentration on that path has constitutional consequences</li>
+</ul>
+<h3>Section 2. Choke Function Analysis</h3>
+<h4>2.1 Choke-function principle</h4>
+<p>A <strong>choke function</strong> is any operational function whose failure, capture, concentration, or coordination can materially affect:</p>
+<ul>
+<li>transaction inclusion</li>
+<li>normal downward exit</li>
+<li>reserve truth</li>
+<li>reserve custody</li>
+<li>proof publication</li>
+<li>settlement publication</li>
+<li>bridge release or redemption</li>
+<li>protocol mutability</li>
+<li>practical user access to constitutional rights</li>
+</ul>
+<h4>2.2 Core choke functions</h4>
+<p>The following are core choke functions:</p>
+<ol>
+<li>Transaction ordering or sequencing.</li>
+<li>Block production, validation, or equivalent acceptance of state updates where those functions affect ordinary inclusion.</li>
+<li>Canonical bridge operation or release where a canonical path depends on it.</li>
+<li>Normal downward exit processing.</li>
+<li>Reserve custody for direct Bitcoin claims or Layer 2 transactional balances.</li>
+<li>Proof generation, proof publication, or authoritative reserve-state publication for reserve-backed claims.</li>
+<li>Upgrade deployment while protocol mutability still exists.</li>
+</ol>
+<h4>2.3 Auxiliary choke functions</h4>
+<p>The following may be auxiliary choke functions, but become core if practical user dependence is high:</p>
+<ol>
+<li>Fee setting, where operator-controlled.</li>
+<li>Routing and mempool access.</li>
+<li>Settlement publication if ordinary users materially depend on it.</li>
+<li>Withdrawal batching or release services.</li>
+<li>Shared relayer systems.</li>
+<li>Common attestation pipelines.</li>
+</ol>
+<p>An auxiliary choke function becomes a <strong>core choke function</strong> when either of the following is true:</p>
+<ol>
+<li>More than <strong>50 percent</strong> of ordinary users depend on it for normal operation or normal downward exit.</li>
+<li>Its failure, capture, or concentration would delay normal downward exit beyond the constitutional maximum or materially impair practical path to inclusion.</li>
+</ol>
+<p>Once an auxiliary choke function becomes core, it must be measured and zoned under the same rules as any other core choke function.</p>
+<h4>2.4 What matters more than node count</h4>
+<p>A system must not rely on raw node count as its primary concentration defense if practical control of choke functions remains concentrated elsewhere.</p>
+<h3>Section 3. Concentration Measurement</h3>
+<h4>3.1 Unit of measurement</h4>
+<p>Concentration must be measured by <strong>effective control</strong>, not merely by nominal participation.</p>
+<p>Effective control may include aggregation across:</p>
+<ul>
+<li>the same legal entity</li>
+<li>the same corporate family</li>
+<li>the same operator cartel</li>
+<li>the same funding controller</li>
+<li>the same infrastructure cluster</li>
+<li>the same jurisdictional capture domain</li>
+<li>the same code implementation if a common failure or exploit would disable all of them together</li>
+</ul>
+<h4>3.2 Required concentration measures</h4>
+<p>For each core choke function, the system must publish, at minimum:</p>
+<ol>
+<li><strong>Largest operator share</strong></li>
+</ol>
+<p>The share of the choke function controlled by the single largest independent control domain.</p>
+<ol>
+<li><strong>Top-three operator share</strong></li>
+</ol>
+<p>The cumulative share controlled by the three largest independent control domains.</p>
+<ol>
+<li><strong>Largest jurisdiction share</strong></li>
+</ol>
+<p>The share capturable by one legal or regulatory jurisdiction.</p>
+<ol>
+<li><strong>Largest infrastructure-provider share</strong></li>
+</ol>
+<p>The share dependent on the same cloud provider, datacenter family, or equivalent infrastructure cluster.</p>
+<ol>
+<li><strong>Largest client-implementation share</strong></li>
+</ol>
+<p>The share dependent on the same codebase or client implementation for that choke function.</p>
+<ol>
+<li><strong>Largest exit-dependency share</strong></li>
+</ol>
+<p>The share of users whose normal downward exit depends on the same operational cluster.</p>
+<h4>3.3 Correlated failure domains</h4>
+<p>Operators that would likely fail together under the same stress event shall be measured together where constitutionally relevant.</p>
+<p>Examples include:</p>
+<ul>
+<li>same corporate parent</li>
+<li>same major cloud dependency</li>
+<li>same jurisdictional seizure path</li>
+<li>same client monoculture</li>
+<li>same signer-hosting provider</li>
+</ul>
+<h4>3.4 Reserve custody overlap</h4>
+<p>Where reserve custody exists, this standard measures operational concentration of custody clusters. Exact signer requirements remain governed by <a href="companions.html#reserve-custody-key-management-standard">Reserve Custody and Key Management Standard</a>.</p>
+<h4>3.5 Materiality floor</h4>
+<p>For this standard:</p>
+<ol>
+<li>A change is presumptively <strong>material</strong> if a measured concentration, delay, dependency, or resilience metric worsens by more than <strong>5 percent relative deterioration</strong> within a single reporting period, unless a publicly documented and constitutionally neutral justification is provided.</li>
+<li>A comparison is <strong>materially comparable</strong> only where the transactions, users, or operational conditions being compared are similar in type, fee conditions, network conditions, and constitutional function.</li>
+<li>Comparisons that mix unlike conditions in order to dilute concentration, delay, or censorship findings are invalid.</li>
+</ol>
+<h4>3.6 Anti-gaming measurement rule</h4>
+<p>Trailing-window averages do not excuse short periods of constitutionally dangerous concentration.</p>
+<p>If any concentration metric exceeds the applicable <strong>Red</strong> threshold for more than <strong>7 consecutive days</strong> within the reporting window, that metric shall be treated as Red for the reporting period unless the system proves that the excursion was caused solely by a neutral and temporary failure outside operator control.</p>
+<p>If any concentration metric exceeds the applicable <strong>Critical</strong> threshold for more than <strong>72 consecutive hours</strong>, that metric shall be treated as Critical for the reporting period unless the system proves that the excursion was caused solely by a neutral and temporary failure outside operator control.</p>
+<p>Temporary cosmetic expansion of nominal participants that does not create durable independent control domains does not reduce concentration for purposes of this standard.</p>
+<h3>Section 4. Censorship Resistance Thresholds</h3>
+<h4>4.1 Practical path to inclusion</h4>
+<p>A practical path to inclusion exists only if an ordinary user can submit a valid ordinary transaction through a public, documented, and non-discretionary path without:</p>
+<ul>
+<li>special relationships</li>
+<li>identity-gated access</li>
+<li>insider-only routing</li>
+<li>extraordinary technical effort</li>
+<li>extraordinary fee burden</li>
+</ul>
+<h4>4.2 Acceptable delay</h4>
+<p>Under normal conditions, a valid ordinary transaction is considered within acceptable delay if it is included within:</p>
+<ul>
+<li>the greater of <strong>3 times</strong> the rolling median inclusion time for comparable transactions under comparable fee conditions, or</li>
+<li><strong>12 blocks</strong> where the transaction is part of normal downward movement</li>
+</ul>
+<p>This threshold may be refined by later review, but not weakened without public justification.</p>
+<h4>4.3 Sustained censorship</h4>
+<p>Sustained censorship is presumed where valid ordinary transactions, or a specific affected class of such transactions, are:</p>
+<ul>
+<li>delayed beyond <strong>2 times</strong> the acceptable-delay threshold for more than <strong>24 hours</strong>, or</li>
+<li>repeatedly subjected to materially worse inclusion than comparable transactions across <strong>three or more distinct 24-hour windows</strong> in a rolling <strong>30-day</strong> period, without neutral justification</li>
+</ul>
+<h4>4.4 No practical path to inclusion</h4>
+<p>A practical path to inclusion is presumed absent where:</p>
+<ol>
+<li>All public submission paths are identity-gated, relationship-gated, or practically inaccessible to ordinary users.</li>
+<li>Fees required for inclusion exceed materially comparable neutral market fees without publicly justified and generally applied reasons.</li>
+<li>The only paths require insider coordination or extraordinary infrastructure.</li>
+<li>A single operator or coordinated cluster can indefinitely refuse inclusion for valid ordinary transactions.</li>
+</ol>
+<h4>4.5 Neutral reasons that do not count as censorship</h4>
+<p>The following do not by themselves constitute censorship, provided they are published, identity-blind, and generally applied:</p>
+<ul>
+<li>malformed transaction rejection</li>
+<li>invalid state rejection</li>
+<li>minimum fee rules applied consistently</li>
+<li>temporary congestion management</li>
+<li>anti-spam rules applied neutrally</li>
+<li>contract terms that the user explicitly and voluntarily accepted</li>
+</ul>
+<h4>4.6 Economic coercion and incentive-based suppression</h4>
+<p>Where there is credible evidence that financial incentives, bribery, side payments, induced coordination, or other economic coercion are being used to systematically exclude, delay, or disadvantage a class of valid ordinary transactions, that pattern shall be evaluated as censorship under this standard.</p>
+<p>The standard does not distinguish between suppression by formal command and suppression by economic inducement.</p>
+<p>Such a pattern may qualify as sustained censorship even if no written rule prohibits inclusion.</p>
+<h3>Section 5. Directional Decentralization Measurement</h3>
+<h4>5.1 Progress, stagnation, regression</h4>
+<p>Directional decentralization is measured across reporting periods.</p>
+<p>A system is <strong>progressing</strong> if:</p>
+<ul>
+<li>at least three core concentration metrics improve over two consecutive reporting periods, and</li>
+<li>no core concentration metric materially worsens</li>
+</ul>
+<p>A system is <strong>stagnating</strong> if:</p>
+<ul>
+<li>concentration remains materially unchanged across two consecutive reporting periods, and</li>
+<li>network participation, user reliance, or value under operation has grown materially</li>
+</ul>
+<p>A system is <strong>regressing</strong> if:</p>
+<ul>
+<li>a core metric worsens by more than <strong>10 percent relative deterioration</strong> across a reporting period, or</li>
+<li>operator or governance decisions entrench existing chokepoints</li>
+</ul>
+<p>If a system crosses into a worse compliance zone under Section 7, the zone transition governs current compliance status immediately, regardless of whether the directional deterioration threshold in this section has been crossed.</p>
+<h4>5.2 Entrenching centralization</h4>
+<p>A system is presumed to be entrenching centralization if it:</p>
+<ul>
+<li>keeps a provisional structure open-ended</li>
+<li>preserves incumbent privilege in operator admission</li>
+<li>resists addition of independent control domains without public justification</li>
+<li>allows concentration to worsen as participation or value grows</li>
+<li>shifts more choke functions under the same actor set</li>
+</ul>
+<h4>5.3 Required reporting cadence</h4>
+<p>A system must publish concentration and decentralization reports at least every <strong>90 days</strong>, and additionally within <strong>7 days</strong> of entering a worse compliance zone.</p>
+<p>Such reports must be published in a public, durable, and reasonably discoverable location. Reports published only in obscure technical channels, private dashboards, or inaccessible API outputs do not satisfy this requirement.</p>
+<h3>Section 6. Phase-Based Expectations</h3>
+<h4>6.1 Principle</h4>
+<p>The sliding scale must not become a permanent excuse for dangerous concentration because the network is still small.</p>
+<h4>6.2 Provisional phase</h4>
+<p>A system may be treated as in a provisional decentralization phase only if all of the following are true:</p>
+<ol>
+<li>The concentration is publicly disclosed.</li>
+<li>The affected choke functions are named.</li>
+<li>The system publishes a public decentralization plan.</li>
+<li>The plan includes deadlines and measurable milestones.</li>
+<li>Reserve size or operational exposure is bounded where constitutionally relevant.</li>
+<li>The system does not present provisional operation as mature compliance.</li>
+</ol>
+<h4>6.3 Required decentralization plan</h4>
+<p>A constitutional decentralization plan must publish:</p>
+<ul>
+<li>the current concentration state</li>
+<li>the target state</li>
+<li>measurable milestones</li>
+<li>deadlines</li>
+<li>blocker explanations</li>
+<li>consequences if milestones are missed</li>
+</ul>
+<h4>6.4 No permanent early-phase excuse</h4>
+<p>No system may rely indefinitely on claims such as:</p>
+<ul>
+<li>"we are still early"</li>
+<li>"we are still decentralizing"</li>
+<li>"this is temporary"</li>
+</ul>
+<p>without measurable progress.</p>
+<p>Persistent failure to progress converts provisional concentration into a compliance problem.</p>
+<h4>6.5 Exit from provisional status</h4>
+<p>A system exits provisional decentralization status only when:</p>
+<ol>
+<li>it has met its published decentralization milestones</li>
+<li>it satisfies the applicable Green-zone requirements for all core choke functions</li>
+<li>it has remained outside provisional caps and exception logic for at least <strong>two consecutive reporting periods</strong></li>
+<li>no material concentration exception remains undisclosed or unresolved</li>
+</ol>
+<p>A system may not remain labeled provisional after these conditions are satisfied, nor may it claim mature compliance before they are satisfied.</p>
+<h3>Section 7. Compliance Zones</h3>
+<h4>7.1 Zone definitions</h4>
+<table>
+<thead><tr>
+<th>Zone</th>
+<th>Status</th>
+<th>Meaning</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Green</td>
+<td>Compliant</td>
+<td>Concentration within acceptable bounds for current network size and structure</td>
+</tr>
+<tr>
+<td>Yellow / Warning</td>
+<td>At risk</td>
+<td>Concentration approaching constitutional concern; corrective action required</td>
+</tr>
+<tr>
+<td>Red / Failure</td>
+<td>Non-compliant</td>
+<td>Concentration too high to call the system compliant</td>
+</tr>
+<tr>
+<td>Critical</td>
+<td>Continuity-threatening</td>
+<td>Concentration so severe it may break constitutional continuity</td>
+</tr>
+</tbody></table>
+<h4>7.2 Zone assignment</h4>
+<p>For each core choke function, assign a zone based on the worst applicable measured metric:</p>
+<ul>
+<li><strong>Green</strong> if all measured metrics are within Green thresholds</li>
+<li><strong>Yellow</strong> if any metric exceeds Green but none exceeds Yellow</li>
+<li><strong>Red</strong> if any metric exceeds Yellow but none exceeds Red</li>
+<li><strong>Critical</strong> if any metric exceeds Red</li>
+</ul>
+<p>The system-wide zone is the worst zone among its core choke functions, adjusted upward where cross-function dependence materially compounds risk.</p>
+<h4>7.3 Zone consequences</h4>
+<p><strong>Green</strong></p>
+<ul>
+<li>compliant with this standard</li>
+</ul>
+<p><strong>Yellow / Warning</strong></p>
+<ul>
+<li>mandatory public disclosure within <strong>7 days</strong></li>
+<li>corrective action plan within <strong>30 days</strong></li>
+<li>no claim that concentration is safely resolved</li>
+</ul>
+<p><strong>Red / Failure</strong></p>
+<ul>
+<li>current non-compliance under this standard</li>
+<li>presumptive material breach under <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a></li>
+<li>public disclosure within <strong>72 hours</strong></li>
+<li>corrective action plan within <strong>14 days</strong></li>
+</ul>
+<p><strong>Critical</strong></p>
+<ul>
+<li>presumptive continuity-breaking breach</li>
+<li>may trigger successor logic if sustained, concealed, or combined with other core breaches</li>
+<li>immediate disclosure required under the Breach and Restoration Standard</li>
+<li>in addition to immediate public disclosure, Critical zone status requires active notification to users through the system's primary user-facing interface within the same disclosure timeframe, where such an interface exists</li>
+</ul>
+<h4>7.4 Transition rules</h4>
+<p>A system enters a worse zone immediately upon crossing the threshold.</p>
+<p>A system returns to a better zone only after:</p>
+<ul>
+<li>two consecutive reporting periods at the better level, and</li>
+<li>public disclosure of the transition</li>
+</ul>
+<h4>7.5 User preference safeguard</h4>
+<p>A system is not in breach merely because many users prefer one provider, wallet, or interface, so long as:</p>
+<ul>
+<li>alternatives remain genuinely open</li>
+<li>alternatives remain practical for ordinary users</li>
+<li>the protocol and incentives do not structurally entrench one chokepoint</li>
+</ul>
+<h3>Section 8. Interaction with Other Standards</h3>
+<h4>8.1 Constitution</h4>
+<p>This standard operationalizes:</p>
+<ul>
+<li>Article XXIV (Directional Decentralization and Operational Concentration)</li>
+<li>Article X (Transaction-Level Censorship Resistance)</li>
+</ul>
+<h4>8.2 Breach and Restoration Standard</h4>
+<p>Red and Critical zone conditions may trigger classification under <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a>.</p>
+<h4>8.3 Reserve Custody and Key Management Standard</h4>
+<p>Where concentration concerns reserve custody specifically, this standard works together with <a href="companions.html#reserve-custody-key-management-standard">Reserve Custody and Key Management Standard</a>.</p>
+<h4>8.4 Verification Checklist</h4>
+<p><a href="checklist.html">Verification Checklist</a> may assist evaluators in applying this standard consistently, but does not override this standard.</p>
+<h4>8.5 UX Constitution</h4>
+<p>Where concentration manifests through user-facing access paths to constitutional functions, including wallet dominance, interface routing dominance, or practical monopoly over visible exit paths, this standard applies together with <a href="companions.html#ux-constitution">UX Constitution</a>.</p>
+<p>A chokepoint in user-facing access may constitute operational concentration even where alternative paths exist in theory, if ordinary users are not given a practical and visible way to use them.</p>
+<h3>Final Rule</h3>
+<p>The real question is not:</p>
+<p><strong>"How many validators or operators do we have?"</strong></p>
+<p>The real question is:</p>
+<p><strong>"How easy is it for one pressure point to control meaningful operation or exit right now?"</strong></p>
+<p>If that answer becomes dangerously favorable to one pressure point, the system is in constitutional danger, no matter how good the code looks.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="reserve-custody-key-management-standard">
+  <input type="checkbox" id="comp-4" class="accordion-toggle">
+  <label for="comp-4" class="accordion-label">Reserve Custody and Key Management Standard<br><span class="companion-desc">Exact custody thresholds, signer requirements, key ceremony rules, and concentration limits.</span></label>
+  <div class="accordion-body">
+    <div class="accordion-inner">
+      <p><span class="status-badge draft">Binding · Draft</span></p>
+      <h3>Governing Principles</h3>
+<ol>
+<li>No reserve backing direct Bitcoin claims or Layer 2 transactional balances may be subject to unilateral control.</li>
+<li>Apparent signer count is not enough. Real independence matters more than headline diversity.</li>
+<li>A custody structure must be secure against:</li>
+</ol>
+<ul>
+<li>single-key failure</li>
+<li>single-operator compromise</li>
+<li>small-clique collusion</li>
+<li>single-jurisdiction coercion</li>
+<li>infrastructure monoculture</li>
+<li>silent signer substitution</li>
+</ul>
+<ol>
+<li>Provisional custody is allowed only as a disclosed, bounded, capped transition. It is not full compliance.</li>
+<li>Signer growth must reduce concentrated control, not merely expand the appearance of decentralization.</li>
+<li>If a custody threshold or requirement is not explicitly met, the more conservative compliance reading applies.</li>
+</ol>
+<h3>Section 1. Scope and Applicability</h3>
+<h4>1.1 In-scope reserves</h4>
+<p>This standard applies to all reserves backing:</p>
+<ul>
+<li>direct Bitcoin claims</li>
+<li>Bitcoin transactional balances on Layer 2</li>
+<li>any other balance that the system presents as reserve-backed Bitcoin access</li>
+</ul>
+<h4>1.2 Out of scope</h4>
+<p>This standard does not directly govern:</p>
+<ul>
+<li>purely optional Layer 3 credit instruments</li>
+<li>unbacked utility balances</li>
+<li>speculative balances not presented as reserve-backed Bitcoin</li>
+</ul>
+<p>However, if any such system is marketed or functionally presented as reserve-backed Bitcoin access, this standard applies.</p>
+<h4>1.3 Measurement basis</h4>
+<p>Where thresholds depend on reserve exposure, exposure shall be measured as the <strong>highest daily reserve-backed balance</strong> observed during the trailing <strong>30-day</strong> window, denominated in BTC.</p>
+<h3>Section 2. Custody Bands and Minimum Threshold Requirements</h3>
+<h4>2.1 Principle</h4>
+<p>Thresholds scale with reserve exposure. Lower exposure does not excuse unsafe custody forever, but higher exposure demands materially stronger custody.</p>
+<h4>2.2 Minimum operational signer bands</h4>
+<table>
+<thead><tr>
+<th>Reserve-backed exposure (BTC)</th>
+<th>Minimum active operational signers (N)</th>
+<th>Minimum spend threshold (T)</th>
+<th>Minimum independent jurisdictions</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>>0 to 250 BTC</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>>250 to 2,500 BTC</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>>2,500 to 25,000 BTC</td>
+<td>7</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>>25,000 BTC</td>
+<td>9</td>
+<td>6</td>
+<td>5</td>
+</tr>
+</tbody></table>
+<h4>2.3 Higher bands allowed</h4>
+<p>A system may voluntarily adopt the thresholds of a higher band than required by current exposure. Doing so is constitutionally favored.</p>
+<h4>2.4 Full-compliance floor</h4>
+<p>A system meeting only the minimum of the lowest band is not automatically fully compliant if other independence, concentration, or provisional-custody conditions are not met.</p>
+<h4>2.5 Threshold rule</h4>
+<p>For any operational signer set:</p>
+<ol>
+<li>The spend threshold must always be greater than one.</li>
+<li>The spend threshold must always exceed one half of the active signer count once N is 7 or greater.</li>
+<li>No single signer and no subset below the threshold may unilaterally move, steal, or encumber reserves.</li>
+</ol>
+<h3>Section 3. Jurisdiction, Entity, and Infrastructure Distribution</h3>
+<h4>3.1 Single-jurisdiction limit</h4>
+<p>No single jurisdiction may control, host, or legally compel enough operational signers to satisfy the spend threshold by itself.</p>
+<h4>3.1A Jurisdiction definition for custody purposes</h4>
+<p>For purposes of this standard, a jurisdiction means a distinct legal and regulatory compulsion domain in which a single legal order could compel all signers located within it simultaneously.</p>
+<p>Jurisdictional independence is measured by practical compulsion risk, not by superficial geographic labeling.</p>
+<p>Different subdivisions within the same sovereign legal order do not automatically count as separate jurisdictions if the same legal or regulatory process could compel them together.</p>
+<h4>3.2 Jurisdiction concentration rule</h4>
+<p>For fully compliant custody:</p>
+<ul>
+<li>no single jurisdiction may contain more than <strong>T - 2</strong> active operational signers</li>
+<li>and no single jurisdiction may contain more than <strong>one third</strong> of active operational signers, whichever is stricter</li>
+</ul>
+<h4>3.3 Corporate-family limit</h4>
+<p>No single legal entity or corporate family may control more than:</p>
+<ul>
+<li><strong>1</strong> operational signer in any band</li>
+<li><strong>2</strong> recovery quorum members in any band</li>
+</ul>
+<p>This limit applies regardless of provisional status.</p>
+<p>Provisional custody may relax exposure band requirements and maturity timing only where explicitly allowed by this standard. It does not relax independence requirements.</p>
+<h4>3.4 Infrastructure concentration limit</h4>
+<p>No single cloud provider, hosting cluster, datacenter family, managed key provider, or equivalent infrastructure concentration point may support more than:</p>
+<ul>
+<li><strong>one third</strong> of active operational signers for bands at or above 7 signers</li>
+<li><strong>one half</strong> of active operational signers for bands below 7 signers</li>
+</ul>
+<h4>3.5 Client implementation concentration</h4>
+<p>For bands at or above 7 operational signers:</p>
+<ul>
+<li>no single signing software implementation may support more than <strong>two thirds</strong> of active operational signers</li>
+</ul>
+<p>For exposures above 25,000 BTC:</p>
+<ul>
+<li>no single signing software implementation may support more than <strong>one half</strong> of active operational signers</li>
+</ul>
+<h4>3.6 Correlated domains</h4>
+<p>Where several signers share the same effective control, failure domain, or compromise path, they shall be measured together.</p>
+<h3>Section 4. Key Ceremony Requirements</h3>
+<h4>4.1 Required public ceremony record</h4>
+<p>Every initial key ceremony and every full re-ceremony must generate a durable public record sufficient to verify:</p>
+<ul>
+<li>ceremony date</li>
+<li>signer count</li>
+<li>threshold</li>
+<li>participating jurisdictions</li>
+<li>hardware or HSM class used</li>
+<li>software versions or signing stack versions</li>
+<li>cryptographic identifiers or fingerprints of resulting public keys</li>
+<li>whether the ceremony was initial, replacement, or emergency</li>
+</ul>
+<h4>4.2 Secret handling</h4>
+<p>Private key material must not be transmitted in plaintext or reconstructed outside the declared secure ceremony process.</p>
+<h4>4.3 Witnessing and attestation</h4>
+<p>Each ceremony must produce signed attestations from participating custody operators that:</p>
+<ul>
+<li>the declared process was followed</li>
+<li>the stated threshold and signer distribution are accurate</li>
+<li>no undeclared shared control exists to the best of the attestors' knowledge</li>
+</ul>
+<p>For reserve-backed exposure above <strong>2,500 BTC</strong>, at least one independent non-signer witness must attest to ceremony conduct. That attestation must be published alongside participant attestations and must identify whether the witness observed any deviation from the declared ceremony process.</p>
+<h4>4.4 Emergency ceremonies</h4>
+<p>Emergency re-ceremonies are allowed, but must be publicly disclosed within <strong>24 hours</strong> of completion unless disclosure would itself materially endanger funds. In that case, disclosure must occur as soon as the acute danger has passed.</p>
+<h3>Section 5. Hardware Security Requirements</h3>
+<h4>5.1 Core requirement</h4>
+<p>Operational and recovery signing material must be generated, stored, and used in hardware-isolated environments appropriate to their role.</p>
+<h4>5.2 Prohibited practices</h4>
+<p>The following are prohibited for reserve-backed custody:</p>
+<ul>
+<li>storing reserve-signing keys in general-purpose hot wallets</li>
+<li>using browser-managed key storage for reserve movement authority</li>
+<li>exporting plaintext private key material after generation except where constitutionally required for a separately protected archival recovery process</li>
+<li>relying on ordinary cloud VM memory as the primary long-term home of reserve-signing keys</li>
+</ul>
+<h4>5.3 Acceptable control environments</h4>
+<p>Reserve-signing material must use one or more of:</p>
+<ul>
+<li>dedicated HSMs</li>
+<li>hardware wallets or signing devices with verified firmware paths</li>
+<li>air-gapped signing environments</li>
+<li>secure enclaves with public attestation, where constitutionally appropriate</li>
+<li>functionally equivalent secure hardware architectures</li>
+</ul>
+<h4>5.4 Recovery hardware</h4>
+<p>Recovery quorum material must be held in colder and materially more isolated environments than routine operational signers.</p>
+<h3>Section 6. Rotation, Review, and Signer Changes</h3>
+<h4>6.1 Regular review cadence</h4>
+<p>All signer assignments, jurisdictions, infrastructure dependencies, and software stacks must be reviewed at least every <strong>180 days</strong>.</p>
+<h4>6.2 Rotation cadence</h4>
+<p>Operational signing material must be rotated or re-attested no less often than every <strong>24 months</strong>, unless the system publishes a stronger security justification for a longer interval and that interval does not exceed <strong>36 months</strong>.</p>
+<h4>6.3 Immediate rotation triggers</h4>
+<p>Immediate rotation or removal action is required upon:</p>
+<ul>
+<li>suspected key compromise</li>
+<li>confirmed signer compromise</li>
+<li>undisclosed shared control discovered</li>
+<li>critical software compromise in the signing stack</li>
+<li>signer legal capture that materially changes coercion risk</li>
+<li>signer insolvency</li>
+<li>signer regulatory shutdown, dissolution, or equivalent forced cessation</li>
+<li>material violation of this standard by a signer</li>
+</ul>
+<p>Upon a mandatory immediate rotation trigger, the affected signer's authority must be suspended as soon as constitutionally and operationally possible pending completion of rotation or replacement. It is not sufficient merely to schedule rotation while the compromised or constitutionally impaired signer remains active.</p>
+<h4>6.4 Public disclosure of signer changes</h4>
+<p>Planned signer addition, removal, or replacement must be publicly disclosed at least <strong>7 days</strong> before taking effect.</p>
+<p>Emergency changes may occur faster, but must be disclosed within <strong>24 hours</strong> unless acute risk temporarily prevents disclosure.</p>
+<h4>6.5 Auditability</h4>
+<p>A durable public record of signer additions, removals, replacements, and threshold changes must be maintained.</p>
+<h3>Section 7. Recovery Quorum Rules</h3>
+<h4>7.1 Independent recovery requirement</h4>
+<p>A reserve-backed custody system must maintain a recovery quorum independent from the daily operational signer path.</p>
+<h4>7.2 Minimum recovery quorum</h4>
+<table>
+<thead><tr>
+<th>Reserve-backed exposure (BTC)</th>
+<th>Minimum recovery quorum members</th>
+<th>Minimum recovery threshold</th>
+<th>Minimum independent jurisdictions</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>>0 to 2,500 BTC</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>>2,500 to 25,000 BTC</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>>25,000 BTC</td>
+<td>7</td>
+<td>5</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<h4>7.3 Overlap limit</h4>
+<p>No more than <strong>40 percent</strong> of recovery quorum members may also be active operational signers.</p>
+<p>In addition:</p>
+<ul>
+<li>overlap members must not by themselves be sufficient to satisfy both the operational spend threshold and the recovery threshold</li>
+<li>the overlap set must not create a practical path for the same small coordinated group to dominate both ordinary reserve movement and recovery reconstitution</li>
+</ul>
+<p>If a band-specific configuration would allow such dual domination despite numerical compliance, the custody structure is non-compliant.</p>
+<h4>7.4 Recovery quorum strength</h4>
+<p>A recovery quorum must not be materially easier to compromise than the operational custody path. If a lower threshold is used for recovery, the system must justify why the colder environment and stronger isolation offset the lower numerical threshold.</p>
+<h4>7.5 Recovery trigger</h4>
+<p>Recovery quorum authority may be used only for:</p>
+<ul>
+<li>reconstituting the operational signer set</li>
+<li>restoring user control after operator disappearance or refusal</li>
+<li>replacing compromised signers</li>
+<li>preserving funds when operational quorum is no longer reliable</li>
+</ul>
+<p>It must not be used as a convenience shortcut for ordinary reserve movement.</p>
+<h3>Section 8. Anti-Sybil Admission Requirements</h3>
+<h4>8.1 Objective criteria</h4>
+<p>Signer admission criteria must be:</p>
+<ul>
+<li>public</li>
+<li>rule-based</li>
+<li>specific</li>
+<li>measurable</li>
+</ul>
+<h4>8.2 Independence proof</h4>
+<p>A candidate signer must demonstrate independent control domain status through one or more of:</p>
+<ul>
+<li>public disclosure</li>
+<li>cryptographic attestation</li>
+<li>legal separation evidence</li>
+<li>operational separation evidence</li>
+<li>jurisdictional separation evidence</li>
+<li>privacy-preserving but reviewable independence attestations that can be evaluated under the Constitutional Dispute and Review Standard process, with evidence made available to that process under appropriate confidentiality protections</li>
+</ul>
+<p>Self-assertion alone is insufficient.</p>
+<h4>8.3 No arbitrary incumbent veto</h4>
+<p>Incumbent signers may reject applicants only for failure to meet published criteria, not for competitive, political, or social preference.</p>
+<h4>8.4 Anti-sybil aggregation</h4>
+<p>Candidates with shared beneficial control, shared coercion path, or shared infrastructure dependency may be counted as one effective control domain for compliance purposes.</p>
+<h3>Section 9. Signer Removal Procedures and Conditions</h3>
+<h4>9.1 Mandatory removal or suspension triggers</h4>
+<p>A signer must be suspended or removed when:</p>
+<ul>
+<li>compromise is confirmed</li>
+<li>prolonged unavailability exceeds published maximum tolerance</li>
+<li>false independence claims are proven</li>
+<li>required rotation or re-attestation is refused</li>
+<li>the signer becomes part of an unconstitutional concentration cluster</li>
+<li>the signer materially violates this standard</li>
+</ul>
+<h4>9.2 Emergency suspension</h4>
+<p>Emergency suspension may occur before full investigation where credible risk to reserves exists. Such suspension must be followed by public disclosure and review.</p>
+<h4>9.3 No silent removal</h4>
+<p>Signer removal must not occur silently.</p>
+<h4>9.4 Replacement safety</h4>
+<p>Adding or replacing signers must not:</p>
+<ul>
+<li>lower threshold protections</li>
+<li>worsen jurisdiction concentration</li>
+<li>worsen operator concentration</li>
+<li>worsen infrastructure monoculture</li>
+<li>make recovery weaker</li>
+</ul>
+<p>For planned changes, a post-change concentration analysis must be published at least <strong>7 days</strong> before the change takes effect.</p>
+<p>That analysis must be publicly reviewable and sufficiently detailed for independent evaluators to assess whether concentration, independence, and recovery posture are materially weakened.</p>
+<p>Emergency changes may occur faster, but the same analysis must be published within <strong>24 hours</strong> after the change unless acute risk temporarily prevents disclosure.</p>
+<h3>Section 10. Provisional Custody Rules</h3>
+<h4>10.1 Principle</h4>
+<p>Provisional custody is a transitional state only. It is not fully compliant custody.</p>
+<h4>10.2 Minimum provisional requirements</h4>
+<p>A system claiming provisional custody must, at minimum:</p>
+<ul>
+<li>satisfy the lowest exposure band thresholds</li>
+<li>disclose its provisional status publicly</li>
+<li>publish a reserve cap</li>
+<li>publish a maturity plan</li>
+<li>publish deadlines and milestones</li>
+<li>disclose the precise ways in which it is not yet fully compliant</li>
+</ul>
+<h4>10.3 Duration limit</h4>
+<p>Provisional custody may not continue beyond <strong>12 months</strong> from activation of the reserve-bearing component unless a stricter project-specific deadline has already been declared.</p>
+<h4>10.4 Reserve cap</h4>
+<p>A provisional system must hard-cap reserve-backed exposure at a publicly declared amount before accepting user funds.</p>
+<p>That cap:</p>
+<ul>
+<li>must be technically enforceable or publicly auditable</li>
+<li>must not be raised without <strong>30 days</strong> prior public notice</li>
+<li>must not be raised if prior maturity milestones have been missed</li>
+<li>may be raised only after the immediately preceding maturity milestone has been publicly verified as complete</li>
+</ul>
+<p>Being merely not-yet-late is not sufficient to justify a cap increase.</p>
+<h4>10.5 No full compliance claim</h4>
+<p>A provisionally custodied system must not claim:</p>
+<ul>
+<li>full constitutional compliance</li>
+<li>full compliance with Article XIV</li>
+<li>full reserve-custody compliance</li>
+</ul>
+<p>It may only claim provisional or partial compliance, with explicit disclosure.</p>
+<h4>10.6 Failure to mature</h4>
+<p>Failure to meet the published maturity path or deadline constitutes a compliance issue under the constitution and may escalate under the Breach and Restoration Standard.</p>
+<h3>Section 11. Recovery if Many Signers Disappear</h3>
+<h4>11.1 Operational quorum loss</h4>
+<p>If operational signer availability falls below threshold:</p>
+<ol>
+<li>ordinary reserve movement must halt unless constitutionally necessary for user protection</li>
+<li>recovery quorum procedures must begin under published rules</li>
+<li>public disclosure must occur within <strong>24 hours</strong></li>
+</ol>
+<p>Such a halt must not block users from initiating normal downward exit through the recovery quorum path or any other constitutionally valid alternative path that remains available.</p>
+<h4>11.2 Recovery quorum degradation</h4>
+<p>If recovery quorum availability also falls below threshold:</p>
+<ul>
+<li>the system must publicly disclose that reserve recovery is at risk</li>
+<li>affected balances must not continue to be represented as normally secure</li>
+<li>constitutional breach evaluation may be triggered</li>
+</ul>
+<h4>11.3 Reconstitution</h4>
+<p>Reconstitution of signer sets must preserve or improve:</p>
+<ul>
+<li>threshold security</li>
+<li>independence</li>
+<li>jurisdictional spread</li>
+<li>concentration posture</li>
+</ul>
+<p>It must not be used as a pretext to consolidate power.</p>
+<h3>Section 12. Concentration Limits and Compliance Zones</h3>
+<h4>12.1 Green</h4>
+<p>Custody is Green only if:</p>
+<ul>
+<li>all applicable band thresholds are met</li>
+<li>no concentration limit is exceeded</li>
+<li>no provisional-custody status remains</li>
+<li>recovery quorum requirements are met</li>
+<li>signer changes are fully auditable</li>
+</ul>
+<h4>12.2 Yellow / Warning</h4>
+<p>Yellow applies where:</p>
+<ul>
+<li>a concentration limit is approached or slightly exceeded</li>
+<li>a required rotation is overdue but not dangerously so</li>
+<li>independence evidence is incomplete</li>
+<li>a signer cluster has become temporarily too correlated</li>
+</ul>
+<p>Yellow requires:</p>
+<ul>
+<li>public warning within <strong>7 days</strong></li>
+<li>corrective action plan within <strong>30 days</strong></li>
+</ul>
+<h4>12.3 Red / Failure</h4>
+<p>Red applies where:</p>
+<ul>
+<li>a required threshold or distribution rule is materially violated</li>
+<li>provisional custody overstays its deadline</li>
+<li>one operator cluster or jurisdiction materially dominates reserve movement</li>
+<li>recovery quorum requirements fail but no actual loss or rewrite has yet occurred</li>
+</ul>
+<p>Red is non-compliant and should be classified under the Breach and Restoration Standard.</p>
+<h4>12.4 Critical</h4>
+<p>Critical applies where:</p>
+<ul>
+<li>unilateral or near-unilateral reserve movement becomes possible</li>
+<li>a single coercion domain can practically compel reserve movement</li>
+<li>reserve recovery is plausibly impossible under current conditions</li>
+<li>signer concentration makes immediate user loss realistically likely</li>
+</ul>
+<p>Critical conditions may constitute continuity-threatening breach.</p>
+<h4>12.5 Return to Green</h4>
+<p>A system that has entered Yellow, Red, or Critical custody status may return to Green only after:</p>
+<ul>
+<li>meeting Green requirements for all applicable custody metrics</li>
+<li>maintaining those conditions for <strong>two consecutive reporting periods</strong></li>
+<li>publicly disclosing the return-to-Green claim with supporting evidence</li>
+</ul>
+<p>A temporary single-period improvement is not sufficient to re-establish Green status.</p>
+<h3>Section 13. Relationship to Other Standards</h3>
+<h4>13.1 Constitution</h4>
+<p>This standard operationalizes Article XIV of the Bitcoin System Constitution.</p>
+<h4>13.2 Operational Independence Standard</h4>
+<p>Where custody concentration overlaps broader operator concentration, this standard works together with <a href="companions.html#operational-independence-standard">Operational Independence Standard</a>.</p>
+<h4>13.3 Breach and Restoration Standard</h4>
+<p>Violations of this standard are classified under <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a>.</p>
+<h4>13.4 Verification Checklist</h4>
+<p><a href="checklist.html">Verification Checklist</a> may assist evaluators in applying this standard consistently, but does not override this standard.</p>
+<h4>13.5 UX Constitution</h4>
+<p>User-facing disclosure of custody structure, custody-zone status, provisional custody status, and material custody-zone changes is governed jointly by this standard and <a href="companions.html#ux-constitution">UX Constitution</a>.</p>
+<p>Where custody status changes materially affect user trust assumptions, users must be informed through constitutionally compliant interface disclosure.</p>
+<h3>Final Rule</h3>
+<p>A reserve backing Bitcoin access is constitutionally sound only when:</p>
+<ul>
+<li>it is real</li>
+<li>it is current</li>
+<li>it is unencumbered</li>
+<li>and no single person, operator cluster, jurisdiction, or hidden clique can quietly take it away</li>
+</ul>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="software-security-architecture-standard">
+  <input type="checkbox" id="comp-5" class="accordion-toggle">
+  <label for="comp-5" class="accordion-label">Software and Security Architecture Standard<br><span class="companion-desc">Required implementation behaviors for custody, recovery, delegation, and long-term system integrity.</span></label>
+  <div class="accordion-body">
+    <div class="accordion-inner">
+      <p><span class="status-badge draft">Binding · Draft</span></p>
+      <h3>Governing Principles</h3>
+<ol>
+<li>The constitution remains primary. This standard operationalizes, but does not override, Articles XXV and XXVI.</li>
+<li>Operational control must never silently become ultimate ownership control.</li>
+<li>Delegation is permitted. Irrevocable dependence is not.</li>
+<li>Recovery must remain possible even if daily operators disappear, are captured, are offline, or refuse service.</li>
+<li>Recovery-critical semantics must remain stable across time.</li>
+<li>Recovery-critical software must be verifiable, preservable, and not silently mutable.</li>
+<li>Any implementation choice that weakens revocability, separation, archival recoverability, or user escape is non-compliant unless explicitly authorized by the constitution.</li>
+<li>This standard uses definitions from Article I exclusively. Any undefined technical term used here is descriptive only and does not override constitutional definitions.</li>
+</ol>
+<h3>Section 1. Delegated, Revocable, Rotating Capability Trees</h3>
+<h4>1.1 Required model</h4>
+<p>Where a system supports delegated control, it must implement delegation through a capability structure anchored in a colder, harder-to-compromise root authority or a functionally equivalent control model.</p>
+<p>A compliant delegation architecture must ensure that delegated authority is:</p>
+<ul>
+<li>scoped</li>
+<li>revocable</li>
+<li>time-bounded or rotation-bounded</li>
+<li>distinguishable from ownership</li>
+<li>incapable of silently overriding recovery rights</li>
+</ul>
+<p>Literal tree data structures are not mandatory, but the implemented architecture must provide equivalent guarantees.</p>
+<h4>1.2 Capability scope</h4>
+<p>Delegated capabilities must be limited by one or more of the following:</p>
+<ul>
+<li>action type</li>
+<li>value range</li>
+<li>asset class</li>
+<li>time window</li>
+<li>layer or context</li>
+<li>destination policy</li>
+<li>frequency or rate limit</li>
+</ul>
+<p>Open-ended delegation without scope is prohibited for any authority that can materially affect user funds.</p>
+<h4>1.3 Cold roots</h4>
+<p>Any architecture using delegation must anchor ultimate recovery or revocation power in a colder control domain than the one used for routine operations.</p>
+<p>Cold roots must not be:</p>
+<ul>
+<li>permanently online by default</li>
+<li>required for routine daily operation</li>
+<li>silently replaced or bypassed by operator convenience paths</li>
+</ul>
+<h4>1.4 Recovery quorums</h4>
+<p>Where recovery quorums are used, they must be independent of the day-to-day operational key path.</p>
+<p>A recovery quorum must not be reducible to the same operator set that controls ordinary operations.</p>
+<h4>1.5 Rotation</h4>
+<p>Delegated operational authority must rotate on a declared schedule or under a declared rotation policy.</p>
+<p>Long-lived operational keys are permissible only if:</p>
+<ul>
+<li>they remain clearly subordinate to root and recovery control</li>
+<li>they are revocable without delegate cooperation</li>
+<li>they cannot trap or irreversibly transfer ownership</li>
+</ul>
+<h4>1.6 No hidden broadening of delegated authority</h4>
+<p>No software update, operator intervention, or policy change may silently broaden the scope of an existing delegated capability.</p>
+<p>Any broadening of capability scope must be explicit, visible, and separately consented to by the delegator.</p>
+<h3>Section 2. Separation of Operational and Ultimate Control</h3>
+<h4>2.1 Core requirement</h4>
+<p>Day-to-day operational keys and ultimate ownership or recovery keys must remain meaningfully distinct.</p>
+<h4>2.2 Prohibited control collapse</h4>
+<p>No operational key, hot key, operator key, session key, API credential, or delegated capability may by itself:</p>
+<ul>
+<li>irreversibly transfer ownership</li>
+<li>permanently disable recovery</li>
+<li>permanently change the recovery profile</li>
+<li>rebind a user into a new trust model without explicit higher-authority consent</li>
+</ul>
+<h4>2.3 Ownership transfer vs convenience delegation</h4>
+<p>The system must clearly distinguish between:</p>
+<ul>
+<li>convenience delegation</li>
+<li>temporary authority</li>
+<li>operational authorization</li>
+<li>ownership transfer</li>
+</ul>
+<p>Routine use of a delegated path must not be treated as implied transfer of ownership.</p>
+<h4>2.4 Location and environment separation</h4>
+<p>Where possible, ultimate control and operational control must be held in materially different control environments.</p>
+<p>Operational convenience is not a sufficient reason to collapse all control into the same device, service, or operator path if doing so would eliminate meaningful recovery independence.</p>
+<h4>2.5 Replacement and succession rules</h4>
+<p>Changes to operational control must not automatically affect ultimate control.</p>
+<p>Changes to ultimate control must require a stronger consent path than changes to operational control.</p>
+<h3>Section 3. Revocability of Delegation</h3>
+<h4>3.1 Core requirement</h4>
+<p>All delegation must be revocable by the delegator or by a constitutionally valid recovery path.</p>
+<h4>3.2 No delegate cooperation requirement</h4>
+<p>Revocation must not require cooperation, approval, availability, or good behavior from the delegate.</p>
+<p>A delegate must not be able to hold the delegator hostage by refusing to participate in revocation.</p>
+<h4>3.3 Time-bounded delegation</h4>
+<p>Time-bounded delegation is preferred over open-ended delegation wherever practical.</p>
+<p>If delegation is open-ended, the system must justify why a bounded model was not used and must still preserve immediate or bounded revocation.</p>
+<h4>3.4 Revocation path independence</h4>
+<p>The revocation path must be available even if:</p>
+<ul>
+<li>the delegate is offline</li>
+<li>the delegate is hostile</li>
+<li>the delegate has been captured</li>
+<li>the operator service is unavailable</li>
+<li>the software vendor has disappeared</li>
+</ul>
+<h4>3.5 Declared revocation latency</h4>
+<p>If revocation is not immediate, the system must declare the maximum revocation latency.</p>
+<p>For delegation that materially affects normal downward exit, user withdrawal capability, or restoration of independent control over reserve-backed or Bitcoin-denominated balances, the declared revocation latency must not exceed the constitutional maximum downward movement delay.</p>
+<p>For other forms of delegation, the declared revocation latency must be specifically disclosed, technically justified, and bounded strongly enough that escape does not become practically illusory.</p>
+<p>Any declared revocation latency that renders escape, exit, or independent control practically unavailable to ordinary users may constitute a breach under the constitution and <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a>.</p>
+<h4>3.6 Revocation must not weaken funds recoverability</h4>
+<p>A revocation process must not force the user into a worse trust model merely to revoke a delegate.</p>
+<h3>Section 4. Recovery Independence from Daily Operators</h3>
+<h4>4.1 Core requirement</h4>
+<p>Recovery must not depend on the same actors, infrastructure, or control path that run the system's ordinary daily operations.</p>
+<h4>4.2 Independent recovery path</h4>
+<p>A compliant system must provide an independent recovery capability sufficient to restore user control under the conditions contemplated by Article XXVI.6.</p>
+<h4>4.3 Required failure assumptions</h4>
+<p>Recovery must remain possible if the ordinary operator:</p>
+<ul>
+<li>disappears</li>
+<li>is captured</li>
+<li>refuses service</li>
+<li>is legally restrained</li>
+<li>experiences prolonged outage</li>
+<li>becomes malicious</li>
+</ul>
+<h4>4.4 No single-operator recovery choke point</h4>
+<p>No single operator, company, hosted API, or centralized service may be the only path by which a user can recover from dependence.</p>
+<h4>4.5 Recovery documentation</h4>
+<p>The system must document, in technically accurate but user-legible form:</p>
+<ul>
+<li>how recovery works</li>
+<li>what prerequisites are needed</li>
+<li>what happens if the operator disappears</li>
+<li>what happens if the user loses routine access but still holds ultimate recovery material</li>
+<li>what conditions, delays, or thresholds apply</li>
+</ul>
+<h4>4.6 Distinction from normal use</h4>
+<p>Recovery architecture is not required to be convenient for daily use.</p>
+<p>It is required to be real, independent, and durable.</p>
+<h4>4.6A Partial recovery quorum failure</h4>
+<p>The system must document the recovery path where one or more recovery quorum participants become unavailable, hostile, seized, or uncooperative during the recovery process.</p>
+<p>That path must not require the cooperation of the hostile or unavailable party to complete, provided the remaining constitutionally sufficient recovery authority still exists.</p>
+<p>If quorum loss below the required threshold would make recovery impossible, that condition must be explicitly disclosed as part of the recovery model.</p>
+<h4>4.7 External data dependency</h4>
+<p>Recovery, revocation, and restoration of independent control must not depend on external data sources whose unavailability, compromise, or manipulation would block or indefinitely delay recovery.</p>
+<p>This includes, where relevant:</p>
+<ul>
+<li>oracles</li>
+<li>price feeds</li>
+<li>attestation services</li>
+<li>external state proofs</li>
+<li>third-party API responses</li>
+</ul>
+<p>If an external data source is used, the architecture must preserve a bounded, non-discretionary fallback path that allows the user to recover, unwind, or otherwise regain control without waiting indefinitely for that source to return.</p>
+<h3>Section 5. Archival Offline Recovery Environments</h3>
+<h4>5.1 Core requirement</h4>
+<p>Recovery must be possible from archival offline materials without dependency on operator-controlled live servers for key interpretation, address discovery semantics, or fundamental recovery logic.</p>
+<h4>5.2 What offline recovery must preserve</h4>
+<p>An archival offline recovery environment must preserve, at minimum:</p>
+<ul>
+<li>recovery-critical software behavior</li>
+<li>recovery profile semantics</li>
+<li>key and metadata interpretation</li>
+<li>address derivation semantics</li>
+<li>descriptor or script interpretation, where relevant</li>
+<li>documentation sufficient to perform recovery</li>
+</ul>
+<h4>5.3 Allowed online dependencies</h4>
+<p>Network access may still be required to:</p>
+<ul>
+<li>fetch blockchain data</li>
+<li>broadcast transactions</li>
+<li>synchronize chain state</li>
+</ul>
+<p>But operator-controlled live services must not be required for any step of the recovery process beyond standard blockchain data access and transaction broadcast.</p>
+<p>A recovery path that depends on operator-controlled live services for interpretation, authorization, execution, or completion of recovery is non-compliant.</p>
+<h4>5.4 Offline recovery package</h4>
+<p>A compliant system must provide, directly or through verifiable archival means, a recovery package or equivalent recoverability set containing:</p>
+<ul>
+<li>recovery documentation</li>
+<li>recovery-critical software or source</li>
+<li>cryptographic hashes</li>
+<li>version identifiers</li>
+<li>recovery profile data</li>
+<li>metadata needed to reconstruct ownership and discovery logic</li>
+</ul>
+<h4>5.5 Longevity requirement</h4>
+<p>The archival recovery path must be designed for long-term viability, not merely short-term backup convenience.</p>
+<h4>5.6 No archive bait-and-switch</h4>
+<p>A system must not publish archival recovery materials and later render them useless through silent semantic drift.</p>
+<h3>Section 6. Hash-Pinned Reference Implementations</h3>
+<h4>6.1 Core requirement</h4>
+<p>Recovery-critical software versions must be cryptographically identifiable and verifiable.</p>
+<h4>6.2 Hash pinning</h4>
+<p>A compliant system must publish cryptographic hashes for recovery-critical software, including where relevant:</p>
+<ul>
+<li>binaries</li>
+<li>scripts</li>
+<li>deterministic build outputs</li>
+<li>source references</li>
+<li>manifests</li>
+</ul>
+<h4>6.3 No silent updates</h4>
+<p>Recovery-critical software must not be silently updated.</p>
+<p>Any update affecting recovery semantics, key handling, profile interpretation, descriptor interpretation, or discovery logic must be:</p>
+<ul>
+<li>visible</li>
+<li>documented</li>
+<li>versioned</li>
+<li>opt-in where constitutionally required</li>
+</ul>
+<p>Any change to recovery-critical software or recovery-profile semantics must result in active notification to affected users through the system's primary user-facing interface, where such an interface exists. Publication in a changelog or technical note alone is insufficient.</p>
+<h4>6.4 Known-good verification</h4>
+<p>Users must be able to verify that they are running a known-good reference implementation or a functionally equivalent implementation.</p>
+<h4>6.5 Public release record</h4>
+<p>A durable public record of recovery-critical releases must be maintained.</p>
+<p>Recovery-critical release records must be maintained for the longer of:</p>
+<ul>
+<li>the life of the system</li>
+<li>or 10 years from the last active use of the relevant recovery profile</li>
+</ul>
+<h4>6.6 Reproducibility where reasonably achievable</h4>
+<p>Where reasonably achievable, recovery-critical reference implementations should support reproducible verification paths. If not, the system must document what substitute integrity guarantees exist.</p>
+<h3>Section 7. Frozen Recovery Profiles</h3>
+<h4>7.1 Core requirement</h4>
+<p>A compliant system must provide a defined recovery profile or set of recovery profiles whose semantics do not silently change over time.</p>
+<h4>7.2 Meaning of a recovery profile</h4>
+<p>A recovery profile includes, where relevant:</p>
+<ul>
+<li>derivation path</li>
+<li>descriptor structure</li>
+<li>script type</li>
+<li>address discovery logic</li>
+<li>profile version</li>
+<li>key interpretation rules</li>
+<li>required metadata</li>
+</ul>
+<h4>7.2A Activation timestamps and applicability record</h4>
+<p>Each recovery profile version must carry a publicly recorded activation timestamp or activation block reference.</p>
+<p>The system must maintain a durable record of:</p>
+<ul>
+<li>which recovery profile version was in force</li>
+<li>during which time window</li>
+<li>and, where reasonably achievable, which balances or deposits were placed under that profile</li>
+</ul>
+<p>This record must be sufficient to determine which recovery semantics applied at the time a user entered the system.</p>
+<h4>7.3 Profile stability</h4>
+<p>If a user follows the recovery procedure in force at the time funds were placed under that profile, the user must remain able to recover those funds later, provided the user still possesses the required secrets and the publicly documented chain data.</p>
+<h4>7.4 No silent derivation or mapping changes</h4>
+<p>No compliant implementation may silently change:</p>
+<ul>
+<li>derivation paths</li>
+<li>descriptor interpretation</li>
+<li>wallet mapping rules</li>
+<li>discovery behavior</li>
+<li>script interpretation</li>
+</ul>
+<p>for existing balances.</p>
+<h4>7.5 Legacy discovery preservation</h4>
+<p>Legacy discovery must remain available for previously supported balances, either:</p>
+<ul>
+<li>natively in current software</li>
+<li>or through a fixed archival recovery path that preserves prior semantics</li>
+</ul>
+<h4>7.6 New profiles</h4>
+<p>New recovery profiles may be introduced prospectively, but the existence of a new profile must not make old profiles unreadable, undiscoverable, or unsupported for existing balances.</p>
+<h4>7.7 Profile export</h4>
+<p>Recovery profiles must be exportable in an open, durable, machine-readable form sufficient to support independent recovery.</p>
+<p>Exported recovery profiles must:</p>
+<ul>
+<li>use publicly documented formats</li>
+<li>be free from IP restrictions that prevent independent parsing or implementation</li>
+<li>be interpretable without vendor-specific tooling</li>
+<li>contain enough information to reconstruct profile semantics independently</li>
+</ul>
+<h3>Section 8. Relationship to Other Standards</h3>
+<h4>8.1 Constitution</h4>
+<p>This standard operationalizes:</p>
+<ul>
+<li>Article XXV (Long-Term Recoverability and Compatibility Continuity)</li>
+<li>Article XXVI (Dependence Must Remain Escapable)</li>
+</ul>
+<h4>8.2 UX Constitution</h4>
+<p>The user-facing implications of this standard, including warnings, recovery walkthroughs, and continuity disclosures, are governed by <a href="companions.html#ux-constitution">UX Constitution</a>.</p>
+<h4>8.3 Definitions and Interpretive Notes</h4>
+<p>Interpretation of edge cases, terminology, and anti-gaming guidance is informed by <a href="companions.html#definitions-interpretive-notes">Definitions and Interpretive Notes</a>, but this document remains binding within its scope.</p>
+<h4>8.4 Breach and Restoration Standard</h4>
+<p>Violations of this standard may constitute breach conditions and are classified under <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a>.</p>
+<h4>8.5 Operational Independence and Concentration Standard</h4>
+<p>Where delegation, custody, revocation, or recovery architecture creates operational concentration in signers, operators, jurisdictions, infrastructure, or user access paths, this standard applies together with <a href="companions.html#operational-independence-standard">Operational Independence Standard</a>.</p>
+<p>A software architecture that is formally correct but operationally concentrated may still be constitutionally weak.</p>
+<h3>Final Rule</h3>
+<p>A user who still possesses valid recovery authority must not lose control merely because:</p>
+<ul>
+<li>a hot key was compromised</li>
+<li>an operator disappeared</li>
+<li>a service was captured</li>
+<li>a vendor changed software</li>
+<li>a live server stopped functioning</li>
+<li>a delegated path failed</li>
+</ul>
+<p>If the user can still prove rightful control under the constitution, the architecture must still provide a real path home.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="ux-constitution">
+  <input type="checkbox" id="comp-6" class="accordion-toggle">
+  <label for="comp-6" class="accordion-label">UX Constitution<br><span class="companion-desc">Required wallet-level and user-facing behavior for systems claiming constitutional compliance.</span></label>
+  <div class="accordion-body">
+    <div class="accordion-inner">
+      <p><span class="status-badge draft">Binding · Draft</span></p>
+      <h3>Section 2. Migration Prompts and Upgrade Confirmations</h3>
+<p><strong>Supports:</strong> Governance, Mutability, and Ossification, Long-Term Recoverability and Compatibility Continuity, Successor Systems and Voluntary Migration</p>
+<h4>Rules</h4>
+<ol>
+<li>Users must explicitly confirm before any change that alters:</li>
+</ol>
+<ul>
+<li>trust model</li>
+<li>custody model</li>
+<li>recovery model</li>
+<li>asset class</li>
+<li>layer context</li>
+<li>governance exposure</li>
+<li>bridge dependency</li>
+</ul>
+<ol>
+<li>No silent upgrade may change the effective risk properties of a user's balances or recovery assumptions.</li>
+<li>Upgrade prompts must explain in plain language:</li>
+</ol>
+<ul>
+<li>what is changing</li>
+<li>why it is changing</li>
+<li>whether the change is optional</li>
+<li>whether the user may stay on the prior path</li>
+<li>whether the change alters constitutional protections</li>
+</ul>
+<ol>
+<li>No prompt may use artificial urgency, countdown pressure, fear-based manipulation, or "last chance" framing to push users into trust-model changes.</li>
+<li>If a proposed upgrade would move the user into a successor system, that fact must be stated directly.</li>
+<li>If an upgrade changes the process for sending, receiving, or moving between layers, the prompt must state whether the old process remains available.</li>
+</ol>
+<h4>Forbidden patterns</h4>
+<ul>
+<li>"Continue" buttons that mask a trust-model change.</li>
+<li>"Recommended" labels that steer users into weaker custody without equal disclosure.</li>
+<li>Hidden automatic migration to new contract logic, bridge paths, or recovery semantics.</li>
+</ul>
+<h3>Section 3. Human-Readable Labels</h3>
+<p><strong>Supports:</strong> Distinction Between Bitcoin, Claims, Utility Balances, and Credit, Clarity to Users</p>
+<h4>Rules</h4>
+<ol>
+<li>All asset types must be labeled clearly and consistently.</li>
+<li>Labels must distinguish at minimum:</li>
+</ol>
+<ul>
+<li>Bitcoin on Layer 1</li>
+<li>direct Bitcoin claim</li>
+<li>Bitcoin transactional balance</li>
+<li>Bitcoin utility balance</li>
+<li>native gas or utility token</li>
+<li>governance token</li>
+<li>credit instrument</li>
+<li>speculative asset</li>
+</ul>
+<ol>
+<li>Protocol-level naming must match user-facing naming closely enough that the user is not misled by cosmetic rebranding.</li>
+<li>No label may blur categories by using Bitcoin-like language for non-Bitcoin instruments without explicit qualification.</li>
+<li>If a system uses non-standard layer names, the UX must still make the constitutional trust position understandable to a normal user.</li>
+<li>Asset classification labels must persist across all screens where balances are displayed or actions may be initiated. Labels must be visible at the point of decision, including send, receive, bridge, stake, or any commitment action.</li>
+</ol>
+<p>Labels must not:</p>
+<ul>
+<li>disappear after onboarding</li>
+<li>be reduced in visibility during normal use</li>
+<li>be replaced by ambiguous icons or branding</li>
+</ul>
+<p>Asset classification is a permanent interface requirement, not an onboarding aid.</p>
+<h4>Example</h4>
+<p>A system may call something:</p>
+<ul>
+<li>Settlement Rail</li>
+<li>Utility Zone</li>
+<li>Contract Context</li>
+<li>Layer 1.5</li>
+<li>Layer 4</li>
+<li>Layer 5</li>
+</ul>
+<p>But the UX must still make clear:</p>
+<ul>
+<li>whether it is stronger, weaker, or simply different from the current context</li>
+<li>whether it is base-chain Bitcoin or not</li>
+<li>whether the user is holding money, claim, utility balance, gas token, governance token, or credit</li>
+</ul>
+<h3>Section 4. Recovery Walkthroughs and Test Restore Flows</h3>
+<p><strong>Supports:</strong> Long-Term Recoverability and Compatibility Continuity, Dependence Must Remain Escapable</p>
+<h4>Rules</h4>
+<ol>
+<li>Self-custody systems must provide users with a way to verify that their recovery backup works without risking live funds.</li>
+<li>Recovery procedures must be documented in plain language.</li>
+<li>Recovery-critical metadata must be exportable in a way the user can actually understand and preserve.</li>
+<li>No UX may imply that a seed phrase or backup is sufficient if additional hidden metadata is required to restore access.</li>
+<li>No interface may rely on vendor lock-in as the normal or only recovery path.</li>
+<li>If recovery assumptions change, the user must be explicitly informed before the change takes effect.</li>
+</ol>
+<h4>Required recovery flow properties</h4>
+<ul>
+<li>testable</li>
+<li>documented</li>
+<li>repeatable</li>
+<li>vendor-independent to the maximum extent possible</li>
+<li>honest about what is and is not backed up</li>
+</ul>
+<h3>Section 5. Anti-Dark-Pattern Rules</h3>
+<p><strong>Supports:</strong> Honest Risk Hierarchy, Clarity to Users, Dependence Must Remain Escapable</p>
+<h4>Rules</h4>
+<ol>
+<li>No deceptive defaults.</li>
+<li>No prechecked opt-ins for:</li>
+</ol>
+<ul>
+<li>custody delegation</li>
+<li>yield products</li>
+<li>credit exposure</li>
+<li>contract-based encumbrance</li>
+<li>migration into weaker trust contexts</li>
+</ul>
+<ol>
+<li>No visual manipulation that steers users toward riskier or more centralized options while hiding safer ones.</li>
+<li>No burying of self-custody, plain transfer, or downward exit options.</li>
+<li>No misleading color, icon, badge, or status system that suggests constitutional safety where it does not exist.</li>
+<li>No "safety" language may be used merely because a product is popular, regulated, insured by a private party, or widely adopted.</li>
+<li>No reveal control may be used to hide the fact that a user is entering credit, losing plain transferability, becoming custodial, or entering a weaker trust context.</li>
+<li>Communications, including push notifications, emails, SMS messages, and in-app alerts, must adhere to the same anti-dark-pattern rules as the interface itself.</li>
+</ol>
+<p>Such communications must not:</p>
+<ul>
+<li>use artificial urgency to pressure user action</li>
+<li>create fear-based decision-making</li>
+<li>steer users toward weaker trust models</li>
+<li>obscure the true nature of an action or change</li>
+</ul>
+<p>Any communication prompting a user to:</p>
+<ul>
+<li>move funds</li>
+<li>change custody</li>
+<li>accept an upgrade</li>
+<li>enter a new context</li>
+</ul>
+<p>must include clear disclosure of:</p>
+<ul>
+<li>the trust change involved</li>
+<li>the asset class implications</li>
+<li>whether the action weakens user control or exit rights</li>
+</ul>
+<h3>Section 6. Context, Layer Position, and Relative Trust</h3>
+<p><strong>Supports:</strong> Functional Layer Order, Honest Risk Hierarchy, Clarity to Users</p>
+<h4>Rules</h4>
+<ol>
+<li>The user must always be able to see their current operational context.</li>
+<li>The current context display must tell the user, at minimum:</li>
+</ol>
+<ul>
+<li>what system or sub-system they are in</li>
+<li>which constitutional layer or equivalent trust zone they are in</li>
+<li>what asset class they currently hold</li>
+<li>whether the current context is stronger, weaker, or simply different from the one below it</li>
+</ul>
+<ol>
+<li>If a system uses more than three layers, sublayers, internal trust domains, or hybrid layer names, the UX must still present the current position clearly.</li>
+<li>Developer naming is flexible. User-facing clarity is not.</li>
+<li>Shared address formats, account metaphors, or reused wallet visuals must not be relied on as the sole indicator of where the user is.</li>
+</ol>
+<h4>Special rule for same-address or same-identifier designs</h4>
+<p>If the same address format, account string, or receiving identifier is reused across multiple trust contexts, the UX must provide an explicit context marker strong enough that a normal user cannot reasonably confuse:</p>
+<ul>
+<li>base-chain Bitcoin</li>
+<li>claim balances</li>
+<li>utility balances</li>
+<li>custodial balances</li>
+<li>contract-governed balances</li>
+</ul>
+<h3>Section 7. Cross-Layer and Cross-Context Confirmation</h3>
+<p><strong>Supports:</strong> Exit as a Right, Interlayer Coupling and Movement, Plain Transferability and Voluntary Encumbrance</p>
+<h4>Rules</h4>
+<ol>
+<li>Any action that changes:</li>
+</ol>
+<ul>
+<li>layer</li>
+<li>trust model</li>
+<li>custody model</li>
+<li>asset class</li>
+<li>compliance context</li>
+<li>contract status</li>
+</ul>
+<p>must require explicit confirmation.</p>
+<ol>
+<li>The confirmation must state in plain language:</li>
+</ol>
+<ul>
+<li>what the user is moving out of</li>
+<li>what they are moving into</li>
+<li>what protections are lost, gained, or changed</li>
+<li>whether the move is reversible</li>
+<li>whether the move depends on a bridge, contract, or operator</li>
+</ul>
+<ol>
+<li>No cross-context move may be hidden inside a generic send, deposit, bridge, stake, continue, or next flow.</li>
+</ol>
+<h4>Required special confirmation cases</h4>
+<ul>
+<li>Moving from Layer 1 Bitcoin into any claim-based or bridged context.</li>
+<li>Moving from a transactional balance into a utility balance.</li>
+<li>Moving from plain transferability into contract-governed state.</li>
+<li>Moving from self-custody into assisted, delegated, or custodial control.</li>
+<li>Entering a non-compliant, partially compliant, or out-of-scope component.</li>
+</ul>
+<h3>Section 8. How Risk Is Shown on Screen</h3>
+<p><strong>Supports:</strong> Honest Risk Hierarchy, Clarity to Users, Scope and Compliance</p>
+<h4>Rules</h4>
+<ol>
+<li>The screen must always make visible:</li>
+</ol>
+<ul>
+<li>current operational context</li>
+<li>current asset class</li>
+<li>custody status</li>
+<li>compliance context, where relevant</li>
+</ul>
+<ol>
+<li>Trust assumptions of the current context must be accessible directly from the primary balance or action screen without navigating away from that screen or entering secondary menus such as settings, profile, or configuration pages. Access must be clearly labeled and discoverable without requiring search, guesswork, or prior knowledge of the interface.</li>
+<li>The UX must not blur:</li>
+</ol>
+<ul>
+<li>self-custodial versus custodial state</li>
+<li>compliant versus non-compliant context</li>
+<li>plain transfer versus contract-governed state</li>
+<li>money versus credit</li>
+</ul>
+<ol>
+<li>If a user is about to take an action that weakens their current trust position, that weakening must be visible before commitment.</li>
+<li>UX requirements must be satisfied across all device classes, including mobile, desktop, web, and embedded environments.</li>
+</ol>
+<p>Where screen size or interface constraints limit simultaneous visibility, the following must remain persistently visible on the primary action screen:</p>
+<ul>
+<li>asset classification (money, claim, utility, credit)</li>
+<li>custody status (self-custodial, delegated, custodial)</li>
+<li>compliance context where relevant</li>
+</ul>
+<p>Supporting detail may use progressive disclosure, provided that:</p>
+<ul>
+<li>first-level classification is always visible</li>
+<li>no core classification is hidden behind reveal controls</li>
+<li>reduced space is not used to omit or obscure constitutional disclosures</li>
+</ul>
+<h4>Revealable detail rule</h4>
+<p>A compliant UX may use layered disclosure, including reveal controls, to present deeper implementation detail without overwhelming the user. However, the following must be visible without requiring reveal:</p>
+<ul>
+<li>asset classification</li>
+<li>current trust position</li>
+<li>custody status</li>
+<li>compliance context</li>
+<li>movement into credit</li>
+<li>movement into a weaker trust layer</li>
+<li>movement into custodial or delegated control</li>
+<li>movement into contract-governed state</li>
+</ul>
+<p>Reveal mechanisms may deepen understanding but must not be required to determine the nature of the asset, trust model, custody state, or compliance context.</p>
+<p>Core classifications must be represented by persistent visible text or clearly understandable symbols on the primary action screen. These classifications must not rely solely on:</p>
+<ul>
+<li>tap interactions</li>
+<li>hover states</li>
+<li>hidden panels</li>
+<li>expandable sections</li>
+</ul>
+<p>Reveal controls are permitted only for additional detail, not for core classification.</p>
+<h4>Minimum trust-assumption disclosure</h4>
+<p>At minimum, the user must be able to find:</p>
+<ul>
+<li>whether exit is permissionless or conditional</li>
+<li>whether reserves are direct, claimed, or absent</li>
+<li>whether a bridge or operator is involved</li>
+<li>whether governance or committee control exists</li>
+<li>whether the current balance is money, claim, utility balance, gas token, governance token, or credit</li>
+</ul>
+<h3>Section 9. Compliance Context Disclosure</h3>
+<p><strong>Supports:</strong> Scope, Extensions, Compliance, Naming, and Voluntary Applicability</p>
+<h4>Rules</h4>
+<ol>
+<li>The interface must clearly disclose whether the current context is:</li>
+</ol>
+<ul>
+<li>compliant</li>
+<li>partially compliant</li>
+<li>non-compliant</li>
+<li>out of constitutional scope</li>
+</ul>
+<ol>
+<li>A user must not be left assuming constitutional protection merely because the interface is inside a broader ecosystem that uses constitutional branding.</li>
+<li>If a user is routed into a non-compliant, partially compliant, or less-proven context, that boundary must be disclosed before commitment.</li>
+<li>Compliance status must not be hidden in documentation while the UI implies stronger protection.</li>
+</ol>
+<h4>Examples</h4>
+<p>Allowed:</p>
+<ul>
+<li>"You are entering a non-compliant bridge path. Exit rights and proof standards may differ."</li>
+</ul>
+<p>Forbidden:</p>
+<ul>
+<li>using the same visual trust signals for compliant and non-compliant components with only tiny footnote differences</li>
+</ul>
+<h3>Section 10. Self-Custody Must Not Be Visually Discouraged</h3>
+<p><strong>Supports:</strong> Dependence Must Remain Escapable, Long-Term Recoverability and Compatibility Continuity</p>
+<h4>Rules</h4>
+<ol>
+<li>Where self-custody is available, it must be at least as visually accessible as custodial or delegated alternatives.</li>
+<li>No interface may use asymmetrical warning language to portray self-custody as uniquely dangerous while presenting reliance on third parties as normal or safer by default.</li>
+<li>No compliant UX may default users into custodial or delegated arrangements when a self-custodial path is available and practical.</li>
+<li>No compliant UX may portray self-custody as merely "advanced" while portraying dependence on third parties as neutral baseline reality.</li>
+<li>If a custodial or delegated path is offered, the UX must also explain the path back out.</li>
+</ol>
+<h4>Important note</h4>
+<p>This section does not require every user to choose self-custody.</p>
+<p>It requires the system not to stack the deck against it.</p>
+<h3>Section 11. Compliant Plus Designation</h3>
+<p><strong>Type within this document:</strong> Optional higher UX designation</p>
+<p><strong>Purpose:</strong> To recognize systems that not only remain honest, but also preserve long-term workflow continuity for routine money actions.</p>
+<h4>Principle</h4>
+<p>A Compliant Plus system does not force users to relearn core money actions unnecessarily. It preserves confidence, habit, and operational continuity across upgrades.</p>
+<h4>Qualifying rules</h4>
+<ol>
+<li>Routine money tasks must remain operationally stable across upgrades wherever reasonably possible.</li>
+<li>Users must not be forced onto a new workflow for:</li>
+</ol>
+<ul>
+<li>sending Bitcoin</li>
+<li>receiving Bitcoin</li>
+<li>moving up or down layers</li>
+<li>checking custody state</li>
+<li>confirming what asset they hold</li>
+</ul>
+<p>if the old workflow can still be preserved safely.</p>
+<ol>
+<li>A system may introduce new workflows, new screens, new features, or safer processes, but must not force users to abandon prior core money paths without a safe continuity path.</li>
+<li>The old process or a functionally equivalent compatibility path must remain available long enough for users to continue accessing their money without panic, retraining shock, or operational paralysis.</li>
+<li>If an old process is genuinely unsafe and cannot remain, the system must preserve the old mental model as closely as possible through:</li>
+</ol>
+<ul>
+<li>compatibility mode</li>
+<li>legacy mode</li>
+<li>guided safe bridge</li>
+<li>functionally equivalent path</li>
+</ul>
+<ol>
+<li>No upgrade may strand a user by radically changing the location, naming, or sequence of core money actions without a safe continuity path.</li>
+<li>A system that repeatedly redesigns core money workflows for style, novelty, or product preference rather than necessity should not qualify for Compliant Plus.</li>
+</ol>
+<h4>Evaluation and accountability</h4>
+<p>Compliant Plus status is not self-authoritative. Any system claiming Compliant Plus status is subject to the same evaluation, disclosure, and breach classification processes as base constitutional compliance.</p>
+<p>Claims of Compliant Plus status must be:</p>
+<ul>
+<li>publicly stated</li>
+<li>supported by evidence of meeting the criteria defined in this section</li>
+<li>subject to independent evaluation by users, auditors, or other evaluators</li>
+</ul>
+<p>Misrepresentation of Compliant Plus status constitutes a form of compliance misrepresentation under the constitution.</p>
+<h4>Safety exception</h4>
+<p>If an old workflow is genuinely unsafe, Compliant Plus does not require preserving the dangerous behavior itself. It requires preserving the user's confidence path to the money as closely as safely possible.</p>
+<h4>Practical examples</h4>
+<p>Allowed for Compliant Plus:</p>
+<ul>
+<li>adding a new send flow while keeping the old send flow available</li>
+<li>introducing a safer cross-layer confirmation while preserving the old action location and logic</li>
+<li>providing legacy mode for users trained on an earlier interface</li>
+</ul>
+<p>Not allowed for Compliant Plus:</p>
+<ul>
+<li>moving send, receive, or exit into new locations with no legacy path</li>
+<li>requiring a new app for a routine action that users previously performed in the existing app</li>
+<li>repeatedly renaming basic actions in ways that force retraining</li>
+</ul>
+<h4>Re-evaluation and erosion</h4>
+<ol>
+<li>Compliant Plus status requires periodic reaffirmation following major UX changes.</li>
+</ol>
+<p>A system must be re-evaluated for Compliant Plus status:</p>
+<ul>
+<li>after any significant interface or workflow change affecting core monetary actions</li>
+<li>at reasonable periodic intervals if continuous changes occur</li>
+</ul>
+<p>Incremental changes that individually appear minor but collectively degrade workflow continuity must be evaluated in aggregate.</p>
+<p>A system may lose Compliant Plus status if cumulative changes materially violate the continuity principles defined in this section, even if no single change independently constitutes a breach.</p>
+<h3>Section 12. Third-Party Interfaces</h3>
+<p>Third-party wallets, interfaces, and applications interacting with a compliant system must adhere to this UX Constitution when presenting or operating on constitutional functions.</p>
+<p>A system must not:</p>
+<ul>
+<li>rely on third-party UX behavior to obscure or misrepresent constitutional properties</li>
+<li>outsource user-facing truth obligations to external interfaces</li>
+</ul>
+<p>If third-party interfaces misrepresent constitutional properties:</p>
+<ul>
+<li>the system must not endorse, default to, or silently route users through such interfaces</li>
+<li>continued reliance on such interfaces may constitute a breach under <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a></li>
+</ul>
+<h3>Section 13. Accessibility</h3>
+<p>All required disclosures, warnings, classifications, and confirmations must be accessible to ordinary users, including those with visual, cognitive, or language limitations.</p>
+<p>Critical risk information must:</p>
+<ul>
+<li>not rely solely on color, icons, or small text</li>
+<li>be readable in plain language</li>
+<li>be accessible via screen readers and assistive technologies where applicable</li>
+</ul>
+<p>Accessibility limitations must not be used as justification to omit required constitutional disclosures.</p>
+<h3>Section 14. Relationship to the Protocol Constitution</h3>
+<h4>Rules</h4>
+<ol>
+<li>This document is binding on all user-facing behavior of systems claiming compliance.</li>
+<li>No UX behavior may weaken, blur, or contradict protocol-level protections.</li>
+<li>A system that materially misrepresents asset class, trust model, custody state, exit conditions, or compliance context through its user interface may be classified as in breach under <a href="companions.html#breach-restoration-standard">Breach and Restoration Standard</a>, regardless of underlying protocol correctness.</li>
+<li>If a conflict appears to exist between what is technically true and what the user is led to believe, the stronger requirement is:</li>
+</ol>
+<ul>
+<li>truth in the protocol</li>
+<li>honesty in the UX</li>
+</ul>
+<ol>
+<li>Where this document is silent, interpretation should default toward:</li>
+</ol>
+<ul>
+<li>clearer disclosure</li>
+<li>stronger user understanding</li>
+<li>easier self-custody</li>
+<li>easier downward exit</li>
+<li>less chance of mistaking weaker layers for stronger ones</li>
+</ul>
+<h3>Final UX Principle</h3>
+<p>A compliant system must make it easy for a normal user to answer four questions at all times:</p>
+<ol>
+<li><strong>Where am I?</strong></li>
+<li><strong>What do I hold?</strong></li>
+<li><strong>Who or what do I depend on right now?</strong></li>
+<li><strong>What changes if I move from here?</strong></li>
+</ol>
+<p>If the user cannot answer those questions quickly and honestly from the interface itself, the UX is not constitutionally sound.</p>
+    </div>
+  </div>
+</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">Bitcoin System Constitution · CC0 1.0 · Public Domain · Satoshi Nohashi</div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:satoshinohashi@proton.me">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
