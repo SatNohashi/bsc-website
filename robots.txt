@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bitcoinsystemconstitution.org/sitemap.xml
+Sitemap: https://thebitcoinconstitution.com/sitemap.xml

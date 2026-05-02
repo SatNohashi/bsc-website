@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Story Behind This Site | Bitcoin System Constitution</title>
+  <meta name="description" content="How a defensively-registered domain was suspended by an unsubstantiated abuse complaint, and how the community helped get this site back online — separated, distributed, and harder to take down.">
+  <meta property="og:title" content="The Story Behind This Site | Bitcoin System Constitution">
+  <meta property="og:description" content="A defensive domain registration was suspended over an unsubstantiated abuse complaint. The community responded. The lesson became part of the work.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://thebitcoinconstitution.com/story.html">
+  <meta property="og:image" content="https://thebitcoinconstitution.com/seal-128.png">
+  <meta property="og:site_name" content="Bitcoin System Constitution">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Story Behind This Site">
+  <meta name="twitter:description" content="A defensive domain was suspended over an unsubstantiated abuse complaint. The community responded. The lesson became part of the work.">
+  <meta name="twitter:image" content="https://thebitcoinconstitution.com/seal-128.png">
+  <link rel="canonical" href="https://thebitcoinconstitution.com/story.html">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="seal-128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="content-page">
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Bitcoin System Constitution</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><li class="nav-dropdown"><a href="constitution.html" class="nav-dropdown-trigger">Constitution</a><ul class="nav-submenu"><li><a href="one-pager.html">One-Page Summary</a></li><li><a href="companions.html">Companion Standards</a></li><li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li></ul></li><li><a href="commentary.html">Commentary</a></li><li><a href="faq.html">FAQ</a></li><li><a href="checklist.html">Checklist</a></li><li><a href="compliance.html">Compliance</a></li><li><a href="story.html" class="active">Story</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <header class="page-hero narrow">
+      <p class="eyebrow">A Note from the Author</p>
+      <h1>The Story Behind This Site</h1>
+      <p class="page-intro">Nothing in life goes according to plan. The plan that survives is the one that keeps moving. This is the story of how this site nearly went offline before it was widely read, and how it ended up where it is — distributed, harder to attack, and stronger than it started.</p>
+    </header>
+
+    <section class="section narrow">
+      <h2 style="border:none; margin-top:0;">The Setup</h2>
+      <p>The Bitcoin System Constitution is a CC0-licensed standard for what it means to be Bitcoin-aligned. It has no token. No company. No founder allocation. No donations. It is published openly and intentionally written to outlast its author.</p>
+      <p>When it went online, two domains were registered defensively to keep the namespace from being grabbed by someone hostile: the canonical site at <code>bitcoinsystemconstitution.org</code>, and a shorter alias at <code>bitcoinconstitution.org</code>. The alias was never connected to anything. It had no DNS records. It had never resolved to any IP. It had never served a single byte of content. It existed only to hold the name.</p>
+    </section>
+
+    <section class="section narrow">
+      <h2>The Complaint</h2>
+      <p>Five days after the defensive <code>.org</code> was registered, an unsubstantiated phishing complaint reached the registrar. Within hours, Tucows applied a five-day <code>clientHold</code> on the domain, and the upstream reseller suspended the entire customer account: every unrelated domain, the VPS hosting this site at the time, and access to support reduced to ticket-only.</p>
+      <p>The complaint was factually impossible. A domain that has no DNS records cannot resolve. A domain that doesn't resolve cannot serve content. A domain that doesn't serve content cannot host a phishing page. This is not a matter of opinion — it is how the public DNS works, and any first-year systems engineer can verify it from the public record. Independent investigation confirmed: zero archived snapshots in the Wayback Machine, no public DNS record at any major resolver, no nginx server block on the VPS, no traffic in any access log.</p>
+      <p>But the policy at the reseller was simple: any domain complaint, anywhere, suspends everything. There was no per-domain blast radius. There was no investigation step. The customer was taken offline and asked to prove a negative through a ticket queue.</p>
+      <p>We pushed back. The <code>clientHold</code> was lifted three days later. But the pattern was the lesson — a single anonymous email had cost several days, several domains, and a publicly visible service. There was no plausible defense that scaled.</p>
+    </section>
+
+    <section class="section narrow">
+      <h2>The Pattern Underneath</h2>
+      <p>Investigation surfaced a few facts that, taken together, form a context but not a proof:</p>
+      <ul>
+        <li>A <code>.com</code> of the same name had been parked at GoDaddy since 2020 by an unrelated party, never used.</li>
+        <li>A <code>.xyz</code> of the same name had been registered eleven days <em>before</em> our <code>.org</code> and was listed for sale on Afternic at $999 USD by a seller with no other Bitcoin-related history.</li>
+        <li>We displaced no one when we registered the <code>.org</code> — but five days later, an unsubstantiated complaint arrived.</li>
+      </ul>
+      <p>These facts are circumstantial. They do not name anyone. They do not prove bad faith. But they form a pattern that anyone watching the domain market recognizes: registrant gets a name, an unsubstantiated abuse report arrives, the registrar reflexively suspends, the registrant is pressured to release the name. Whether or not it was deliberate here, the system is structured so that it works that way.</p>
+    </section>
+
+    <section class="section narrow">
+      <h2>The Migration</h2>
+      <p>The decision was clear: separate every service across different providers. One vendor with an "any complaint equals full suspension" policy is one anonymous email away from total outage. The lesson cost time, but it was the right one to learn early.</p>
+      <p>The plan was straightforward, and most of it could be executed immediately:</p>
+      <ul>
+        <li><strong>Registrar.</strong> Move domains away from the original reseller. The first attempted move ran into ICANN's 60-day post-registration transfer lock — a rule designed to prevent fraudulent transfers, but here it functioned as an unintended cage. A secondary plan was needed.</li>
+        <li><strong>DNS.</strong> Separate from the registrar, so a registrar-level suspension cannot also break name resolution.</li>
+        <li><strong>Hosting.</strong> Move the VPS to a different jurisdiction and a different vendor.</li>
+        <li><strong>Email.</strong> Already separate (ProtonMail).</li>
+        <li><strong>Source.</strong> Already separate (GitHub, CC0).</li>
+      </ul>
+      <p>The most time-sensitive piece was getting new domains registered fast. A second registrar, paid in good faith, took payment for two new registrations and then sat on the order for over twelve hours without provisioning. WHOIS confirmed both names were still publicly available — sitting in the open, exposed to anyone monitoring the namespace.</p>
+      <p>So we asked the community for help.</p>
+    </section>
+
+    <section class="section narrow">
+      <h2>The Community</h2>
+      <p>A response came back within minutes. A community member offered to register the names and hold them, no questions asked, before knowing who they were helping. They moved the registrations to a working registrar in under a minute, pointed them at a new VPS, and went to bed. No payment was requested. No conditions were attached.</p>
+      <p>This is what worked when vendors did not. It is the difference between a system that runs on contracts and a system that runs on principle. The Constitution is not just a document about Bitcoin — it is a document for anyone who has decided to do honest work in a world that does not always reward it. The community member who responded to the call understood that without being told.</p>
+      <p>The only request: do not name them. Some people prefer to do the right thing quietly, and that preference deserves to be honored.</p>
+      <p>In thanks, the remaining domains in our collection — the ones still trapped under the original registrar's transfer lock — will be transferred to that community member as soon as they are free. They may be worth something one day if this work continues to matter. They may be worth nothing. Either way, they belong to whoever stepped up when it counted. We trust that they will do the right thing with them. If not, the community will figure it out.</p>
+    </section>
+
+    <section class="section narrow">
+      <h2>What This Site Runs On Now</h2>
+      <ul>
+        <li><strong>Domains:</strong> registered through a community ally, with WHOIS privacy on by default.</li>
+        <li><strong>DNS:</strong> at the registrar level for now, with delegation to a third party planned.</li>
+        <li><strong>Hosting:</strong> a fresh VPS at a privacy-respecting host in Iceland — chosen specifically because it is a different jurisdiction, a different vendor, and a different account from the registrar.</li>
+        <li><strong>Email:</strong> ProtonMail, separate from everything.</li>
+        <li><strong>Source code:</strong> <a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub, under CC0</a>.</li>
+        <li><strong>Evidence record:</strong> a public log at <a href="https://github.com/SatNohashi/bitcoinconstitution-org-evidence" target="_blank" rel="noopener">github.com/SatNohashi/bitcoinconstitution-org-evidence</a>, updated as events occur.</li>
+      </ul>
+      <p>If any single one of these is attacked, the others remain. That is the lesson.</p>
+    </section>
+
+    <section class="section narrow">
+      <h2>What Did Not Change</h2>
+      <p>Everything that mattered. The Constitution itself. The principles. The license. The intent. The fact that this work has no token, no presale, no founder allocation, no monetization plan, and no purpose other than to define honestly what it means to be Bitcoin-aligned.</p>
+      <p>If anything, the experience clarified the work. The Constitution was written, in part, because trusted intermediaries can be coerced into acting against the people who depend on them. That hypothesis — abstract when written — was tested in practice within weeks of publication. The system behaved exactly as the document predicted. The fix was exactly what the document recommended: keep no single intermediary in a position of total leverage.</p>
+    </section>
+
+    <section class="section narrow">
+      <h2>A Note to Whoever Is Watching</h2>
+      <p>If the abuse report against the original <code>.org</code> was accidental — a user clicking the wrong button on the wrong domain — the public record now exists, and the matter is closed.</p>
+      <p>If it was deliberate — a squatter trying to free up a name they could resell — the new domains are registered, the site is live, and the namespace is held. The cost of trying again has gone up, and the next attack hits a more distributed system. The Constitution does not go away because a registrar is uncomfortable.</p>
+      <p>Either way, the work continues. The pattern is on record. The community responded.</p>
+      <p style="margin-top:2rem; font-style: italic; color: var(--text-muted);">Nothing in life goes according to plan. The plan that survives is the one that keeps moving.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      Bitcoin System Constitution · CC0 1.0 · Public Domain · Satoshi Nohashi
+    </div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/SatNohashi/Bitcoin-System-Constitution" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:satoshinohashi@proton.me">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

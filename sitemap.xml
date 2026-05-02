@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bitcoinsystemconstitution.org/</loc>
+    <loc>https://thebitcoinconstitution.com/</loc>
     <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://bitcoinsystemconstitution.org/constitution.html</loc>
+    <loc>https://thebitcoinconstitution.com/constitution.html</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://bitcoinsystemconstitution.org/one-pager.html</loc>
+    <loc>https://thebitcoinconstitution.com/one-pager.html</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://bitcoinsystemconstitution.org/companions.html</loc>
+    <loc>https://thebitcoinconstitution.com/companions.html</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://bitcoinsystemconstitution.org/commentary.html</loc>
+    <loc>https://thebitcoinconstitution.com/commentary.html</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://bitcoinsystemconstitution.org/faq.html</loc>
+    <loc>https://thebitcoinconstitution.com/faq.html</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://bitcoinsystemconstitution.org/checklist.html</loc>
+    <loc>https://thebitcoinconstitution.com/checklist.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://bitcoinsystemconstitution.org/compliance.html</loc>
+    <loc>https://thebitcoinconstitution.com/compliance.html</loc>
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://thebitcoinconstitution.com/story.html</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
   </url>
 </urlset>
