@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /stage/
+Disallow: /stage
 
 Sitemap: https://thebitcoinconstitution.com/sitemap.xml
